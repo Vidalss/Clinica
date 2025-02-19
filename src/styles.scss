@@ -132,6 +132,36 @@ $preclinic-angular-theme: mat.m2-define-light-theme(
     }
   }
 }
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.language-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.language-menu .nav-item {
+  margin-right: 10px;
+}
+
+.language-menu .nav-link {
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.language-menu .nav-link:hover {
+  background-color: #f0f0f0;
+}
 .table_footer {
   display: flex;
   flex-direction: row;

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { DoctorProfileRoutingModule } from './doctor-profile-routing.module';
 import { DoctorProfileComponent } from './doctor-profile.component';
@@ -11,7 +12,8 @@ import { DoctorProfileComponent } from './doctor-profile.component';
   ],
   imports: [
     CommonModule,
-    DoctorProfileRoutingModule
+    DoctorProfileRoutingModule,
+    TranslateModule
   ]
 })
 export class DoctorProfileModule { }

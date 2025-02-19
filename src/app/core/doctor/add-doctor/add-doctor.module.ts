@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { AddDoctorRoutingModule } from './add-doctor-routing.module';
 import { AddDoctorComponent } from './add-doctor.component';
@@ -15,7 +16,8 @@ import { materialModule } from 'src/app/shared/material.module';
     CommonModule,
     AddDoctorRoutingModule,
     SharedModule,
-    materialModule
+    materialModule,
+    TranslateModule
   ]
 })
 export class AddDoctorModule { }
