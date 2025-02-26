@@ -1,0 +1,24 @@
+/* Estilos para el modo oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  
+    .sidebar {
+      background-color: #1e1e1e;
+      color: #ffffff;
+    }
+  
+    a {
+      color: #ffffff;
+    }
+  
+    .menu-title {
+      color: #ffffff;
+    }
+  
+    .logout-btn {
+      background-color: #333;
+      color: #ffffff;
+    }
+  }
+  

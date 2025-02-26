@@ -15,6 +15,7 @@ export class SidebarComponent {
   page = '';
   currentUrl = '';
   public classAdd = false;
+  public isDarkMode = false; // Estado inicial del modo oscuro
 
   public multilevel: Array<boolean> = [false, false, false];
 
@@ -33,6 +34,13 @@ export class SidebarComponent {
       }
     });
     this.getRoutes(this.router);
+
+    // Verificar la preferencia del usuario al cargar el componente
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      this.isDarkMode = true;
+      document.body.classList.add('dark-mode');
+    }
   }
 
   public expandSubMenus(menu: MenuItem): void {
@@ -47,25 +55,34 @@ export class SidebarComponent {
       });
     });
   }
+
   private getRoutes(route: { url: string }): void {
     const bodyTag = document.body;
 
-    bodyTag.classList.remove('slide-nav')
-    bodyTag.classList.remove('opened')
+    bodyTag.classList.remove('slide-nav');
+    bodyTag.classList.remove('opened');
     this.currentUrl = route.url;
 
     const splitVal = route.url.split('/');
 
-
     this.base = splitVal[1];
     this.page = splitVal[2];
   }
+
   public miniSideBarMouseHover(position: string): void {
     if (position == 'over') {
-      this.sideBar.expandSideBar.next("true");
+      this.sideBar.expandSideBar.next('true');
     } else {
-      this.sideBar.expandSideBar.next("false");
+      this.sideBar.expandSideBar.next('false');
     }
   }
 
+  // Función para alternar entre modo oscuro y claro
+  public toggleDarkMode(): void {
+    this.isDarkMode = !this.isDarkMode;
+    document.body.classList.toggle('dark-mode', this.isDarkMode);
+
+    // Guardar la preferencia del usuario en localStorage
+    localStorage.setItem('theme', this.isDarkMode ? 'dark' : 'light');
+  }
 }
