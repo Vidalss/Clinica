@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { EmailRoutingModule } from './email-routing.module';
 import { EmailComponent } from './email.component';
@@ -11,7 +12,8 @@ import { EmailComponent } from './email.component';
   ],
   imports: [
     CommonModule,
-    EmailRoutingModule
+    EmailRoutingModule,
+    TranslateModule
   ]
 })
 export class EmailModule { }
