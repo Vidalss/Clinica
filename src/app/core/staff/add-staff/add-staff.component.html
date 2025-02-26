@@ -1,0 +1,202 @@
+<div class="page-wrapper">
+    <div class="content">
+    
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a [routerLink]="routes.staffList"> {{ 'STAFF.TITLE' | translate }} </a></li>
+                        <li class="breadcrumb-item"><i class="feather icon-chevron-right"></i></li>
+                        <li class="breadcrumb-item active"> {{ 'STAFF.ADD' | translate }} </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Header -->
+        <div class="row">
+            <div class="col-sm-12">
+            
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-heading">
+                                        <h4> {{'STAFF.DETAILS' | translate }} </h4>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-4">  
+                                    <div class="form-group local-forms">
+                                        <label for="name"> {{'STAFF.NAME' | translate }} <span class="login-danger">*</span></label>
+                                        <input class="form-control" type="text"  >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="form-group local-forms">
+                                        <label  for="last"> {{'STAFF.LASTNAME' | translate }}  <span class="login-danger">*</span></label>
+                                        <input class="form-control" type="text"  >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="form-group local-forms">
+                                        <label  for="user"> {{'STAFF.USERNAME' | translate }} <span class="login-danger">*</span></label>
+                                        <input class="form-control" type="text"  >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-6">
+                                    <div class="form-group local-forms">
+                                         <label  for="mobile" > {{'STAFF.MOBILE' | translate }} <span class="login-danger">*</span></label>
+                                        <input class="form-control" type="text"  >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-6">
+                                    <div class="form-group local-forms">
+                                        <label for="email" > {{'STAFF.EMAIL' | translate }} <span class="login-danger">*</span></label>
+                                        <input class="form-control" type="email"  >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-6">
+                                    <div class="form-group local-forms">
+                                        <label  for="password"> {{'STAFF.PASSWORD' | translate }} <span class="login-danger">*</span></label>
+                                        <input class="form-control" type="password"  >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-6">
+                                    <div class="form-group local-forms">
+                                        <label for="confirmpassword" > {{'STAFF.CONFIRM_PASSWORD' | translate }} <span class="login-danger">*</span></label>
+                                        <input class="form-control" type="password"  >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-6">
+                                    <div class="form-group local-forms">
+                                        <label for="Birth" > {{'STAFF.DATE_OF_BIRTH' | translate }}  <span class="login-danger">*</span></label>
+                                        <input class="form-control datetimepicker" type="text" matInput [matDatepicker]="picker"  >
+                                        <mat-datepicker #picker></mat-datepicker>
+                                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-6">
+                                    <div class="form-group select-gender">
+                                        <label for="gender" class="gen-label"> {{'STAFF.GENDER' | translate }} <span class="login-danger">*</span></label>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" name="gender" class="form-check-input"> {{'STAFF.MALE' | translate }}
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" name="gender" class="form-check-input"> {{'STAFF.FEMALE' | translate }}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="form-group local-forms">
+                                         <label  for="education"> {{'STAFF.EDUCATION' | translate }} <span class="login-danger">*</span></label>
+                                        <input class="form-control" type="text"  >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="form-group local-forms">
+                                        <label for="designation"> {{'STAFF.EDUCATION' | translate }} <span class="login-danger">*</span></label>
+                                        <input class="form-control" type="text"  >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="form-group local-forms">
+                                         <label  for="department"> {{'STAFF.DEPARTMENT' | translate }} <span class="login-danger">*</span></label>
+                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder=" {{'STAFF.SELECT_DEPARTMENT' | translate }} ">
+                                            <mat-option *ngFor="let data of selectedList1" [value]="data.value">
+                                            {{data.value}}
+                                            </mat-option>
+                                        </mat-select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12">
+                                    <div class="form-group local-forms">
+                                        <label for="address"> {{'STAFF.ADDRESS'| translate }}  <span class="login-danger">*</span></label>
+                                        <textarea class="form-control" rows="3" cols="30"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-3">
+                                    <div class="form-group local-forms">
+                                        <label for="city"> {{'STAFF.ADDRESS' | translate }} <span class="login-danger">*</span></label>
+                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder=" {{'STAFF.SELECT_CITY' | translate }} ">
+                                            <mat-option *ngFor="let data of selectedList2" [value]="data.value">
+                                            {{data.value}}
+                                            </mat-option>
+                                        </mat-select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-3">
+                                    <div class="form-group local-forms">
+                                        <label for="country"> {{'STAFF.COUNTRY' | translate }}  <span class="login-danger">*</span></label>
+                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder=" {{'STAFF.SELECT_COUNTRY' | translate }}">
+                                            <mat-option *ngFor="let data of selectedList3" [value]="data.value">
+                                            {{data.value}}
+                                            </mat-option>
+                                        </mat-select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-3">
+                                    <div class="form-group local-forms">
+                                        <label for="state"> {{'STAFF.STATE' | translate }} <span class="login-danger">*</span></label>
+                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder=" {{'STAFF.SELECT_STATE' | translate }} ">
+                                            <mat-option *ngFor="let data of selectedList4" [value]="data.value">
+                                            {{data.value}}
+                                            </mat-option>
+                                        </mat-select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-3">
+                                    <div class="form-group local-forms">
+                                        <label for="postalcode"> {{'STAFF.POSTALCODE' | translate }} <span class="login-danger">*</span></label>
+                                        <input class="form-control" type="text"  >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12">
+                                    <div class="form-group local-forms">
+                                        <label for="biography"> {{'STAFF.BIOGRAPHY' | translate }}  <span class="login-danger">*</span></label>
+                                        <textarea class="form-control" rows="3" cols="30"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-6">
+                                    <div class="form-group local-top-form">
+                                        <label for="avator" class="local-top"> {{'STAFF.AVATAR' | translate }} <span class="login-danger">*</span></label>
+                                        <div class="settings-btn upload-files-avator">
+                                            <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" class="hide-input">
+                                            <label for="file" class="upload"> {{'STAFF.CHOOSEFILE' | translate }} </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-6">
+                                    <div class="form-group select-gender">
+                                        <label for="Status" class="gen-label"> {{'STAFF.STATUS'| translate }} <span class="login-danger">*</span></label>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" name="gender" class="form-check-input"> {{'STAFF.ACTIVE' | translate }}
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label">
+                                                <input type="radio" name="gender" class="form-check-input"> {{'STAFF.INACTIVE' | translate }}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="doctor-submit text-end">
+                                        <button type="submit" class="btn btn-primary submit-form me-2"> {{'STAFF.SUBMIT' | translate }} </button>
+                                        <button type="submit" class="btn btn-primary cancel-form"> {{'STAFF.CANCEL' | translate }} </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>							
+            </div>					
+        </div>
+    </div>
+</div>
+ 
