@@ -6,9 +6,9 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="routes.inbox">App </a></li>
+                        <li class="breadcrumb-item"><a [routerLink]="routes.inbox"> {{'EMAIL.APP' | translate }} </a></li>
                         <li class="breadcrumb-item"><i class="feather icon-chevron-right"></i></li>
-                        <li class="breadcrumb-item active">Inbox</li>
+                        <li class="breadcrumb-item active"> {{'EMAIL.INBOX' | translate }} </li>
                     </ul>
                 </div>
             </div>
@@ -34,10 +34,10 @@
                                         <i class="feather icon-more-vertical"></i>
                                     </a>
                                     <div class="dropdown-menu" style="">
-                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-user me-2 text-primary"></i> Profile</a>
-                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-plus-circle me-2 text-success"></i> Archive</a>
-                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-trash-2 me-2 text-danger"></i> Delete</a>
-                                        <a class="dropdown-item " href="javascript:;"><i class="feather icon-slash me-2 text-secondary"></i> Block</a>
+                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-user me-2 text-primary"></i> {{'EMAIL.PROFILE' | translate }} </a>
+                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-plus-circle me-2 text-success"></i> {{'EMAIL.ARCHIVE' | translate }} </a>
+                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-trash-2 me-2 text-danger"></i> {{'EMAIL.DELETE' | translate }} </a>
+                                        <a class="dropdown-item " href="javascript:;"><i class="feather icon-slash me-2 text-secondary"></i> {{'EMAIL.BLOCK' | translate }} </a>
                                     </div>
                                 </div>
                             </div>
