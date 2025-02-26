@@ -102,6 +102,7 @@
     "TITLE": "Doctores",
     "ADD": "Agregar doctor",
     "DETAILS": "Detalles del doctor",
+    "SEARCH:": "Buscar aquí...",
     "PROFILE": "Perfil del doctor",
     "LIST": "Lista de doctores",
     "FULLNAME": "Nombre completo",
@@ -549,6 +550,52 @@
       "NEW_FRIEND_NOTIFICATION": "Notificaciones de solicitud de nueva amistad",
       "PROFILE_VISIBILITY": "Visibilidad del perfil para todos"
       
+
+    },
+
+    "EMAIL": {
+      "APP": "App",
+      "INBOX": "Bandeja de entrada",
+      "SENT": "Enviado",
+      "PROFILE": "Perfil",
+      "ARCHIVE": "Archivo",
+      "DELETE": "Eliminar",
+      "BLOCK": "Bloquear",
+      "COMPOSE_MAIL": "Redactar correo",
+      "SEARCH": "Buscar",
+      "DRAFT": "Borrador",
+      "STARRED": "Destacado",
+      "TRASH": "Papelera",
+      "EMAIL": "Correo electrónico",
+      "LABELS": "Etiquetas",
+      "WORK": "Trabajo",
+      "PERSONAL": "Personal",
+      "READ_LATER": "Leer más tarde",
+      "FOLDERS": "Carpetas",
+      "OFFICE": "Oficina",
+      "BILLS": "Facturas",
+      "MEDICAL": "Médico",
+      "SOCIAL": "Social",
+      "COMPOSE_NEW_MAIL": "Redactar nuevo correo",
+      "TO": "Para",
+      "CC": "CC",
+      "BCC": "BCC",
+      "SUBJECT": "Asunto",
+      "MESSAGE": "Mensaje",
+      "SEND": "Enviar",
+      "CANCEL": "Cancelar",
+      "REPLY": "Responder",
+      "FORWARD": "Reenviar",
+      "ATTACHMENTS": "Adjuntos",
+      "SEND_EMAIL": "Enviar correo",
+      "REPLY_EMAIL": "Responder correo",
+      "FORWARD_EMAIL": "Reenviar correo",
+      "EMAIL_DETAILS": "Detalles del correo",
+      "FROM": "De",
+      "DATE": "Fecha",
+      "CHOOSE_FILE": "Elegir archivo",
+      "DOWNLOAD": "Descargar"
+
 
     }
 
