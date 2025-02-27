@@ -561,7 +561,7 @@
       "ARCHIVE": "Archivo",
       "DELETE": "Eliminar",
       "BLOCK": "Bloquear",
-      "COMPOSE_MAIL": "Redactar correo",
+      "COMPOSE_EMAIL": "Redactar correo",
       "SEARCH": "Buscar",
       "DRAFT": "Borrador",
       "STARRED": "Destacado",
@@ -594,7 +594,22 @@
       "FROM": "De",
       "DATE": "Fecha",
       "CHOOSE_FILE": "Elegir archivo",
-      "DOWNLOAD": "Descargar"
+      "DOWNLOAD": "Descargar",
+      "MARK_AS_READ": "Marcar como leído",
+      "MARK_AS_UNREAD": "Marcar como no leído",
+      "MARK_AS_IMPORTANT": "Marcar como importante",
+      "MARK_AS_NOT_IMPORTANT": "Marcar como no importante",
+      "MOVE_TO": "Mover a",
+
+      "SUCCESS": "Éxito",
+      "SUCCESS_MESSAGE": "Correo enviado con éxito",
+      "ERROR": "Error",
+      "MARKETTING": "Marketting",
+      "SEE_ALL_MESSAGES": "Ver todos los mensajes",
+      "NO_MESSAGES": "No hay mensajes",
+      "MESSAGE1": "Hola, gracias por comunicarte conmigo",
+      "MESSAGE2": "Gracias",
+      "DOWNLOAD_ALL": "Descargar todo"
 
 
     }

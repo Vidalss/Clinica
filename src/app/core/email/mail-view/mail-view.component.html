@@ -6,9 +6,9 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="routes.inbox">App </a></li>
+                        <li class="breadcrumb-item"><a [routerLink]="routes.inbox"> {{'EMAIL.APP' | translate }} </a></li>
                         <li class="breadcrumb-item"><i class="feather icon-chevron-right"></i></li>
-                        <li class="breadcrumb-item active">Inbox</li>
+                        <li class="breadcrumb-item active"> {{'EMAIL.INBOX' | translate }} </li>
                     </ul>
                 </div>
             </div>
@@ -34,28 +34,28 @@
                                         <i class="feather icon-more-vertical"></i>
                                     </a>
                                     <div class="dropdown-menu" style="">
-                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-user me-2 text-primary"></i> Profile</a>
-                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-plus-circle me-2 text-success"></i> Archive</a>
-                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-trash-2 me-2 text-danger"></i> Delete</a>
-                                        <a class="dropdown-item " href="javascript:;"><i class="feather icon-slash me-2 text-secondary"></i> Block</a>
+                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-user me-2 text-primary"></i> {{'EMAIL.PROFILE' | translate }} </a>
+                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-plus-circle me-2 text-success"></i> {{'EMAIL.ARCHIVE' | translate }} </a>
+                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-trash-2 me-2 text-danger"></i> {{'EMAIL.DELETE' | translate }} </a>
+                                        <a class="dropdown-item " href="javascript:;"><i class="feather icon-slash me-2 text-secondary"></i> {{'EMAIL.BLOCK' | translate }} </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="compose-mail">
-                            <a [routerLink]="routes.compose" class="btn btn-primary"><img src="assets/img/icons/edit-2.svg" class="me-2" alt="img">Compose Mail</a>
+                            <a [routerLink]="routes.compose" class="btn btn-primary"><img src="assets/img/icons/edit-2.svg" class="me-2" alt="img"> {{'EMAIL.COMPOSE_EMAIL' | translate }} </a>
                         </div>
                         <div class="email-menu-blk">
                             <ul >
-                                <li class="active"><a href="javascript:;"><img src="assets/img/icons/inbox.svg" class="me-2" alt="img">Inbox<span class="comman-flex">50</span></a></li>
-                                <li><a href="javascript:;"><img src="assets/img/icons/sent.svg" class="me-2" alt="img">Sent <span class="comman-flex">120</span></a></li>
-                                <li><a href="javascript:;"><img src="assets/img/icons/draft.svg" class="me-2" alt="img">Draft <span class="comman-flex">20</span></a></li>
-                                <li><a href="javascript:;"><img src="assets/img/icons/star.svg" class="me-2" alt="img">Starred <span class="comman-flex">05</span></a></li>
-                                <li><a href="javascript:;"><img src="assets/img/icons/trash.svg" class="me-2" alt="img">Trash <span class="comman-flex">12</span></a></li>
+                                <li class="active"><a href="javascript:;"><img src="assets/img/icons/inbox.svg" class="me-2" alt="img"> {{'EMAIL.INBOX' | translate }} <span class="comman-flex">50</span></a></li>
+                                <li><a href="javascript:;"><img src="assets/img/icons/sent.svg" class="me-2" alt="img"> {{'EMAIL.SENT' | translate }} <span class="comman-flex">120</span></a></li>
+                                <li><a href="javascript:;"><img src="assets/img/icons/draft.svg" class="me-2" alt="img"> {{'EMAIL.DRAFT' | translate }} <span class="comman-flex">20</span></a></li>
+                                <li><a href="javascript:;"><img src="assets/img/icons/star.svg" class="me-2" alt="img"> {{'EMAIL.STARRED' | translate }} <span class="comman-flex">05</span></a></li>
+                                <li><a href="javascript:;"><img src="assets/img/icons/trash.svg" class="me-2" alt="img"> {{'EMAIL.TRASH' | translate }} <span class="comman-flex">12</span></a></li>
                             </ul>
                         </div>
                         <div class="label-blk comman-space-flex">
-                            <h4>Labels</h4>
+                            <h4> {{'EMAIL.LABELS' | translate }} </h4>
                             <ul class="nav label-add-list">
                                 <li><a href="javascript:;" class="add-list-btn me-2"><i class="feather icon-plus "></i></a></li>
                                 <li>
@@ -63,23 +63,23 @@
                                         <i class="feather icon-more-vertical"></i>
                                     </a>
                                     <div class="dropdown-menu" style="">
-                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-user me-2 text-primary"></i> Profile</a>
-                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-plus-circle me-2 text-success"></i> Archive</a>
-                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-trash-2 me-2 text-danger"></i> Delete</a>
-                                        <a class="dropdown-item " href="javascript:;"><i class="feather icon-slash me-2 text-secondary"></i> Block</a>
+                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-user me-2 text-primary"></i> {{'EMAIL.PROFILE' | translate }} </a>
+                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-plus-circle me-2 text-success"></i> {{'EMAIL.ARCHIVE' | translate }} </a>
+                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-trash-2 me-2 text-danger"></i> {{'EMAIL.DELETE' | translate }} </a>
+                                        <a class="dropdown-item " href="javascript:;"><i class="feather icon-slash me-2 text-secondary"></i> {{'EMAIL.BLOCK' | translate }} </a>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="email-menu-blk">
                             <ul >
-                                <li ><a href="javascript:;"><img src="assets/img/icons/tag-icon-01.svg" class="me-2" alt="img">Work<span class="comman-flex">50</span></a></li>
-                                <li><a href="javascript:;"><img src="assets/img/icons/tag-icon-02.svg" class="me-2" alt="img">Personal <span class="comman-flex">120</span></a></li>
-                                <li><a href="javascript:;"><img src="assets/img/icons/tag-icon-03.svg" class="me-2" alt="img">Read Later <span class="comman-flex">20</span></a></li>
+                                <li ><a href="javascript:;"><img src="assets/img/icons/tag-icon-01.svg" class="me-2" alt="img"> {{'EMAIL.WORK' | translate }} <span class="comman-flex">50</span></a></li>
+                                <li><a href="javascript:;"><img src="assets/img/icons/tag-icon-02.svg" class="me-2" alt="img"> {{'EMAIL.PERSONAL' | translate }} <span class="comman-flex">120</span></a></li>
+                                <li><a href="javascript:;"><img src="assets/img/icons/tag-icon-03.svg" class="me-2" alt="img"> {{'EMAIL.READ_LATER' | translate }} <span class="comman-flex">20</span></a></li>
                             </ul>
                         </div>
                         <div class="label-blk comman-space-flex">
-                            <h4>Folders</h4>
+                            <h4> {{'EMAIL.FOLDERS' | translate }} </h4>
                             <ul class="nav label-add-list ">
                                 <li><a href="javascript:;" class="add-list-btn me-2"><i class="feather icon-plus "></i></a></li>
                                 <li>
@@ -87,20 +87,20 @@
                                         <i class="feather icon-more-vertical"></i>
                                     </a>
                                     <div class="dropdown-menu" style="">
-                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-user me-2 text-primary"></i> Profile</a>
-                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-plus-circle me-2 text-success"></i> Archive</a>
-                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-trash-2 me-2 text-danger"></i> Delete</a>
-                                        <a class="dropdown-item " href="javascript:;"><i class="feather icon-slash me-2 text-secondary"></i> Block</a>
+                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-user me-2 text-primary"></i> {{'EMAIL.PROFILE' | translate }} </a>
+                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-plus-circle me-2 text-success"></i> {{'EMAIL.ARCHIVE' | translate }} </a>
+                                        <a class="dropdown-item" href="javascript:;"><i class="feather icon-trash-2 me-2 text-danger"></i> {{'EMAIL.DELETE' | translate }} </a>
+                                        <a class="dropdown-item " href="javascript:;"><i class="feather icon-slash me-2 text-secondary"></i> {{'EMAIL.BLOCK' | translate }} </a>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="email-menu-blk">
                             <ul class="mb-0">
-                                <li ><a href="javascript:;"><img src="assets/img/icons/folder-icon-01.svg" class="me-2" alt="img">Personal<span class="comman-flex">50</span></a></li>
-                                <li><a href="javascript:;"><img src="assets/img/icons/folder-icon-02.svg" class="me-2" alt="img">Office <span class="comman-flex">120</span></a></li>
-                                <li><a href="javascript:;"><img src="assets/img/icons/folder-icon-03.svg" class="me-2" alt="img">Bills <span class="comman-flex">20</span></a></li>
-                                <li><a href="javascript:;"><img src="assets/img/icons/folder-icon-04.svg" class="me-2" alt="img">Medical <span class="comman-flex">20</span></a></li>
+                                <li ><a href="javascript:;"><img src="assets/img/icons/folder-icon-01.svg" class="me-2" alt="img"> {{'EMAIL.PERSONAL' | translate }} <span class="comman-flex">50</span></a></li>
+                                <li><a href="javascript:;"><img src="assets/img/icons/folder-icon-02.svg" class="me-2" alt="img"> {{'EMAIL.OFFICE' | translate }} <span class="comman-flex">120</span></a></li>
+                                <li><a href="javascript:;"><img src="assets/img/icons/folder-icon-03.svg" class="me-2" alt="img"> {{'EMAIL.BILLS' | translate }} <span class="comman-flex">20</span></a></li>
+                                <li><a href="javascript:;"><img src="assets/img/icons/folder-icon-04.svg" class="me-2" alt="img"> {{'EMAIL.MEDICAL' | translate }} <span class="comman-flex">20</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -123,8 +123,8 @@
                                     <img  alt="" src="assets/img/profiles/avatar-01.jpg" class="rounded-circle me-2">
                                 </div>
                                 <div class="send-user send-user-name">
-                                    <h4>Bernardo James <span class="email-market">Marketting</span></h4>
-                                    <p><span>From:</span> Markhaysmith&#64;example.com</p>
+                                    <h4>Bernardo James <span class="email-market"> {{'EMAIL.MARKETTING' | translate }} </span></h4>
+                                    <p><span> {{'EMAIL.FROM' | translate }}:</span> Markhaysmith&#64;example.com</p>
                                 </div>
                             </div>
                             <div class="mail-reports">
@@ -138,35 +138,35 @@
                                             <i class="feather icon-more-vertical"></i>
                                         </a>
                                         <div class="dropdown-menu" style="">
-                                            <a class="dropdown-item" href="javascript:;"><i class="feather icon-user me-2 text-primary"></i> Profile</a>
-                                            <a class="dropdown-item" href="javascript:;"><i class="feather icon-plus-circle me-2 text-success"></i> Archive</a>
-                                            <a class="dropdown-item" href="javascript:;"><i class="feather icon-trash-2 me-2 text-danger"></i> Delete</a>
-                                            <a class="dropdown-item " href="javascript:;"><i class="feather icon-slash me-2 text-secondary"></i> Block</a>
+                                            <a class="dropdown-item" href="javascript:;"><i class="feather icon-user me-2 text-primary"></i> {{'EMAIL.PROFILE' | translate }} </a>
+                                            <a class="dropdown-item" href="javascript:;"><i class="feather icon-plus-circle me-2 text-success"></i> {{'EMAIL.ARCHIVE' | translate }} </a>
+                                            <a class="dropdown-item" href="javascript:;"><i class="feather icon-trash-2 me-2 text-danger"></i> {{'EMAIL.DELETE' | translate }} </a>
+                                            <a class="dropdown-item " href="javascript:;"><i class="feather icon-slash me-2 text-secondary"></i> {{'EMAIL.BLOCK' | translate }} </a>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="mailview-inner">
-                            <p>Hola, thanks for reaching me out.</p>
+                            <p> {{'EMAIL.MESSAGE1' | translate }} </p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <p>Scelerisque purus semper eget duis at. Feugiat in fermentum posuere urna net.</p>
                             <p>Leo in vitae turpis massa sed element ?</p>
                         </div>
                         <div class="thank-mail">
-                            <h5>Thanks</h5>
+                            <h5> {{'EMAIL.MESSAGE2' | translate }} </h5>
                             <h4>Mark hay smith</h4>
                         </div>
                         <div class="mail-attach">
-                            <h2>Attachments<a href="javascript:;">Download All</a></h2>
+                            <h2> {{'EMAIL.ATTACHMENTS'}} <a href="javascript:;"> {{'EMAIL.DOWNLOAD_ALL' | translate }} </a></h2>
                             <ul class="msg-sub-list nav">
                                 <li><img src="assets/img/icons/document-icon.svg" alt="" class="me-1">Expense.txt <span class="ms-1">30.0 MB</span><img src="assets/img/icons/chat-icon-07.svg" alt="" class="ms-2 "><i class="feather icon-x ms-2 mt-2"></i></li>
                                 <li><img src="assets/img/icons/gallery-icon.svg" alt="" class="me-1">Expense.img <span class="ms-1">4.0 MB</span><img src="assets/img/icons/chat-icon-07.svg" alt="" class="ms-2 "><i class="feather icon-x ms-2 mt-2"></i></li>
                             </ul>
                         </div>
                         <div class="forward-send">
-                            <a  href="javascript:;" class="btn btn-primary replay-btn me-2"><img src="assets/img/icons/replay.svg" class="me-2" alt="img">Reply</a>
-                            <a href="javascript:;" class="btn btn-primary forwrd-btn"><img src="assets/img/icons/replay-01.svg" class="me-2" alt="img">Forward</a>
+                            <a  href="javascript:;" class="btn btn-primary replay-btn me-2"><img src="assets/img/icons/replay.svg" class="me-2" alt="img"> {{'EMAIL.REPLY' | translate }} </a>
+                            <a href="javascript:;" class="btn btn-primary forwrd-btn"><img src="assets/img/icons/replay-01.svg" class="me-2" alt="img"> {{'EMAIL.FORWARD' | translate }} </a>
                             <a href="javascript:;" ><img src="assets/img/icons/printer.svg" class="ms-2 me-2" alt="img"></a>
                             <a href="javascript:;" ><img src="assets/img/icons/trash.svg" class="me-2" alt="img"></a>
                         </div>
@@ -186,8 +186,8 @@
                                     <img  alt="" src="assets/img/profiles/avatar-01.jpg" class="rounded-circle me-2">
                                 </div>
                                 <div class="send-user send-user-name">
-                                    <h4>Bernardo James <span class="email-market">Marketting</span></h4>
-                                    <p><span>From:</span> Markhaysmith&#64;example.com</p>
+                                    <h4>Bernardo James <span class="email-market"> {{'EMAIL.MARKETTING' | translate }} </span></h4>
+                                    <p><span> {{'EMAIL.FROM' | translate }}:</span> Markhaysmith&#64;example.com</p>
                                 </div>
                             </div>
                             <div class="mail-reports">
@@ -201,10 +201,10 @@
                                             <i class="feather icon-more-vertical"></i>
                                         </a>
                                         <div class="dropdown-menu" style="">
-                                            <a class="dropdown-item" href="javascript:;"><i class="feather icon-user me-2 text-primary"></i> Profile</a>
-                                            <a class="dropdown-item" href="javascript:;"><i class="feather icon-plus-circle me-2 text-success"></i> Archive</a>
-                                            <a class="dropdown-item" href="javascript:;"><i class="feather icon-trash-2 me-2 text-danger"></i> Delete</a>
-                                            <a class="dropdown-item " href="javascript:;"><i class="feather icon-slash me-2 text-secondary"></i> Block</a>
+                                            <a class="dropdown-item" href="javascript:;"><i class="feather icon-user me-2 text-primary"></i> {{'EMAIL.PROFILE'|  translate }} </a>
+                                            <a class="dropdown-item" href="javascript:;"><i class="feather icon-plus-circle me-2 text-success"></i> {{'EMAIL.ARCHIVE' | translate }} </a>
+                                            <a class="dropdown-item" href="javascript:;"><i class="feather icon-trash-2 me-2 text-danger"></i> {{'EMAIL.DELETE' | translate }} </a>
+                                            <a class="dropdown-item " href="javascript:;"><i class="feather icon-slash me-2 text-secondary"></i> {{'EMAIL.BLOCK' | translate }} </a>
                                         </div>
                                     </li>
                                 </ul>
@@ -214,12 +214,12 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
                         </div>
                         <div class="thank-mail">
-                            <h5>Thanks</h5>
+                            <h5> {{'EMAIL.MESSAGE2' | translate }} </h5>
                             <h4>Mark hay smith</h4>
                         </div>
                         <div class="forward-send">
-                            <a  href="javascript:;" class="btn btn-primary replay-btn me-2"><img src="assets/img/icons/replay.svg" class="me-2" alt="img">Reply</a>
-                            <a href="javascript:;" class="btn btn-primary forwrd-btn"><img src="assets/img/icons/replay-01.svg" class="me-2" alt="img">Forward</a>
+                            <a  href="javascript:;" class="btn btn-primary replay-btn me-2"><img src="assets/img/icons/replay.svg" class="me-2" alt="img"> {{'EMAIL.REPLY' | translate }} </a>
+                            <a href="javascript:;" class="btn btn-primary forwrd-btn"><img src="assets/img/icons/replay-01.svg" class="me-2" alt="img"> {{'EMAIL.FORWARD' | translate }} </a>
                             <a href="javascript:;" ><img src="assets/img/icons/printer.svg" class="ms-2 me-2" alt="img"></a>
                             <a href="javascript:;" ><img src="assets/img/icons/trash.svg" class="me-2" alt="img"></a>
                         </div>

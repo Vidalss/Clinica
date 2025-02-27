@@ -560,7 +560,7 @@
     "ARCHIVE": "Archive",
     "DELETE": "Delete",
     "BLOCK": "Block",
-    "COMPOSE_MAIL": "Compose Mail",
+    "COMPOSE_EMAIL": "Compose Mail",
     "SEARCH": "Search",
     "DRAFT": "Draft",
     "STARRED": "Starred",
@@ -593,7 +593,24 @@
     "FROM": "From",
     "DATE": "Date",
     "CHOOSE_FILE": "Choose File",
-    "DOWNLOAD:" : "Download"
+    "DOWNLOAD:" : "Download",
+    "MARK_AS_READ": "Mark as Read",
+    "MARK_AS_UNREAD": "Mark as Unread",
+    "MARK_AS_IMPORTANT": "Mark as Important",
+    "MARK_AS_NOT_IMPORTANT": "Mark as Not Important",
+    "MOVE_TO": "Move to",
+    
+
+    "SUCCESS": "Success",
+    "SUCCESS_MESSAGE": "A email has been send to youremail&#64;domain.com. Please check for an email from company and click on the included link to reset your password.",
+    "ERROR": "Error",
+    "MARKETTING": "Marketting",
+    "SEE_ALL_MESSAGES": "See all messages",
+    "NO_MESSAGES": "No messages",
+    "MESSAGE1": "Hi, thanks for reaching me out.",
+    "MESSAGE2": "Thanks",
+    "DOWNLOAD_ALL": "Download All"
+
 
   }
 
