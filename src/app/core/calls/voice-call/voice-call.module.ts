@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { VoiceCallRoutingModule } from './voice-call-routing.module';
 import { VoiceCallComponent } from './voice-call.component';
@@ -11,7 +12,8 @@ import { VoiceCallComponent } from './voice-call.component';
   ],
   imports: [
     CommonModule,
-    VoiceCallRoutingModule
+    VoiceCallRoutingModule,
+    TranslateModule
   ]
 })
 export class VoiceCallModule { }

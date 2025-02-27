@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { IncomingCallRoutingModule } from './incoming-call-routing.module';
 import { IncomingCallComponent } from './incoming-call.component';
@@ -11,7 +12,8 @@ import { IncomingCallComponent } from './incoming-call.component';
   ],
   imports: [
     CommonModule,
-    IncomingCallRoutingModule
+    IncomingCallRoutingModule,
+    TranslateModule
   ]
 })
 export class IncomingCallModule { }
