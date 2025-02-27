@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { SocialSettingsRoutingModule } from './social-settings-routing.module';
 import { SocialSettingsComponent } from './social-settings.component';
@@ -11,7 +12,8 @@ import { SocialSettingsComponent } from './social-settings.component';
   ],
   imports: [
     CommonModule,
-    SocialSettingsRoutingModule
+    SocialSettingsRoutingModule,
+    TranslateModule
   ]
 })
 export class SocialSettingsModule { }

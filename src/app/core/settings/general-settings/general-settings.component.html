@@ -7,9 +7,9 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="routes.adminDashboard">Dashboard </a></li>
+                        <li class="breadcrumb-item"><a [routerLink]="routes.adminDashboard"> {{'SETTING.DASHBOARD' | translate }} </a></li>
                         <li class="breadcrumb-item"><i class="feather icon-chevron-right"></i></li>
-                        <li class="breadcrumb-item active">Settings</li>
+                        <li class="breadcrumb-item active"> {{'SETTING.SETTINGS' | translate }} </li>
                     </ul>
                 </div>
             </div>
@@ -19,34 +19,34 @@
         <div class="settings-menu-links">
             <ul class="nav nav-tabs menu-tabs">
                 <li class="nav-item active">
-                    <a class="nav-link" [routerLink]="routes.settings">General Settings</a>
+                    <a class="nav-link" [routerLink]="routes.settings">{{ 'SETTING.GENERAL' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.localizationDetails">Localization</a>
+                    <a class="nav-link" [routerLink]="routes.localizationDetails">{{ 'SETTING.LOCALIZATION' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.paymentSettings">Payment Settings</a>
+                    <a class="nav-link" [routerLink]="routes.paymentSettings">{{ 'SETTING.PAYMENT' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.emailSettings">Email Settings</a>
+                    <a class="nav-link" [routerLink]="routes.emailSettings">{{ 'SETTING.EMAIL' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.socialSettings">Social Media Login</a>
+                    <a class="nav-link" [routerLink]="routes.socialSettings">{{ 'SETTING.SOCIAL_MEDIA' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.socialLinks">Social Links</a>
+                    <a class="nav-link" [routerLink]="routes.socialLinks">{{ 'SETTING.SOCIAL_LINKS' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.seoSettings">SEO Settings</a>
+                    <a class="nav-link" [routerLink]="routes.seoSettings">{{ 'SETTING.SEO' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.themeSettings">Theme Settings</a>
+                    <a class="nav-link" [routerLink]="routes.themeSettings">{{ 'SETTING.THEME' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.changePassword">Change Password</a>
+                    <a class="nav-link" [routerLink]="routes.changePassword">{{ 'SETTING.CHANGE_PASSWORD' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.othersSettings">Others</a>
+                    <a class="nav-link" [routerLink]="routes.othersSettings">{{ 'SETTING.OTHERS' | translate }}</a>
                 </li>
             </ul>
         </div>
@@ -55,24 +55,24 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title">Website Basic Details</h5>
+                        <h5 class="card-title"> {{'SETTING.WEBSITE_DETAILS' | translate }} </h5>
                     </div>
                     <div class="card-body pt-0">
                         <form>
                             <div class="settings-form">
                                 <div class="form-group">
-                                    <label for="website">Website Name <span class="star-red">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Enter Website Name">
+                                    <label for="website"> {{'SETTING.WEBSITE_NAME' | translate }} <span class="star-red">*</span></label>
+                                    <input type="text" class="form-control" placeholder=" {{'SETTING.ENTER_WEBSITE_NAME' | translate }} ">
                                 </div>
                                 <div class="form-group ">
-                                    <p class="settings-label">Logo <span class="star-red">*</span></p>
+                                    <p class="settings-label"> {{'SETTING.LOGO' | translate }} <span class="star-red">*</span></p>
                                     <div class="settings-btn">
                                         <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" class="hide-input">
                                         <label for="file" class="upload">
                                             <i class="feather icon-upload upload-icon"></i>
                                         </label>
                                     </div>
-                                    <h6 class="settings-size">Recommended image size is <span>150px x 150px</span></h6>
+                                    <h6 class="settings-size"> {{'SETTING.MESSAGE_IMAGE' | translate }} <span>150px x 150px</span></h6>
                                     <div class="upload-images" [ngClass]="{'d-none':deleteIcon2 === false}">
                                         <img src="assets/img/logo-dark.png" alt="Image">
                                         <a (click)="deleteIconFunc2()" href="javascript:void(0);" class="btn-icon logo-hide-btn">
@@ -81,7 +81,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <p class="settings-label">Favicon <span class="star-red">*</span></p>
+                                    <p class="settings-label"> {{'SETTING.FAVICON' | translate }} <span class="star-red">*</span></p>
                                     <div class="settings-btn">
                                         <input type="file" accept="image/*" name="image" id="files" onchange="loadFile(event)" class="hide-input">
                                         <label for="file" class="upload">
@@ -89,9 +89,9 @@
                                         </label>
                                     </div>
                                     <h6 class="settings-size">
-                                        Recommended image size is <span>16px x 16px or 32px x 32px</span>
+                                        {{'SETTING.MESSAGE_IMAGE' | translate }} <span>16px x 16px or 32px x 32px</span>
                                     </h6>
-                                    <h6 class="settings-size mt-1">Accepted formats: only png and ico</h6>
+                                    <h6 class="settings-size mt-1"> {{'SETTING.MESSAGE_FORMATS' | translate }} </h6>
                                     <div class="upload-images upload-size" [ngClass]="{'d-none':deleteIcon1 === false}">
                                         <img src="assets/img/favicon.png" alt="Image">
                                         <a (click)="deleteIconFunc1()" href="javascript:void(0);" class="btn-icon logo-hide-btn">
@@ -103,7 +103,7 @@
                                     <div class="col-lg-5 col-md-6">
                                         <div class="form-group">
                                             <div class="status-toggle d-flex justify-content-between align-items-center">
-                                                <p class="mb-0">RTL</p>
+                                                <p class="mb-0"> {{'SETTING.RTL' | translate }} </p>
                                                 <input type="checkbox" id="status_1" class="check">
                                                 <label for="status_1" class="checktoggle">checkbox</label>
                                             </div>
@@ -112,8 +112,8 @@
                                 </div>
                                 <div class="form-group mb-0">
                                     <div class="settings-btns">
-                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded">Update</button>&nbsp;&nbsp;
-                                        <button type="submit" class="btn btn-secondary btn-rounded">Cancel</button>
+                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded"> {{'SETTING.UPDATE' | translate }} </button>&nbsp;&nbsp;
+                                        <button type="submit" class="btn btn-secondary btn-rounded"> {{'SETTING.CANCEL' | translate }} </button>
                                     </div>
                                 </div>
                             </div>
@@ -125,30 +125,30 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title">Address Details</h5>
+                        <h5 class="card-title"> {{'SETTING.ADDRESS' | translate }} </h5>
                     </div>
                     <div class="card-body pt-0">
                         <form>
                             <div class="settings-form">
                                 <div class="form-group">
-                                    <label for="address">Address Line 1 <span class="star-red">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Enter Address Line 1">
+                                    <label for="address"> {{'SETTING.ADDRESS_LINE' | translate }} <span class="star-red">*</span></label>
+                                    <input type="text" class="form-control" placeholder=" {{'SETTING.ENTER_ADDRESS_LINE'}} ">
                                 </div>
                                 <div class="form-group">
-                                    <label for="address">Address Line 2 <span class="star-red">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Enter Address Line 2">
+                                    <label for="address"> {{'SETTING.ADDRESS_LINE2' | translate }} <span class="star-red">*</span></label>
+                                    <input type="text" class="form-control" placeholder=" {{'SETTING.ENTER_ADDRESS_LINE2'}} ">
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="city">City <span class="star-red">*</span></label>
+                                            <label for="city"> {{'SETTING.CITY' | translate }} <span class="star-red">*</span></label>
                                             <input type="text" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="State">State/Province <span class="star-red">*</span></label>
-                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder="Select">
+                                            <label for="State"> {{'SETTING.STATE' | translate }} <span class="star-red">*</span></label>
+                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder=" {{'SETTING.SELECT_STATE' | translate }} ">
                                             <mat-option *ngFor="let data of selectedList1" [value]="data.value">
                                             {{data.value}}
                                             </mat-option>
@@ -157,14 +157,14 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="zip">Zip/Postal Code <span class="star-red">*</span></label>
+                                            <label for="zip"> {{'SETTING.POSTAL_CODE' | translate }} <span class="star-red">*</span></label>
                                             <input type="text" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="country">Country <span class="star-red">*</span></label>
-                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder="Select">
+                                            <label for="country"> {{'SETTING.COUNTRY' | translate }} <span class="star-red">*</span></label>
+                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder=" {{'SETTING.SELECT_COUNTRY' | translate }} ">
                                             <mat-option *ngFor="let data of selectedList2" [value]="data.value">
                                             {{data.value}}
                                             </mat-option>
@@ -174,8 +174,8 @@
                                 </div>
                                 <div class="form-group mb-0">
                                     <div class="settings-btns">
-                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded">Update</button>&nbsp;&nbsp;
-                                        <button type="submit" class="btn btn-secondary btn-rounded">Cancel</button>
+                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded"> {{'SETTING.UPDATE' | translate }} </button>&nbsp;&nbsp;
+                                        <button type="submit" class="btn btn-secondary btn-rounded"> {{'SETTING.CANCEL' | translate }} </button>
                                     </div>
                                 </div>
                             </div>

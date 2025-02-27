@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { SeoSettingsRoutingModule } from './seo-settings-routing.module';
 import { SeoSettingsComponent } from './seo-settings.component';
@@ -11,7 +12,8 @@ import { SeoSettingsComponent } from './seo-settings.component';
   ],
   imports: [
     CommonModule,
-    SeoSettingsRoutingModule
+    SeoSettingsRoutingModule,
+    TranslateModule
   ]
 })
 export class SeoSettingsModule { }

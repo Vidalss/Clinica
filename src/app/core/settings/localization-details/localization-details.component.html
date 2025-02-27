@@ -7,9 +7,9 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="routes.adminDashboard">Dashboard </a></li>
+                        <li class="breadcrumb-item"><a [routerLink]="routes.adminDashboard"> {{'SETTING.DASHBOARD' | translate }} </a></li>
                         <li class="breadcrumb-item"><i class="feather icon-chevron-right"></i></li>
-                        <li class="breadcrumb-item active">Settings</li>
+                        <li class="breadcrumb-item active"> {{'SETTING.SETTINGS' | translate }} </li>
                     </ul>
                 </div>
             </div>
@@ -18,35 +18,35 @@
 
         <div class="settings-menu-links">
             <ul class="nav nav-tabs menu-tabs">
-                <li class="nav-item ">
-                    <a class="nav-link" [routerLink]="routes.settings">General Settings</a>
-                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" [routerLink]="routes.localizationDetails">Localization</a>
+                    <a class="nav-link" [routerLink]="routes.settings">{{ 'SETTING.GENERAL' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.paymentSettings">Payment Settings</a>
+                    <a class="nav-link" [routerLink]="routes.localizationDetails">{{ 'SETTING.LOCALIZATION' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.emailSettings">Email Settings</a>
+                    <a class="nav-link" [routerLink]="routes.paymentSettings">{{ 'SETTING.PAYMENT' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.socialSettings">Social Media Login</a>
+                    <a class="nav-link" [routerLink]="routes.emailSettings">{{ 'SETTING.EMAIL' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.socialLinks">Social Links</a>
+                    <a class="nav-link" [routerLink]="routes.socialSettings">{{ 'SETTING.SOCIAL_MEDIA' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.seoSettings">SEO Settings</a>
+                    <a class="nav-link" [routerLink]="routes.socialLinks">{{ 'SETTING.SOCIAL_LINKS' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.themeSettings">Theme Settings</a>
+                    <a class="nav-link" [routerLink]="routes.seoSettings">{{ 'SETTING.SEO' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.changePassword">Change Password</a>
+                    <a class="nav-link" [routerLink]="routes.themeSettings">{{ 'SETTING.THEME' | translate }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.othersSettings">Others</a>
+                    <a class="nav-link" [routerLink]="routes.changePassword">{{ 'SETTING.CHANGE_PASSWORD' | translate }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="routes.othersSettings">{{ 'SETTING.OTHERS' | translate }}</a>
                 </li>
             </ul>
         </div>
@@ -55,13 +55,13 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title">Localization Details</h5>
+                        <h5 class="card-title"> {{'SETTING.LOCALIZATION_DETAILS' | translate }} </h5>
                     </div>
                     <div class="card-body pt-0">
                         <form>
                             <div class="settings-form">
                                 <div class="form-group">
-                                    <label for="time">Time Zone</label>
+                                    <label for="time"></label>
                                     <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder="(UTC +5:30) Antarctica/Palmer">
                                         <mat-option *ngFor="let data of selectedList1" [value]="data.value">
                                         {{data.value}}
@@ -69,7 +69,7 @@
                                     </mat-select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="Date">Date Format</label>
+                                    <label for="Date"> {{'SETTING.DATE_FORMAT' | translate }} </label>
                                     <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder="15 May 2016">
                                         <mat-option *ngFor="let data of selectedList2" [value]="data.value">
                                         {{data.value}}
@@ -77,15 +77,15 @@
                                     </mat-select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="Time">Time Format</label>
-                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder="12 Hours">
+                                    <label for="Time"> {{'SETTING.TIME_FORMAT' | translate }} </label>
+                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder=" {{'SETTING.HOURS' | translate }} ">
                                             <mat-option *ngFor="let data of selectedList3" [value]="data.value">
                                             {{data.value}}
                                             </mat-option>
                                         </mat-select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="symbol">Currency Symbol</label>
+                                    <label for="symbol"> {{'SETTING.CURRENCY_SYMBOL' | translate }} </label>
                                     <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder="$">
                                         <mat-option *ngFor="let data of selectedList4" [value]="data.value">
                                         {{data.value}}
@@ -94,7 +94,7 @@
                                 </div>
                                 <div class="form-group mb-0">
                                     <div class="settings-btns">
-                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded">Update</button>
+                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded"> {{'SETTING.UPDATE' | translate }} </button>
                                     </div>
                                 </div>
                             </div>
