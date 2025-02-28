@@ -5,9 +5,9 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="routes.blog">Blog </a></li>
+                        <li class="breadcrumb-item"><a [routerLink]="routes.blog">{{ 'BLOG.BLOG_TITLE' | translate }}</a></li>
                         <li class="breadcrumb-item"><i class="feather icon icon-chevron-right"></i></li>
-                        <li class="breadcrumb-item active">Blogs</li>
+                        <li class="breadcrumb-item active">{{ 'BLOG.BLOGS' | translate }}</li>
                     </ul>
                 </div>
             </div>
@@ -22,8 +22,8 @@
                             <h5>{{data.heading5}}</h5>
                         </div>
                         <ul class="nav view-blog-list blog-views">
-                            <li><i class="feather icon-message-square me-1"></i>{{data.count1}}</li>
-                            <li><i class="feather icon-eye me-1"></i>{{data.count2}}</li>
+                            <li><i class="feather icon-message-square me-1"></i>{{data.count1}} {{ 'BLOG.COMMENTS' | translate }}</li>
+                            <li><i class="feather icon-eye me-1"></i>{{data.count2}} {{ 'BLOG.VIEWS' | translate }}</li>
                         </ul>
                     </div>
                     <div class="blog-content">
@@ -35,11 +35,11 @@
                                     <h5>{{data.name}}</h5>
                                 </div>
                             </div>
-                            <span><i class="feather icon-calendar me-1"></i>{{data.date}}</span>
+                            <span><i class="feather icon-calendar me-1"></i>{{data.date}} {{ 'BLOG.CALENDAR' | translate }}</span>
                         </div>
                         <h3 class="blog-title"><a [routerLink]="routes.blogDetails">{{data.heading3}}</a></h3>
                         <p>{{data.paragraph}}</p>
-                        <a [routerLink]="routes.blogDetails" class="read-more d-flex"> {{data.msg}}<i class="fa fa-long-arrow-right ms-2"></i></a>
+                        <a [routerLink]="routes.blogDetails" class="read-more d-flex"> {{ 'BLOG.READ_MORE' | translate }}<i class="fa fa-long-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>

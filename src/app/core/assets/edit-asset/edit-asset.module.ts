@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { EditAssetRoutingModule } from './edit-asset-routing.module';
 import { EditAssetComponent } from './edit-asset.component';
@@ -13,7 +14,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     EditAssetRoutingModule,
-    SharedModule
+    SharedModule,
+    TranslateModule
   ]
 })
 export class EditAssetModule { }
