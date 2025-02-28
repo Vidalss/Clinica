@@ -6,12 +6,12 @@
         <div class="col-sm-12">
           <ul class="breadcrumb">
             <li class="breadcrumb-item">
-              <a [routerLink]="routes.assetsList">Assets </a>
+              <a [routerLink]="routes.assetsList">{{ 'ASSETS_LIST.ASSETS' | translate }}</a>
             </li>
             <li class="breadcrumb-item">
               <i class="feather icon-chevron-right"></i>
             </li>
-            <li class="breadcrumb-item active">Assets List</li>
+            <li class="breadcrumb-item active">{{ 'ASSETS_LIST.ASSETS_LIST' | translate }}</li>
           </ul>
         </div>
       </div>
@@ -27,48 +27,50 @@
               <div class="row align-items-center">
                 <div class="col">
                   <div class="doctor-table-blk">
-                    <h3>Assets List</h3>
+                    <h3>{{ 'ASSETS_LIST.ASSETS_LIST' | translate }}</h3>
                     <div class="doctor-search-blk">
                       <div class="top-nav-search table-search-blk">
                         <input
                           type="text"
                           class="form-control"
-                          placeholder="Search here"
+                          [placeholder]="'ASSETS_LIST.SEARCH_HERE' | translate"
                           [(ngModel)]="searchDataValue"
                           (ngModelChange)="searchData(searchDataValue)"
                         />
-                        <a class="btn"
-                          ><img src="assets/img/icons/search-normal.svg" alt=""
-                        /></a>
+                        <a class="btn">
+                          <img src="assets/img/icons/search-normal.svg" alt="" />
+                        </a>
                       </div>
                       <div class="add-group">
                         <a
                           [routerLink]="routes.addAsset"
                           class="btn btn-primary add-pluss ms-2"
-                          ><img src="assets/img/icons/plus.svg" alt=""
-                        /></a>
+                        >
+                          <img src="assets/img/icons/plus.svg" alt="" />
+                        </a>
                         <a
                           href="javascript:;"
                           class="btn btn-primary doctor-refresh ms-2"
-                          ><img src="assets/img/icons/re-fresh.svg" alt=""
-                        /></a>
+                        >
+                          <img src="assets/img/icons/re-fresh.svg" alt="" />
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-auto text-end float-end ms-auto download-grp">
-                  <a href="javascript:;" class="me-2"
-                    ><img src="assets/img/icons/pdf-icon-01.svg" alt=""
-                  /></a>
-                  <a href="javascript:;" class="me-2"
-                    ><img src="assets/img/icons/pdf-icon-02.svg" alt=""
-                  /></a>
-                  <a href="javascript:;" class="me-2"
-                    ><img src="assets/img/icons/pdf-icon-03.svg" alt=""
-                  /></a>
-                  <a href="javascript:;"
-                    ><img src="assets/img/icons/pdf-icon-04.svg" alt=""
-                  /></a>
+                  <a href="javascript:;" class="me-2">
+                    <img src="assets/img/icons/pdf-icon-01.svg" alt="" />
+                  </a>
+                  <a href="javascript:;" class="me-2">
+                    <img src="assets/img/icons/pdf-icon-02.svg" alt="" />
+                  </a>
+                  <a href="javascript:;" class="me-2">
+                    <img src="assets/img/icons/pdf-icon-03.svg" alt="" />
+                  </a>
+                  <a href="javascript:;">
+                    <img src="assets/img/icons/pdf-icon-04.svg" alt="" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -78,13 +80,13 @@
                 <div class="row">
                   <div class="col-12 col-md-6 col-xl-3">
                     <div class="form-group local-forms">
-                      <label for="Employee">Employee Name </label>
+                      <label>{{ 'ASSETS_LIST.EMPLOYEE_NAME' | translate }}</label>
                       <input class="form-control" type="text" />
                     </div>
                   </div>
                   <div class="col-12 col-md-6 col-xl-3">
                     <div class="form-group local-forms">
-                      <label for="From ">From </label>
+                      <label>{{ 'ASSETS_LIST.FROM' | translate }}</label>
                       <input
                         class="form-control datetimepicker"
                         type="text"
@@ -100,7 +102,7 @@
                   </div>
                   <div class="col-12 col-md-6 col-xl-3">
                     <div class="form-group local-forms">
-                      <label for="to">To </label>
+                      <label>{{ 'ASSETS_LIST.TO' | translate }}</label>
                       <input
                         class="form-control datetimepicker"
                         type="text"
@@ -120,7 +122,7 @@
                         type="submit"
                         class="btn btn-primary submit-list-form me-2"
                       >
-                        Search
+                        {{ 'ASSETS_LIST.SEARCH' | translate }}
                       </button>
                     </div>
                   </div>
@@ -145,14 +147,14 @@
                         />
                       </div>
                     </th>
-                    <th mat-sort-header="assetId">Asset Id</th>
-                    <th mat-sort-header="assetUser">Asset User</th>
-                    <th mat-sort-header="assetName">Asset Name</th>
-                    <th mat-sort-header="purchaseDate">Purchase Date</th>
-                    <th mat-sort-header="warrenty">Warrenty</th>
-                    <th mat-sort-header="warrentyEnd">Warrenty End</th>
-                    <th mat-sort-header="amount">Amount</th>
-                    <th mat-sort-header="status">Status</th>
+                    <th mat-sort-header="assetId">{{ 'ASSETS_LIST.ASSET_ID' | translate }}</th>
+                    <th mat-sort-header="assetUser">{{ 'ASSETS_LIST.ASSET_USER' | translate }}</th>
+                    <th mat-sort-header="assetName">{{ 'ASSETS_LIST.ASSETS_NAME' | translate }}</th>
+                    <th mat-sort-header="purchaseDate">{{ 'ASSETS_LIST.PURCHASE_DATE' | translate }}</th>
+                    <th mat-sort-header="warrenty">{{ 'ASSETS_LIST.WARRANTY' | translate }}</th>
+                    <th mat-sort-header="warrentyEnd">{{ 'ASSETS_LIST.WARRANTY_END' | translate }}</th>
+                    <th mat-sort-header="amount">{{ 'ASSETS_LIST.AMOUNT' | translate }}</th>
+                    <th mat-sort-header="status">{{ 'ASSETS_LIST.STATUS' | translate }}</th>
                     <th></th>
                   </tr>
                 </thead>
@@ -169,16 +171,16 @@
                     </td>
                     <td>{{ data.assetId }}</td>
                     <td class="profile-image">
-                      <a [routerLink]="routes.profile"
-                        ><img
+                      <a [routerLink]="routes.profile">
+                        <img
                           width="28"
                           height="28"
                           src="assets/img/profiles/avatar-01.jpg"
                           class="rounded-circle m-r-5"
                           alt=""
                         />
-                        {{ data.assetUser }}</a
-                      >
+                        {{ data.assetUser }}
+                      </a>
                     </td>
                     <td>{{ data.assetName }}</td>
                     <td>{{ data.purchaseDate }}</td>
@@ -195,18 +197,10 @@
                         >
                           {{ data.status }}
                         </a>
-                        <div
-                          class="dropdown-menu dropdown-menu-end status-staff"
-                        >
-                          <a class="dropdown-item" href="javascript:;"
-                            >Pending</a
-                          >
-                          <a class="dropdown-item" href="javascript:;"
-                            >Approved</a
-                          >
-                          <a class="dropdown-item" href="javascript:;"
-                            >Returnd</a
-                          >
+                        <div class="dropdown-menu dropdown-menu-end status-staff">
+                          <a class="dropdown-item" href="javascript:;">{{ 'ASSETS_LIST.PENDING' | translate }}</a>
+                          <a class="dropdown-item" href="javascript:;">{{ 'ASSETS_LIST.APPROVED' | translate }}</a>
+                          <a class="dropdown-item" href="javascript:;">{{ 'ASSETS_LIST.RETURNED' | translate }}</a>
                         </div>
                       </div>
                     </td>
@@ -217,22 +211,26 @@
                           class="action-icon dropdown-toggle"
                           data-bs-toggle="dropdown"
                           aria-expanded="false"
-                          ><i class="fa fa-ellipsis-v"></i
-                        ></a>
+                        >
+                          <i class="fa fa-ellipsis-v"></i>
+                        </a>
                         <div class="dropdown-menu dropdown-menu-end">
                           <a
                             class="dropdown-item"
                             [routerLink]="routes.editAsset"
-                            ><i class="fa-solid fa-pen-to-square m-r-5"></i>
-                            Edit</a
                           >
+                            <i class="fa-solid fa-pen-to-square m-r-5"></i>
+                            {{ 'ASSETS_LIST.EDIT' | translate }}
+                          </a>
                           <a
                             class="dropdown-item"
                             href="javascript:void(0);"
                             data-bs-toggle="modal"
                             data-bs-target="#delete_patient"
-                            ><i class="fa fa-trash-alt m-r-5"></i> Delete</a
                           >
+                            <i class="fa fa-trash-alt m-r-5"></i>
+                            {{ 'ASSETS_LIST.DELETE' | translate }}
+                          </a>
                         </div>
                       </div>
                     </td>
@@ -242,9 +240,8 @@
               <div class="table_footer">
                 <div class="col-sm-12 col-md-5">
                   <div class="dataTables_info">
-                    Showing {{ serialNumberArray[0] }} to
-                    {{ serialNumberArray[serialNumberArray.length - 1] }} of
-                    {{ totalData }} entries
+                    {{ 'ASSETS_LIST.SHOWING' | translate }} {{ serialNumberArray[0] }} {{ 'ASSETS_LIST.TO_ENTRIES' | translate }}
+                    {{ serialNumberArray[serialNumberArray.length - 1] }} {{ 'ASSETS_LIST.OF' | translate }} {{ totalData }} {{ 'ASSETS_LIST.ENTRIES' | translate }}
                   </div>
                 </div>
 
@@ -262,13 +259,12 @@
                           class="page-link"
                           href="javascript:void(0);"
                           tabindex="-1"
-                          >Previous</a
                         >
+                          {{ 'ASSETS_LIST.PREVIOUS' | translate }}
+                        </a>
                       </li>
 
-                      <ng-container
-                        *ngFor="let item of pageNumberArray; let i = index"
-                      >
+                      <ng-container *ngFor="let item of pageNumberArray; let i = index">
                         <li
                           class="page-item"
                           [class.active]="item === currentPage"
@@ -304,9 +300,7 @@
                           (keyup.enter)="moveToPage(currentPage - 2)"
                           tabindex="0"
                         >
-                          <a class="page-link" href="javascript:void(0);">
-                            ...
-                          </a>
+                          <a class="page-link" href="javascript:void(0);"> ... </a>
                         </li>
                         <li
                           *ngIf="
@@ -324,9 +318,7 @@
                           (keyup.enter)="moveToPage(currentPage + 2)"
                           tabindex="0"
                         >
-                          <a class="page-link" href="javascript:void(0);">
-                            ...
-                          </a>
+                          <a class="page-link" href="javascript:void(0);"> ... </a>
                         </li>
                       </ng-container>
 
@@ -343,7 +335,8 @@
                           (click)="getMoreData('next')"
                           class="page-link"
                           href="javascript:void(0);"
-                          >Next
+                        >
+                          {{ 'ASSETS_LIST.NEXT' | translate }}
                         </a>
                       </li>
                     </ul>

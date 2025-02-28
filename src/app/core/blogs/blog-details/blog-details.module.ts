@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 import { BlogDetailsRoutingModule } from './blog-details-routing.module';
 import { BlogDetailsComponent } from './blog-details.component';
@@ -11,7 +13,8 @@ import { BlogDetailsComponent } from './blog-details.component';
   ],
   imports: [
     CommonModule,
-    BlogDetailsRoutingModule
+    BlogDetailsRoutingModule,
+    TranslateModule
   ]
 })
 export class BlogDetailsModule { }

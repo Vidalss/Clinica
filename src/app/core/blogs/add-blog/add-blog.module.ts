@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { AddBlogRoutingModule } from './add-blog-routing.module';
 import { AddBlogComponent } from './add-blog.component';
@@ -13,7 +14,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     AddBlogRoutingModule,
-    SharedModule
+    SharedModule,
+    TranslateModule
   ]
 })
 export class AddBlogModule { }
