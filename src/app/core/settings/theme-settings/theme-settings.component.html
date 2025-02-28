@@ -7,9 +7,9 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="routes.adminDashboard">Dashboard </a></li>
+                        <li class="breadcrumb-item"><a [routerLink]="routes.adminDashboard"> {{'SETTING.DASHBOARD' | translate }} </a></li>
                         <li class="breadcrumb-item"><i class="feather icon-chevron-right"></i></li>
-                        <li class="breadcrumb-item active">Settings</li>
+                        <li class="breadcrumb-item active"> {{'SETTING.SETTINGS' | translate }} </li>
                     </ul>
                 </div>
             </div>
@@ -19,72 +19,73 @@
         <div class="settings-menu-links">
             <ul class="nav nav-tabs menu-tabs">
                 <li class="nav-item ">
-                    <a class="nav-link" [routerLink]="routes.settings">General Settings</a>
+                    <a class="nav-link" [routerLink]="routes.settings"> {{'SETTING.GENERAL' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.localizationDetails">Localization</a>
+                    <a class="nav-link" [routerLink]="routes.localizationDetails"> {{'SETTING.LOCALIZATION' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.paymentSettings">Payment Settings</a>
+                    <a class="nav-link" [routerLink]="routes.paymentSettings"> {{'SETTING.PAYMENT' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.emailSettings">Email Settings</a>
+                    <a class="nav-link" [routerLink]="routes.emailSettings"> {{'SETTING.EMAIL' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.socialSettings">Social Media Login</a>
+                    <a class="nav-link" [routerLink]="routes.socialSettings"> {{'SETTING.SOCIAL_MEDIA' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.socialLinks">Social Links</a>
+                    <a class="nav-link" [routerLink]="routes.socialLinks"> {{'SETTING.SOCIAL_LINKS' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.seoSettings">SEO Settings</a>
+                    <a class="nav-link" [routerLink]="routes.seoSettings"> {{'SETTING.SEO' | translate }} </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" [routerLink]="routes.themeSettings">Theme Settings</a>
+                    <a class="nav-link" [routerLink]="routes.themeSettings"> {{'SETTING.THEME' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.changePassword">Change Password</a>
+                    <a class="nav-link" [routerLink]="routes.changePassword"> {{'SETTING.CHANGE_PASSWORD' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.othersSettings">Others</a>
+                    <a class="nav-link" [routerLink]="routes.othersSettings"> {{'SETTING.OTHERS' | translate }} </a>
                 </li>
             </ul>
         </div>
+        
         
         <div class="row">
             <div class="col-lg-8">
                 <div class="card">
                     <div class="card-body">
                         <form>
-                            <h4 class="page-title">Theme Settings</h4>
+                            <h4 class="page-title"> {{'SETTING.THEME' | translate }} </h4>
                             <div class="form-group row">
-                                <label for="Website" class="col-lg-3 col-form-label">Website Name</label>
+                                <label for="Website" class="col-lg-3 col-form-label"> {{'SETTING.WEBSITE_NAME' | translate }} </label>
                                 <div class="col-lg-9">
                                     <input name="website_name" class="form-control" value="PreClinic" type="text">
                                 </div>
                             </div>
                             <div class="form-group theme-set row">
-                                <label for="Light" class="col-lg-3 col-form-label">Light Logo</label>
+                                <label for="Light" class="col-lg-3 col-form-label"> {{'SETTING.LIGHT_LOGO' | translate }} </label>
                                 <div class="col-lg-7">
                                     <input class="form-control" type="file">
-                                    <span class="form-text text-muted">Recommended image size is 40px x 40px</span>
+                                    <span class="form-text text-muted"> {{'SETTING.MESSAGE_IMAGE' | translate }} 40px x 40px</span>
                                 </div>
                                 <div class="col-lg-2">
                                     <div class="img-thumbnail float-end"><img src="assets/img/logo-dark.png" alt="" width="40" height="40"></div>
                                 </div>
                             </div>
                             <div class="form-group theme-set row">
-                                <label for="Favicon" class="col-lg-3 col-form-label">Favicon</label>
+                                <label for="Favicon" class="col-lg-3 col-form-label"> {{'SETTING.FAVICON' | translate }} </label>
                                 <div class="col-lg-7">
                                     <input class="form-control" type="file">
-                                    <span class="form-text text-muted">Recommended image size is 16px x 16px</span>
+                                    <span class="form-text text-muted"> {{'SETTING.MESSAGE_IMAGE' | translate }}  is 16px x 16px</span>
                                 </div>
                                 <div class="col-lg-2">
                                     <div class="settings-image img-thumbnail float-end"><img src="assets/img/favicon.png" class="img-fluid" width="16" height="16" alt=""></div>
                                 </div>
                             </div>
                             <div class="m-t-20 text-center">
-                                <button class="btn btn-primary submit-btn">Save</button>
+                                <button class="btn btn-primary submit-btn"> {{'SETTING.SAVE' | translate }} </button>
                             </div>
                         </form>
                     </div>

@@ -7,9 +7,9 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="routes.adminDashboard">Dashboard </a></li>
+                        <li class="breadcrumb-item"><a [routerLink]="routes.adminDashboard"> {{'SETTING.DASHBOARD' | translate}} </a></li>
                         <li class="breadcrumb-item"><i class="feather icon-chevron-right"></i></li>
-                        <li class="breadcrumb-item active">Settings</li>
+                        <li class="breadcrumb-item active"> {{'SETTING.SETTINGS' | translate }} </li>
                     </ul>
                 </div>
             </div>
@@ -19,34 +19,34 @@
         <div class="settings-menu-links">
             <ul class="nav nav-tabs menu-tabs">
                 <li class="nav-item ">
-                    <a class="nav-link" [routerLink]="routes.settings">General Settings</a>
+                    <a class="nav-link" [routerLink]="routes.settings"> {{'SETTING.GENERAL' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.localizationDetails">Localization</a>
+                    <a class="nav-link" [routerLink]="routes.localizationDetails"> {{'SETTING.LOCALIZATION' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.paymentSettings">Payment Settings</a>
+                    <a class="nav-link" [routerLink]="routes.paymentSettings"> {{'SETTING.PAYMENT' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.emailSettings">Email Settings</a>
+                    <a class="nav-link" [routerLink]="routes.emailSettings"> {{'SETTING.EMAIL' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.socialSettings">Social Media Login</a>
+                    <a class="nav-link" [routerLink]="routes.socialSettings"> {{'SETTING.SOCIAL_MEDIA' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.socialLinks">Social Links</a>
+                    <a class="nav-link" [routerLink]="routes.socialLinks"> {{'SETTING.SOCIAL_LINKS' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.seoSettings">SEO Settings</a>
+                    <a class="nav-link" [routerLink]="routes.seoSettings"> {{'SETTING.SEO' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.themeSettings">Theme Settings</a>
+                    <a class="nav-link" [routerLink]="routes.themeSettings"> {{'SETTING.THEME' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.changePassword">Change Password</a>
+                    <a class="nav-link" [routerLink]="routes.changePassword"> {{'SETTING.CHANGE_PASSWORD' | translate }} </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" [routerLink]="routes.othersSettings">Others</a>
+                    <a class="nav-link" [routerLink]="routes.othersSettings"> {{'SETTING.OTHERS' | translate }} </a>
                 </li>
             </ul>
         </div>
@@ -54,7 +54,7 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5 class="card-title">Enable Google Analytics</h5>
+                        <h5 class="card-title"> {{'SETTING.GOOGLE_ANALYTICS2' | translate }} </h5>
                         <div class="status-toggle d-flex justify-content-between align-items-center">
                             <input type="checkbox" id="status_1" class="check" checked="">
                             <label for="status_1" class="checktoggle">checkbox</label>
@@ -64,8 +64,8 @@
                         <form>
                             <div class="settings-form">
                                 <div class="form-group">
-                                    <label for="Google">Google Analytics <span class="star-red">*</span></label>
-                                    <textarea class="form-control" placeholder="Google Analytics"></textarea>
+                                    <label for="Google"> {{'SETTING.GOOGLE_ANALYTICS' | translate }} <span class="star-red">*</span></label>
+                                    <textarea class="form-control" placeholder=" {{'SETTING.GOOGLE_ANALYTICS' | translate }} "></textarea>
                                 </div>
                                 <div class="form-group mb-0">
                                     <div class="settings-btns">
@@ -80,7 +80,7 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5 class="card-title">Enable Google Adsense Code</h5>
+                        <h5 class="card-title"> {{'SETTING.GOOGLE_ADSENSE_CODE3' | translate }} </h5>
                         <div class="status-toggle d-flex justify-content-between align-items-center">
                             <input type="checkbox" id="status_2" class="check" checked="">
                             <label for="status_2" class="checktoggle">checkbox</label>
@@ -90,8 +90,8 @@
                         <form>
                             <div class="settings-form">
                                 <div class="form-group">
-                                    <label for="Google">Google Adsense Code <span class="star-red">*</span></label>
-                                    <textarea class="form-control" placeholder="Google Adsense Code"></textarea>
+                                    <label for="Google"> {{'SETTING.GOOGLE_ADSENSE' | translate }} <span class="star-red">*</span></label>
+                                    <textarea class="form-control" placeholder=" {{'SETTING.GOOGLE_ADSENSE' | translate }} "></textarea>
                                 </div>
                                 <div class="form-group mb-0">
                                     <div class="settings-btns">
@@ -106,7 +106,7 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5 class="card-title">Display Facebook Messenger</h5>
+                        <h5 class="card-title"> {{'SETTING.FACEBOOK_MESSENGER' | translate }} </h5>
                         <div class="status-toggle d-flex justify-content-between align-items-center">
                             <input type="checkbox" id="status_3" class="check" checked="">
                             <label for="status_3" class="checktoggle">checkbox</label>
@@ -116,8 +116,8 @@
                         <form>
                             <div class="settings-form">
                                 <div class="form-group">
-                                    <label for="Facebook">Facebook Messenger <span class="star-red">*</span></label>
-                                    <textarea class="form-control" placeholder="Facebook Messenger"></textarea>
+                                    <label for="Facebook"> {{'SETTING.FACEBOOK_MESSENGER2' | translate }} <span class="star-red">*</span></label>
+                                    <textarea class="form-control" placeholder=" {{'SETTING.FACEBOOK_MESSENGER2' | translate }} "></textarea>
                                 </div>
                                 <div class="form-group mb-0">
                                     <div class="settings-btns">
@@ -132,7 +132,7 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5 class="card-title">Display Facebook Pixel</h5>
+                        <h5 class="card-title"> {{'SETTING.FACEBOOK_PIXEL' | translate }} </h5>
                         <div class="status-toggle d-flex justify-content-between align-items-center">
                             <input type="checkbox" id="status_4" class="check" checked="">
                             <label for="status_4" class="checktoggle">checkbox</label>
@@ -142,12 +142,12 @@
                         <form>
                             <div class="settings-form">
                                 <div class="form-group">
-                                    <label for="Adsense">Google Adsense Code <span class="star-red">*</span></label>
-                                    <textarea class="form-control" placeholder="Google Adsense Code"></textarea>
+                                    <label for="Adsense"> {{'SETTING.GOOGLE_ADSENSE_CODE' | translate  }} <span class="star-red">*</span></label>
+                                    <textarea class="form-control" placeholder=" {{'SETTING.GOOGLE_ADSENSE_CODE' | translate }} "></textarea>
                                 </div>
                                 <div class="form-group mb-0">
                                     <div class="settings-btns">
-                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded">Save</button>
+                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded"> {{'SETTING.SAVE' | translate }} </button>
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@
             <div class="col-md-6 d-flex">
                 <div class="card w-100">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5 class="card-title">Display Google Recaptcha</h5>
+                        <h5 class="card-title"> {{'SETTING.GOOGLE_RECAPTCHA' | translate }} </h5>
                         <div class="status-toggle d-flex justify-content-between align-items-center">
                             <input type="checkbox" id="status_5" class="check" checked="">
                             <label for="status_5" class="checktoggle">checkbox</label>
@@ -168,16 +168,16 @@
                         <form>
                             <div class="settings-form">
                                 <div class="form-group form-placeholder">
-                                    <label for="Rechaptcha">Google Rechaptcha Site Key <span class="star-red">*</span></label>
+                                    <label for="Rechaptcha"> {{'SETTING.GOOGLE_RECAPTCHA_SITE_KEY' | translate }} <span class="star-red">*</span></label>
                                     <input type="text" class="form-control" placeholder="6LcnPoEaAAAAAF6QhKPZ8V4744yiEnr41li3SYDn">
                                 </div>
                                 <div class="form-group form-placeholder">
-                                    <label for="Rechaptcha">Google Rechaptcha Secret Key <span class="star-red">*</span></label>
+                                    <label for="Rechaptcha"> {{'SETTING.GOOGLE_RECAPTCHA_SECRET_KEY' | translate }} <span class="star-red">*</span></label>
                                     <input type="text" class="form-control" placeholder="6LcnPoEaAAAAACV_xC4jdPqumaYKBnxz9Sj6y0zk">
                                 </div>
                                 <div class="form-group mb-0">
                                     <div class="settings-btns">
-                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded">Save</button>
+                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded"> {{'SETTING.SAVE' | translate }} </button>
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +188,7 @@
             <div class="col-md-6 d-flex">
                 <div class="card w-100">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5 class="card-title">Cookies Agreement</h5>
+                        <h5 class="card-title"> {{'SETTING.COOKIES_AGREEMENT' | translate }} </h5>
                         <div class="status-toggle d-flex justify-content-between align-items-center">
                             <input type="checkbox" id="status_6" class="check" checked="">
                             <label for="status_6" class="checktoggle">checkbox</label>
@@ -198,12 +198,12 @@
                         <form>
                             <div class="settings-form">
                                 <div class="form-group">
-                                    <label for=">Cookies">Cookies Agreement Text <span class="star-red">*</span></label>
+                                    <label for=">Cookies"> {{'SETTING.COOKIES_AGREEMENT_TEXT' | translate }} <span class="star-red">*</span></label>
                                     <div id="editor"></div>
                                 </div>
                                 <div class="form-group mb-0">
                                     <div class="settings-btns">
-                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded">Save</button>
+                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded"> {{'SETTING.SAVE' | translate }} </button>
                                     </div>
                                 </div>
                             </div>

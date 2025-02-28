@@ -7,9 +7,9 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="routes.adminDashboard">Dashboard </a></li>
+                        <li class="breadcrumb-item"><a [routerLink]="routes.adminDashboard"> {{'SETTING.DASHBOARD' | translate }} </a></li>
                         <li class="breadcrumb-item"><i class="feather icon-chevron-right"></i></li>
-                        <li class="breadcrumb-item active">Settings</li>
+                        <li class="breadcrumb-item active"> {{'SETTING.SETTINGS' | translate }} </li>
                     </ul>
                 </div>
             </div>
@@ -19,42 +19,43 @@
         <div class="settings-menu-links">
             <ul class="nav nav-tabs menu-tabs">
                 <li class="nav-item ">
-                    <a class="nav-link" [routerLink]="routes.settings">General Settings</a>
+                    <a class="nav-link" [routerLink]="routes.settings"> {{'SETTING.GENERAL' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.localizationDetails">Localization</a>
+                    <a class="nav-link" [routerLink]="routes.localizationDetails"> {{'SETTING.LOCALIZATION' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.paymentSettings">Payment Settings</a>
+                    <a class="nav-link" [routerLink]="routes.paymentSettings"> {{'SETTING.PAYMENT' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.emailSettings">Email Settings</a>
+                    <a class="nav-link" [routerLink]="routes.emailSettings"> {{'SETTING.EMAIL' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.socialSettings">Social Media Login</a>
+                    <a class="nav-link" [routerLink]="routes.socialSettings"> {{'SETTING.SOCIAL_MEDIA' | translate }} </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" [routerLink]="routes.socialLinks">Social Links</a>
+                    <a class="nav-link" [routerLink]="routes.socialLinks"> {{'SETTING.SOCIAL_LINKS' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.seoSettings">SEO Settings</a>
+                    <a class="nav-link" [routerLink]="routes.seoSettings"> {{'SETTING.SEO' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.themeSettings">Theme Settings</a>
+                    <a class="nav-link" [routerLink]="routes.themeSettings"> {{'SETTING.THEME' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.changePassword">Change Password</a>
+                    <a class="nav-link" [routerLink]="routes.changePassword"> {{'SETTING.CHANGE_PASSWORD' | translate }} </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.othersSettings">Others</a>
+                    <a class="nav-link" [routerLink]="routes.othersSettings"> {{'SETTING.OTHERS' | translate }} </a>
                 </li>
             </ul>
         </div>
+        
         <div class="row">
             <div class="col-lg-6 col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title">Social Link Settings</h5>
+                        <h5 class="card-title"> {{'SETTING.SOCIAL_LINK_SETTINGS' | translate }} </h5>
                     </div>
                     <div class="card-body pt-0">
                         <form>
@@ -75,13 +76,13 @@
                             </div>
                             <div class="form-group text-end">
                                 <a (click)="add()" href="javascript:void(0);" class="btn add-links">
-                                    <i class="fa fa-plus me-1"></i> Add More
+                                    <i class="fa fa-plus me-1"></i> {{'SETTING.ADD_MORE' | translate}}
                                 </a>
                             </div>
                             <div class="form-group mb-0">
                                 <div class="settings-btns">
-                                    <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded">Submit</button>
-                                    <button type="submit" class="btn btn-secondary btn-rounded">Cancel</button>
+                                    <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded"> {{'SETTING.SUBMIT' | translate }} </button>
+                                    <button type="submit" class="btn btn-secondary btn-rounded"> {{'SETTING.CANCEL' | translate }} </button>
                                 </div>
                             </div>
                         </form>

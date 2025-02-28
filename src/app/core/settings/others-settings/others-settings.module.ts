@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { OthersSettingsRoutingModule } from './others-settings-routing.module';
 import { OthersSettingsComponent } from './others-settings.component';
@@ -11,7 +12,8 @@ import { OthersSettingsComponent } from './others-settings.component';
   ],
   imports: [
     CommonModule,
-    OthersSettingsRoutingModule
+    OthersSettingsRoutingModule,
+    TranslateModule
   ]
 })
 export class OthersSettingsModule { }

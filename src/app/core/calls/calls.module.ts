@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { CallsRoutingModule } from './calls-routing.module';
 import { CallsComponent } from './calls.component';
@@ -11,7 +12,8 @@ import { CallsComponent } from './calls.component';
   ],
   imports: [
     CommonModule,
-    CallsRoutingModule
+    CallsRoutingModule,
+    TranslateModule
   ]
 })
 export class CallsModule { }

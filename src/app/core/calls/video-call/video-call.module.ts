@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { VideoCallRoutingModule } from './video-call-routing.module';
 import { VideoCallComponent } from './video-call.component';
@@ -11,7 +12,8 @@ import { VideoCallComponent } from './video-call.component';
   ],
   imports: [
     CommonModule,
-    VideoCallRoutingModule
+    VideoCallRoutingModule,
+    TranslateModule
   ]
 })
 export class VideoCallModule { }
