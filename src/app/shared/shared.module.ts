@@ -12,6 +12,7 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
 import { DataService } from './data/data.service';
 import { MatSortModule } from '@angular/material/sort';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -54,6 +55,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         NgxEditorModule,
         FullCalendarModule,
         MatSortModule,
+        TranslateModule,
         FormsModule,
         ReactiveFormsModule], providers: [
         DataService,
