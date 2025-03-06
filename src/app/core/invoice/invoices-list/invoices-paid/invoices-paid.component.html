@@ -6,12 +6,12 @@
         <div class="col-sm-12">
           <ul class="breadcrumb">
             <li class="breadcrumb-item">
-              <a [routerLink]="routes.allInvoice">Invoice </a>
+              <a [routerLink]="routes.allInvoice">{{ 'INVOICE.INVOICE' | translate }} </a>
             </li>
             <li class="breadcrumb-item">
               <i class="feather icon-chevron-right"></i>
             </li>
-            <li class="breadcrumb-item active">Invoice Paid</li>
+            <li class="breadcrumb-item active">{{ 'INVOICE.INVOICE_PAID' | translate }}</li>
           </ul>
         </div>
       </div>
@@ -40,7 +40,7 @@
                    <div class="selectBox" (click)="openCheckBoxes('User')"(keyup.enter)="openCheckBoxes('User')" tabindex="0">
                     <p class="mb-0">
                       <i class="feather icon-user-plus me-1 select-icon"></i>
-                      Select User
+                      {{ 'INVOICE.SELECT_USER' | translate }}
                     </p>
                     <span class="down-icon"
                       ><i class="fa fa-angle-down" aria-hidden="true"></i
@@ -55,7 +55,7 @@
                     "
                   >
                     <form action="#">
-                      <p class="checkbox-title">Customer Search</p>
+                      <p class="checkbox-title">{{ 'INVOICE.CUSTOMER_SEARCH' | translate }}</p>
                       <div class="form-custom">
                         <input
                           type="text"
@@ -94,10 +94,10 @@
                         </label>
                       </div>
                       <button type="submit" class="btn w-100 btn-primary">
-                        Apply
+                        {{ 'INVOICE.APPLY' | translate }}
                       </button>
                       <button type="reset" class="btn w-100 btn-grey">
-                        Reset
+                        {{ 'INVOICE.RESET' | translate }}
                       </button>
                     </form>
                   </div>
@@ -108,7 +108,7 @@
                    <div class="selectBox" (click)="openCheckBoxes('Date')"(keyup.enter)="openCheckBoxes('User')" tabindex="0">
                     <p class="mb-0">
                       <i class="feather icon-calendar me-1 select-icon"></i>
-                      Select Date
+                      {{ 'INVOICE.SELECT_DATE' | translate }}
                     </p>
                     <span class="down-icon"
                       ><i class="fa fa-angle-down" aria-hidden="true"></i
@@ -123,7 +123,7 @@
                     "
                   >
                     <form action="#">
-                      <p class="checkbox-title">Date Filter</p>
+                      <p class="checkbox-title">{{ 'INVOICE.DATE_FILTER' | translate }}</p>
                       <div class="selectBox-cont selectBox-cont-one h-auto">
                         <div class="date-picker">
                           <div class="form-custom">
@@ -163,27 +163,27 @@
                           <ul>
                             <li>
                               <a href="javascript:void(0);" class="btn date-btn"
-                                >Today</a
+                                >{{ 'INVOICE.TODAY' | translate }}</a
                               >
                             </li>
                             <li>
                               <a href="javascript:void(0);" class="btn date-btn"
-                                >Yesterday</a
+                                >{{ 'INVOICE.YESTERDAY' | translate }}</a
                               >
                             </li>
                             <li>
                               <a href="javascript:void(0);" class="btn date-btn"
-                                >Last 7 days</a
+                                >{{ 'INVOICE.LAST_7_DAYS' | translate }}</a
                               >
                             </li>
                             <li>
                               <a href="javascript:void(0);" class="btn date-btn"
-                                >This month</a
+                                >{{ 'INVOICE.THIS_MONTH' | translate }}</a
                               >
                             </li>
                             <li>
                               <a href="javascript:void(0);" class="btn date-btn"
-                                >Last month</a
+                                >{{ 'INVOICE.LAST_MONTH' | translate }}</a
                               >
                             </li>
                           </ul>
@@ -198,7 +198,7 @@
                   <div class="selectBox" (click)="openCheckBoxes('Status')"(keyup.enter)="openCheckBoxes('Status')" tabindex="0">
                     <p class="mb-0">
                       <i class="feather icon-book-open me-1 select-icon"></i>
-                      Select Status
+                      {{ 'INVOICE.SELECT_STATUS' | translate }}
                     </p>
                     <span class="down-icon"
                       ><i class="fa fa-angle-down" aria-hidden="true"></i
@@ -213,38 +213,38 @@
                     "
                   >
                     <form action="#">
-                      <p class="checkbox-title">By Status</p>
+                      <p class="checkbox-title">{{ 'INVOICE.BY_STATUS' | translate }}</p>
                       <div class="selectBox-cont">
                         <label class="custom_check w-100">
                           <input type="checkbox" name="name" checked />
-                          <span class="checkmark"></span> All Invoices
+                          <span class="checkmark"></span> {{ 'INVOICE.ALL_INVOICES' | translate }}
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="name" />
-                          <span class="checkmark"></span> Paid
+                          <span class="checkmark"></span> {{ 'INVOICE.PAID' | translate }}
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="name" />
-                          <span class="checkmark"></span> Overdue
+                          <span class="checkmark"></span> {{ 'INVOICE.OVERDUE' | translate }}
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="name" />
-                          <span class="checkmark"></span> Draft
+                          <span class="checkmark"></span> {{ 'INVOICE.DRAFT' | translate }}
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="name" />
-                          <span class="checkmark"></span> Recurring
+                          <span class="checkmark"></span> {{ 'INVOICE.RECURRING' | translate }}
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="name" />
-                          <span class="checkmark"></span> Cancelled
+                          <span class="checkmark"></span> {{ 'INVOICE.CANCELLED' | translate }}
                         </label>
                       </div>
                       <button type="submit" class="btn w-100 btn-primary">
-                        Apply
+                        {{ 'INVOICE.APPLY	' | translate }}
                       </button>
                       <button type="reset" class="btn w-100 btn-grey">
-                        Reset
+                        {{ 'INVOICE.RESET' | translate }}
                       </button>
                     </form>
                   </div>
@@ -254,8 +254,7 @@
                 <div class="multipleSelection">
                   <div class="selectBox" (click)="openCheckBoxes('Category')"  (keyup.enter)="openCheckBoxes('Category')" tabindex="0">
                     <p class="mb-0">
-                      <i class="feather icon-bookmark me-1 select-icon"></i> By
-                      Category
+                      <i class="feather icon-bookmark me-1 select-icon"></i> {{ 'INVOICE.BY_CATEGORY' | translate }}
                     </p>
                     <span class="down-icon"
                       ><i class="fa fa-angle-down" aria-hidden="true"></i
@@ -270,7 +269,7 @@
                     "
                   >
                     <form action="#">
-                      <p class="checkbox-title">Category</p>
+                      <p class="checkbox-title">{{ 'INVOICE.CATEGORY' | translate }}</p>
                       <div class="form-custom">
                         <input
                           type="text"
@@ -281,38 +280,38 @@
                       <div class="selectBox-cont">
                         <label class="custom_check w-100">
                           <input type="checkbox" name="category" />
-                          <span class="checkmark"></span> Advertising
+                          <span class="checkmark"></span> {{ 'INVOICE.ADVERTISING' | translate }}
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="category" />
-                          <span class="checkmark"></span> Food
+                          <span class="checkmark"></span> {{ 'INVOICE.FOOD' | translate }}
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="category" />
-                          <span class="checkmark"></span> Marketing
+                          <span class="checkmark"></span> {{ 'INVOICE.MARKETING' | translate }}
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="category" />
-                          <span class="checkmark"></span> Repairs
+                          <span class="checkmark"></span> {{ 'INVOICE.REPAIRS' | translate }}
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="category" />
-                          <span class="checkmark"></span> Software
+                          <span class="checkmark"></span> {{ 'INVOICE.SOFTWARE' | translate }}
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="category" />
-                          <span class="checkmark"></span> Stationary
+                          <span class="checkmark"></span> {{ 'INVOICE.STATIONARY' | translate }}
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="category" />
-                          <span class="checkmark"></span> Travel
+                          <span class="checkmark"></span> {{ 'INVOICE.TRAVEL' | translate }}
                         </label>
                       </div>
                       <button type="submit" class="btn w-100 btn-primary">
-                        Apply
+                        {{ 'INVOICE.APPLY' | translate }}
                       </button>
                       <button type="reset" class="btn w-100 btn-grey">
-                        Reset
+                        {{ 'INVOICE.RESET' | translate }}
                       </button>
                     </form>
                   </div>
@@ -326,7 +325,7 @@
                       alt=""
                       class="me-2"
                     />
-                    Generate report
+                    {{ 'INVOICE.GENERATE_REPORT' | translate }}
                   </a>
                 </div>
               </li>
@@ -342,19 +341,19 @@
             <div class="col-lg-8 col-md-8">
               <div class="invoices-tabs">
                 <ul>
-                  <li><a [routerLink]="routes.allInvoice">All Invoice</a></li>
+                  <li><a [routerLink]="routes.allInvoice">{{ 'INVOICE.ALL_INVOICE' | translate }}</a></li>
                   <li>
                     <a [routerLink]="routes.invoicesPaid" class="active"
-                      >Paid</a
+                      >{{ 'INVOICE.PAID' | translate }}</a
                     >
                   </li>
-                  <li><a [routerLink]="routes.invoicesOverdue">Overdue</a></li>
-                  <li><a [routerLink]="routes.invoicesDraft">Draft</a></li>
+                  <li><a [routerLink]="routes.invoicesOverdue">{{ 'INVOICE.OVERDUE' | translate }}</a></li>
+                  <li><a [routerLink]="routes.invoicesDraft">{{ 'INVOICE.DRAFT' | translate }}</a></li>
                   <li>
-                    <a [routerLink]="routes.invoicesRecurring">Recurring</a>
+                    <a [routerLink]="routes.invoicesRecurring">{{ 'INVOICE.RECURRING' | translate }}</a>
                   </li>
                   <li>
-                    <a [routerLink]="routes.invoicesCancelled">Cancelled</a>
+                    <a [routerLink]="routes.invoicesCancelled">{{ 'INVOICE.CANCELLED' | translate }}</a>
                   </li>
                 </ul>
               </div>
@@ -369,7 +368,7 @@
                 </a>
                 <a [routerLink]="routes.addInvoice" class="btn">
                   <i class="feather icon-plus-circle feather-circle me-2"></i>
-                  New Invoice
+                  {{ 'INVOICE.NEW_INVOICE' | translate }}
                 </a>
               </div>
             </div>
@@ -389,7 +388,7 @@
                 <div class="inovices-amount">$8,78,797</div>
               </div>
             </div>
-            <p class="inovices-all">All Invoices <span>50</span></p>
+            <p class="inovices-all">{{ 'INVOICE.ALL_INVOICES' | translate }} <span>50</span></p>
           </div>
         </div>
       </div>
@@ -404,7 +403,7 @@
                 <div class="inovices-amount">$4,5884</div>
               </div>
             </div>
-            <p class="inovices-all">Paid Invoices <span>60</span></p>
+            <p class="inovices-all">{{ 'INVOICE.PAID_INVOICES' | translate }} <span>60</span></p>
           </div>
         </div>
       </div>
@@ -419,7 +418,7 @@
                 <div class="inovices-amount">$2,05,545</div>
               </div>
             </div>
-            <p class="inovices-all">Unpaid Invoices <span>70</span></p>
+            <p class="inovices-all">{{ 'INVOICE.UNPAID_INVOICES' | translate }} <span>70</span></p>
           </div>
         </div>
       </div>
@@ -434,7 +433,7 @@
                 <div class="inovices-amount">$8,8,797</div>
               </div>
             </div>
-            <p class="inovices-all">Cancelled Invoices <span>80</span></p>
+            <p class="inovices-all">{{ 'INVOICE.CANCELLED_INVOICES' | translate }} <span>80</span></p>
           </div>
         </div>
       </div>
@@ -449,7 +448,7 @@
                       <div class="col-sm-12 col-md-6">
                         <div class="dataTables_length">
                           <label>
-                            Show
+                            {{ 'INVOICE.SHOW' | translate }}
                             <select
                               [(ngModel)]="pageSize"
                               (ngModelChange)="PageSize()"
@@ -460,7 +459,7 @@
                               <option value="50">50</option>
                               <option value="100">100</option>
                             </select>
-                            entries
+                            {{ 'INVOICE.ENTRIES' | translate }}
                           </label>
                         </div>
                       </div>
@@ -473,13 +472,13 @@
               >
                 <thead class="thead-light">
                   <tr>
-                    <th mat-sort-header="invoiceNumber">Invoice number</th>
-                    <th mat-sort-header="createdOn">Created on</th>
-                    <th mat-sort-header="invoicesTo">Invoice to</th>
-                    <th mat-sort-header="amount">Amount</th>
-                    <th mat-sort-header="paidOn">Paid on</th>
-                    <th mat-sort-header="status">Status</th>
-                    <th class="text-end">Action</th>
+                    <th mat-sort-header="invoiceNumber">{{ 'INVOICE.INVOICE_NUMBER' | translate }}</th>
+                    <th mat-sort-header="createdOn">{{ 'INVOICE.CREATED_ON' | translate }}</th>
+                    <th mat-sort-header="invoicesTo">{{ 'INVOICE.INVOICE_TO' | translate }}</th>
+                    <th mat-sort-header="amount">{{ 'INVOICE.AMOUNT' | translate }}</th>
+                    <th mat-sort-header="paidOn">{{ 'INVOICE.PAID_ON' | translate }}</th>
+                    <th mat-sort-header="status">{{ 'INVOICE.STATUS' | translate }}</th>
+                    <th class="text-end">{{ 'INVOICE.ACTION' | translate }}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -525,14 +524,14 @@
                       <a
                         [routerLink]="routes.editInvoices"
                         class="btn btn-sm btn-white text-success me-2"
-                        ><i class="far fa-edit me-1"></i> Edit</a
+                        ><i class="far fa-edit me-1"></i> {{ 'INVOICE.EDIT' | translate }}</a
                       >
                       <a
                         class="btn btn-sm btn-white text-danger"
                         href="javascript:void(0);"
                         data-bs-toggle="modal"
                         data-bs-target="#delete_paid"
-                        ><i class="far fa-trash-alt me-1"></i>Delete</a
+                        ><i class="far fa-trash-alt me-1"></i>{{ 'INVOICE.DELETE' | translate }}</a
                       >
                     </td>
                   </tr>
@@ -541,9 +540,9 @@
               <div class="table_footer">
                 <div class="col-sm-12 col-md-5">
                   <div class="dataTables_info">
-                    Showing {{ serialNumberArray[0] }} to
-                    {{ serialNumberArray[serialNumberArray.length - 1] }} of
-                    {{ totalData }} entries
+                    {{ 'INVOICE.SHOWING' | translate }} {{ serialNumberArray[0] }} {{ 'INVOICE.TO' | translate }}
+                    {{ serialNumberArray[serialNumberArray.length - 1] }} {{ 'INVOICE.OF' | translate }}
+                    {{ totalData }} {{ 'INVOICE.ENTRIES' | translate }}
                   </div>
                 </div>
 
@@ -561,7 +560,7 @@
                           class="page-link"
                           href="javascript:void(0);"
                           tabindex="-1"
-                          >Previous</a
+                          >{{ 'INVOICE.PREVIOUS' | translate }}</a
                         >
                       </li>
 
@@ -600,7 +599,7 @@
                           "
                           [hidden]="currentPage === 1"
                           (click)="moveToPage(currentPage - 2)"
-                                      (keyup.enter)="moveToPage(currentPage - 2)"  
+                                      (keyup.enter)="moveToPage(currentPage - 2)"
                                       tabindex="0"
                         >
                           <a class="page-link" href="javascript:void(0);">
@@ -619,7 +618,7 @@
                               serialNumberArray[serialNumberArray.length - 1]
                           "
                           class="page-item"
-                          (click)="moveToPage(currentPage + 2)"(keyup.enter)="moveToPage(currentPage + 2)"  
+                          (click)="moveToPage(currentPage + 2)"(keyup.enter)="moveToPage(currentPage + 2)"
                           tabindex="0"
                         >
                           <a class="page-link" href="javascript:void(0);">
@@ -641,7 +640,7 @@
                           (click)="getMoreData('next')"
                           class="page-link"
                           href="javascript:void(0);"
-                          >Next
+                          >{{ 'INVOICE.NEXT' | translate }}
                         </a>
                       </li>
                     </ul>

@@ -3,13 +3,19 @@ import { routes } from '../routes/routes';
 import { map, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { apiResultFormat } from '../models/models';
+import { TranslateService } from '@ngx-translate/core'; 
+
+
 
 
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private translate: TranslateService) {}
+
+
+  
 
   public getDoctorsList(): Observable<apiResultFormat> {
     return this.http.get<apiResultFormat>('assets/json/doctors-list.json').pipe(
@@ -195,12 +201,12 @@ export class DataService {
   }
   public sideBar = [
     {
-      tittle: 'Main',
+      tittle: this.translate.instant('MENU.MAIN'),
       showAsTab: false,
       separateRoute: false,
       menu: [
         {
-          menuValue: 'Dashboard',
+          menuValue: this.translate.instant('MENU.DASHBOARD'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'dashboard',
@@ -208,246 +214,246 @@ export class DataService {
           img: 'assets/img/icons/menu-icon-01.svg',
           subMenus: [
             {
-              menuValue: 'Admin Dashboard',
+              menuValue: this.translate.instant('MENU.ADMIN_DASHBOARD'),
               route: routes.adminDashboard,
               base: routes.adminDashboard,
             },
             {
-              menuValue: 'Doctor Dashboard',
+              menuValue: this.translate.instant('MENU.DOCTOR_DASHBOARD'),
               route: routes.doctorDashboard,
               base: routes.doctorDashboard,
             },
             {
-              menuValue: 'Patient Dashboard',
+              menuValue:this.translate.instant('MENU.PATIENT_DASHBOARD'),
               route: routes.patientDashboard,
               base: routes.patientDashboard,
             },
           ],
         },
         {
-          menuValue: 'Doctors',
+          menuValue:this.translate.instant('MENU.DOCTORS'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'doctor',
           img: 'assets/img/icons/menu-icon-02.svg',
           subMenus: [
             {
-              menuValue: 'Doctor List',
+              menuValue: this.translate.instant('MENU.DOCTOR_LIST'),
               route: routes.doctorsList,
               base: routes.doctorsList,
             },
             {
-              menuValue: 'Add Doctor',
+              menuValue: this.translate.instant('MENU.ADD_DOCTOR'),
               route: routes.addDoctor,
               base: routes.addDoctor,
             },
             {
-              menuValue: 'Edit Doctor',
+              menuValue: this.translate.instant('MENU.EDIT_DOCTOR'),
               route: routes.editDoctor,
               base: routes.editDoctor,
             },
             {
-              menuValue: 'Doctor Profile',
+              menuValue: this.translate.instant('MENU.DOCTOR_PROFILE'),
               route: routes.doctorProfile,
               base: routes.doctorProfile,
             },
           ],
         },
         {
-          menuValue: 'Patients',
+          menuValue: this.translate.instant('MENU.PATIENTS'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'patient',
           img: 'assets/img/icons/menu-icon-03.svg',
           subMenus: [
             {
-              menuValue: 'Patients List',
+              menuValue: this.translate.instant('MENU.PATIENTS_LIST'),
               route: routes.patientsList,
               base: routes.patientsList,
             },
             {
-              menuValue: 'Add Patients',
+              menuValue: this.translate.instant('MENU.ADD_PATIENTS'),
               route: routes.addPatient,
               base: routes.addPatient,
             },
             {
-              menuValue: 'Edit Patients',
+              menuValue: this.translate.instant('MENU.EDIT_PATIENTS'),
               route: routes.editPatient,
               base: routes.editPatient,
             },
             {
-              menuValue: 'Patients Profile',
+              menuValue: this.translate.instant('MENU.PATIENTS_PROFILE'),
               route: routes.patientProfile,
               base: routes.patientProfile,
             },
           ],
         },
         {
-          menuValue: 'Staff',
+          menuValue: this.translate.instant('MENU.STAFF'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'staff',
           img: 'assets/img/icons/menu-icon-08.svg',
           subMenus: [
             {
-              menuValue: 'Staff List',
+              menuValue: this.translate.instant('MENU.STAFF_LIST'),
               route: routes.staffList,
               base: routes.staffList,
             },
             {
-              menuValue: 'Add Staff',
+              menuValue: this.translate.instant('MENU.ADD_STAFF'),
               route: routes.addStaff,
               base: routes.addStaff,
             },
             {
-              menuValue: 'Staff Profile',
+              menuValue: this.translate.instant('MENU.STAFF_PROFILE'),
               route: routes.staffProfile,
               base: routes.staffProfile,
             },
             {
-              menuValue: 'Leaves',
+              menuValue: this.translate.instant('MENU.LEAVES'),
               route: routes.staffLeave,
               base: routes.staffLeave,
             },
             {
-              menuValue: 'Holidays',
+              menuValue: this.translate.instant('MENU.HOLIDAYS'),
               route: routes.staffHoliday,
               base: routes.staffHoliday,
             },
             {
-              menuValue: 'Attendance',
+              menuValue: this.translate.instant('MENU.ATTENDANCE'),
               route: routes.staffAttendance,
               base: routes.staffAttendance,
             },
           ],
         },
         {
-          menuValue: 'Appointments',
+          menuValue: this.translate.instant('MENU.APPOINTMENTS'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'appointments',
           img: 'assets/img/icons/menu-icon-04.svg',
           subMenus: [
             {
-              menuValue: 'Appointment List',
+              menuValue: this.translate.instant('MENU.APPOINTMENT_LIST'),
               route: routes.appointmentList,
               base: routes.appointmentList,
             },
             {
-              menuValue: 'Book Appointment',
+              menuValue: this.translate.instant('MENU.BOOK_APPOINTMENT'),
               route: routes.addAppointment,
               base: routes.addAppointment,
             },
             {
-              menuValue: 'Edit Appointment',
+              menuValue: this.translate.instant('MENU.EDIT_APPOINTMENT'),
               route: routes.editAppointment,
               base: routes.editAppointment,
             },
           ],
         },
         {
-          menuValue: 'Doctor Schedule',
+          menuValue: this.translate.instant('MENU.DOCTOR_SCHEDULE'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'doctor-schedule',
           img: 'assets/img/icons/menu-icon-05.svg',
           subMenus: [
             {
-              menuValue: 'Schedule List',
+              menuValue: this.translate.instant('MENU.SCHEDULE_LIST'),
               route: routes.schedule,
               base: routes.schedule,
             },
             {
-              menuValue: 'Book Appointment',
+              menuValue: this.translate.instant('MENU.BOOK_APPOINTMENT'),
               route: routes.addSchedule,
               base: routes.addSchedule,
             },
             {
-              menuValue: 'Edit Appointment',
+              menuValue: this.translate.instant('MENU.EDIT_APPOINTMENT'),
               route: routes.editSchedule,
               base: routes.editSchedule,
             },
           ],
         },
         {
-          menuValue: 'Departments',
+          menuValue: this.translate.instant('MENU.DEPARTMENTS'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'departments',
           img: 'assets/img/icons/menu-icon-06.svg',
           subMenus: [
             {
-              menuValue: 'Department List',
+              menuValue: this.translate.instant('MENU.DEPARTMENT_LIST'),
               route: routes.departmentList,
               base: routes.departmentList,
             },
             {
-              menuValue: 'Add Department',
+              menuValue: this.translate.instant('MENU.ADD_DEPARTMENT'),
               route: routes.addDepartment,
               base: routes.addDepartment,
             },
             {
-              menuValue: 'Edit Department',
+              menuValue: this.translate.instant('MENU.EDIT_DEPARTMENT'),
               route: routes.editDepartment,
               base: routes.editDepartment,
             },
           ],
         },
         {
-          menuValue: 'Accounts',
+          menuValue: this.translate.instant('MENU.ACCOUNTS'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'accounts',
           img: 'assets/img/icons/menu-icon-07.svg',
           subMenus: [
             {
-              menuValue: 'Invoices',
+              menuValue: this.translate.instant('MENU.INVOICES'),
               route: routes.invoices,
               base: routes.invoices,
             },
             {
-              menuValue: 'Payments',
+              menuValue: this.translate.instant('MENU.PAYMENTS'),
               route: routes.payments,
               base: routes.payments,
             },
             {
-              menuValue: 'Expenses',
+              menuValue: this.translate.instant('MENU.EXPENSE'),
               route: routes.expenses,
               base: routes.expenses,
             },
             {
-              menuValue: 'Taxes',
+              menuValue: this.translate.instant('MENU.TAXES'),
               route: routes.taxes,
               base: routes.taxes,
             },
             {
-              menuValue: 'Provident Fund',
+              menuValue: this.translate.instant('MENU.PROVIDENT_FOUND'),
               route: routes.providentFund,
               base: routes.providentFund,
             },
           ],
         },
         {
-          menuValue: 'Payroll',
+          menuValue: this.translate.instant('MENU.PAYROLL'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'payroll',
           img: 'assets/img/icons/menu-icon-09.svg',
           subMenus: [
             {
-              menuValue: 'Employee Salary',
+              menuValue: this.translate.instant('MENU.EMPLOYEE_SALARY'),
               route: routes.salary,
               base: routes.salary,
             },
             {
-              menuValue: 'Payslip',
+              menuValue: this.translate.instant('MENU.PAYSLIP'),
               route: routes.salaryView,
               base: routes.salaryView,
             },
           ],
         },
         {
-          menuValue: 'Chat',
+          menuValue: this.translate.instant('MENU.CHAT'),
           route: routes.chat,
           hasSubRoute: false,
           showSubRoute: false,
@@ -456,48 +462,48 @@ export class DataService {
           subMenus: [],
         },
         {
-          menuValue: 'Call',
+          menuValue: this.translate.instant('MENU.CALL'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'calls',
           img: 'assets/img/icons/menu-icon-11.svg',
           subMenus: [
             {
-              menuValue: 'Voice Call',
+              menuValue: this.translate.instant('MENU.VOICE_CALL'),
               route: routes.voiceCall,
               base: routes.voiceCall,
             },
             {
-              menuValue: 'Video Call',
+              menuValue: this.translate.instant('MENU.VIDEO_CALL'),
               route: routes.videoCall,
               base: routes.videoCall,
             },
             {
-              menuValue: 'Incoming Call',
+              menuValue: this.translate.instant('MENU.INCOMING_CALL'),
               route: routes.incomingCall,
               base: routes.incomingCall,
             },
           ],
         },
         {
-          menuValue: 'Email',
+          menuValue: this.translate.instant('MENU.EMAIL'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'email',
           img: 'assets/img/icons/menu-icon-12.svg',
           subMenus: [
             {
-              menuValue: 'Compose Mail',
+              menuValue: this.translate.instant('MENU.COMPOSE_MAIL'),
               route: routes.compose,
               base: routes.compose,
             },
             {
-              menuValue: 'Inbox',
+              menuValue: this.translate.instant('MENU.INBOX'),
               route: routes.inbox,
               base: routes.inbox,
             },
             {
-              menuValue: 'Mail View',
+              menuValue: this.translate.instant('MENU.MAIL_VIEW'),
               route: routes.mailView,
               base: routes.mailView,
             },
@@ -516,24 +522,24 @@ export class DataService {
               base: routes.blog,
             },
             {
-              menuValue: 'Blog View',
+              menuValue: this.translate.instant('MENU.BLOG_VIEW'),
               route: routes.blogDetails,
               base: routes.blogDetails,
             },
             {
-              menuValue: 'Add Blog',
+              menuValue: this.translate.instant('MENU.ADD_BLOG'),
               route: routes.addBlog,
               base: routes.addBlog,
             },
             {
-              menuValue: 'Edit Blog',
+              menuValue: this.translate.instant('MENU.EDIT_BLOG'),
               route: routes.editBlog,
               base: routes.editBlog,
             },
           ],
         },
         {
-          menuValue: 'Assets',
+          menuValue: this.translate.instant('MENU.ASSETS'),
           route: routes.assetsList,
           hasSubRoute: false,
           showSubRoute: false,
@@ -543,7 +549,7 @@ export class DataService {
           subMenus: [],
         },
         {
-          menuValue: 'activities',
+          menuValue: this.translate.instant('MENU.ACTIVITIES'),
           route: routes.activities,
           hasSubRoute: false,
           showSubRoute: false,
@@ -552,65 +558,65 @@ export class DataService {
           subMenus: [],
         },
         {
-          menuValue: 'Reports',
+          menuValue: this.translate.instant('MENU.REPORTS'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'reports',
           img: 'assets/img/icons/menu-icon-02.svg',
           subMenus: [
             {
-              menuValue: 'Expense Report',
+              menuValue: this.translate.instant('MENU.EXPENSE_REPORT'),
               route: routes.expenseReports,
               base: routes.expenseReports,
             },
             {
-              menuValue: 'Invoice Report',
+              menuValue: this.translate.instant('MENU.INVOICE_REPORT'),
               route: routes.invoiceReports,
               base: routes.invoiceReports,
             },
           ],
         },
         {
-          menuValue: 'Invoice',
+          menuValue: this.translate.instant('MENU.INVOICE'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'invoice',
           img: 'assets/img/icons/menu-icon-15.svg',
           subMenus: [
             {
-              menuValue: 'Invoices List',
+              menuValue: this.translate.instant('MENU.INVOICES_LIST'),
               route: routes.allInvoice,
               base: routes.allInvoice,
             },
             {
-              menuValue: 'Invoice Grid',
+              menuValue: this.translate.instant('MENU.INVOICE_GRID'),
               route: routes.invoicesGrid,
               base: routes.invoicesGrid,
             },
             {
-              menuValue: 'Add Invoices',
+              menuValue: this.translate.instant('MENU.ADD_INVOICES'),
               route: routes.addInvoice,
               base: routes.addInvoice,
             },
             {
-              menuValue: 'Edit Invoices',
+              menuValue:  this.translate.instant('MENU.EDIT_INVOICES'),
               route: routes.editInvoices,
               base: routes.editInvoices,
             },
             {
-              menuValue: 'Invoices Details',
+              menuValue:  this.translate.instant('MENU.INVOICES_DETAILS'),
               route: routes.viewInvoice,
               base: routes.viewInvoice,
             },
             {
-              menuValue: 'Invoices Settings',
+              menuValue:  this.translate.instant('MENU.INVOICES_SETTINGS'),
               route: routes.invoicesSettings,
               base: routes.invoicesSettings,
             },
           ],
         },
         {
-          menuValue: 'Settings',
+          menuValue:  this.translate.instant('MENU.SETTINGS'),
           route: routes.settings,
           hasSubRoute: false,
           showSubRoute: false,
@@ -626,7 +632,7 @@ export class DataService {
       separateRoute: false,
       menu: [
         {
-          menuValue: 'Components',
+          menuValue:  this.translate.instant('MENU.COMPONENTS'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'components',
@@ -638,19 +644,19 @@ export class DataService {
               base: routes.uikit,
             },
             {
-              menuValue: 'Typography',
+              menuValue:  this.translate.instant('MENU.TYPOGRAPHY'),
               route: routes.typography,
               base: routes.typography,
             },
             {
-              menuValue: 'Tabs',
+              menuValue:  this.translate.instant('MENU.TABS'),
               route: routes.tabs,
               base: routes.tabs,
             },
           ],
         },
         {
-          menuValue: 'Forms',
+          menuValue:  this.translate.instant('MENU.FORMS'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'forms',
@@ -658,29 +664,29 @@ export class DataService {
           faIcon: true,
           subMenus: [
             {
-              menuValue: 'Basic Inputs',
+              menuValue:  this.translate.instant('MENU.BASIC_INPUTS'),
               route: routes.formBasicInputs,
               base: routes.formBasicInputs,
             },
             {
-              menuValue: 'Input Groups',
+              menuValue:  this.translate.instant('MENU.INPUT_GROUPS'),
               route: routes.formInputGroups,
               base: routes.formInputGroups,
             },
             {
-              menuValue: 'Horizontal Form',
+              menuValue:  this.translate.instant('MENU.HORIZONTAL_FORM'),
               route: routes.formHorizontal,
               base: routes.formHorizontal,
             },
             {
-              menuValue: 'Vertical Form',
+              menuValue: this.translate.instant('MENU.VERTICAL_FORM'),
               route: routes.formVertical,
               base: routes.formVertical,
             },
           ],
         },
         {
-          menuValue: 'Tables',
+          menuValue:  this.translate.instant('MENU.TABLES'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'tables',
@@ -688,19 +694,19 @@ export class DataService {
           faIcon: true,
           subMenus: [
             {
-              menuValue: 'Basic Tables',
+              menuValue:  this.translate.instant('MENU.BASIC_TABLES'),
               route: routes.tablesBasic,
               base: routes.tablesBasic,
             },
             {
-              menuValue: 'Data Table',
+              menuValue:  this.translate.instant('MENU.DATA_TABLES'),
               route: routes.tablesDataTables,
               base: routes.tablesDataTables,
             },
           ],
         },
         {
-          menuValue: 'Calendar',
+          menuValue:  this.translate.instant('MENU.CALENDAR'),
           route: routes.calendar,
           hasSubRoute: false,
           showSubRoute: false,
@@ -717,7 +723,7 @@ export class DataService {
       separateRoute: false,
       menu: [
         {
-          menuValue: 'Pages',
+          menuValue:  this.translate.instant('MENU.PAGES'),
           hasSubRoute: true,
           showSubRoute: false,
           base: 'gallery',
@@ -726,37 +732,37 @@ export class DataService {
           faIcon: true,
           subMenus: [
             {
-              menuValue: 'Login',
+              menuValue:  this.translate.instant('MENU.LOGIN'),
               route: routes.login,
               base: routes.login,
             },
             {
-              menuValue: 'Register',
+              menuValue:  this.translate.instant('MENU.REGISTER'),
               route: routes.register,
               base: routes.register,
             },
             {
-              menuValue: 'Forgot Password',
+              menuValue:  this.translate.instant('MENU.FORGOT_PASSWORD'),
               route: routes.forgotPassword,
               base: routes.forgotPassword,
             },
             {
-              menuValue: 'Change Password',
+              menuValue:  this.translate.instant('MENU.CHANGE_PASSWORD'),
               route: routes.changePassword,
               base: routes.changePassword,
             },
             {
-              menuValue: 'Lock Screen',
+              menuValue:  this.translate.instant('MENU.LOCK_SCREEN'),
               route: routes.lockScreen,
               base: routes.lockScreen,
             },
             {
-              menuValue: 'Profile',
+              menuValue:  this.translate.instant('MENU.PROFILE'),
               route: routes.profile,
               base: routes.profile,
             },
             {
-              menuValue: 'Gallery',
+              menuValue:  this.translate.instant('MENU.GALLERY'),
               route: routes.gallery,
               base: routes.gallery,
             },

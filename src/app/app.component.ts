@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core'; 
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-root',
@@ -10,6 +12,7 @@ export class AppComponent {
   title = 'preclinic-angular';
 
   constructor(private translate: TranslateService) {
+    TranslateModule
     // Establece el idioma por defecto
     translate.setDefaultLang('es');
   }

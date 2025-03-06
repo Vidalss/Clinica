@@ -12,6 +12,8 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
 import { DataService } from './data/data.service';
 import { MatSortModule } from '@angular/material/sort';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 
 
@@ -26,6 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         materialModule,
         NgxEditorModule,
         FullCalendarModule,
+        TranslateModule,
         
         MatSortModule,
         FormsModule,
@@ -57,6 +60,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         FormsModule,
         ReactiveFormsModule], providers: [
         DataService,
+        TranslateModule,
         provideHttpClient(withInterceptorsFromDi()),
     ] })
 export class SharedModule { }
