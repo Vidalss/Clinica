@@ -6,6 +6,7 @@ import { PopoverModule } from 'ngx-bootstrap/popover';
 import { ModalModule } from 'ngx-bootstrap/modal';
 // import { LightboxModule } from 'ngx-lightbox';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     ModalModule.forRoot(),
     // LightboxModule,
     BsDatepickerModule.forRoot(),
+    TranslateModule
   ],
   exports: [
     NgScrollbarModule,

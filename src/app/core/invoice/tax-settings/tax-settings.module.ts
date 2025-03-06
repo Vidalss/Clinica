@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { TaxSettingsRoutingModule } from './tax-settings-routing.module';
 import { TaxSettingsComponent } from './tax-settings.component';
@@ -11,7 +12,8 @@ import { TaxSettingsComponent } from './tax-settings.component';
   ],
   imports: [
     CommonModule,
-    TaxSettingsRoutingModule
+    TaxSettingsRoutingModule,
+    TranslateModule
   ]
 })
 export class TaxSettingsModule { }

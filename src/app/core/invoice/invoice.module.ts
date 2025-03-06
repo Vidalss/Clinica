@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { InvoiceRoutingModule } from './invoice-routing.module';
 import { InvoiceComponent } from './invoice.component';
@@ -11,7 +12,8 @@ import { InvoiceComponent } from './invoice.component';
   ],
   imports: [
     CommonModule,
-    InvoiceRoutingModule
+    InvoiceRoutingModule,
+    TranslateModule
   ]
 })
 export class InvoiceModule { }

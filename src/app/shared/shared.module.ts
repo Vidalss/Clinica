@@ -16,7 +16,6 @@ import { TranslateModule } from '@ngx-translate/core';
 
 
 
-
 @NgModule({ declarations: [],
     exports: [
         CommonModule,
@@ -57,6 +56,7 @@ import { TranslateModule } from '@ngx-translate/core';
         NgxEditorModule,
         FullCalendarModule,
         MatSortModule,
+        TranslateModule,
         FormsModule,
         ReactiveFormsModule], providers: [
         DataService,
