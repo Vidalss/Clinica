@@ -6,9 +6,9 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="routes.adminDashboard">{{ 'DASHBOARD.DASHBOARD' | translate }}</a></li>
+                        <li class="breadcrumb-item"><a [routerLink]="routes.adminDashboard">{{ 'DASHBOARD.TITLE' | translate }}</a></li>
                         <li class="breadcrumb-item"><i class="feather icon-chevron-right"></i></li>
-                        <li class="breadcrumb-item active">{{ 'DOCTOR_DASHBOARD.DOCTOR_DASHBOARD' | translate }}</li>
+                        <li class="breadcrumb-item active">{{ 'DASHBOARD.DOCTOR_DASHBOARD' | translate }}</li>
                     </ul>
                 </div>
             </div>
@@ -19,8 +19,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="morning-user">
-                        <h2>{{ 'DOCTOR_DASHBOARD.GOOD_MORNING' | translate }}, <span>Dr.Simi</span></h2>
-                        <p>{{ 'DOCTOR_DASHBOARD.WELCOMEE' | translate }}</p>
+                        <h2>{{ 'DASHBOARD.GOOD_MORNING' | translate }} <span>Dr.Simi</span></h2>
+                        <p>{{ 'DASHBOARD.WELCOMEE' | translate }}</p>
                     </div>
                 </div>
                 <div class="col-md-6 position-blk">
@@ -40,7 +40,7 @@
                         </div>
                         <div class="doctor-content dash-count flex-grow-1">
                             <h4><span class="counter-up" [countUp]="30" [options]="{duration: 10}">30</span><span>/85</span><span class="status-green">+60%</span></h4>
-                            <h5>{{ 'DOCTOR_DASHBOARD.APPOINTMENTS' | translate }}</h5>
+                            <h5>{{ 'DASHBOARD.APPOINTMENTS' | translate }}</h5>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="doctor-content dash-count flex-grow-1">
                             <h4><span class="counter-up" [countUp]="20" [options]="{duration: 10}">20</span><span>/125</span><span class="status-pink">-20%</span></h4>
-                            <h5>{{ 'DOCTOR_DASHBOARD.CONSULTATIONS' | translate }}</h5>
+                            <h5>{{ 'DASHBOARD.CONSULTATIONS' | translate }}</h5>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                         </div>
                         <div class="doctor-content dash-count flex-grow-1">
                             <h4><span class="counter-up" [countUp]="12" [options]="{duration: 10}">12</span><span>/30</span><span class="status-green">+40%</span></h4>
-                            <h5>{{ 'DOCTOR_DASHBOARD.OPERATIONS' | translate }}</h5>
+                            <h5>{{ 'DASHBOARD.OPERATIONS' | translate }}</h5>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                         </div>
                         <div class="doctor-content dash-count flex-grow-1">
                             <h4>$<span class="counter-up" [countUp]="530" [options]="{duration: 10}">530</span><span></span><span class="status-green">+50%</span></h4>
-                            <h5>{{ 'DOCTOR_DASHBOARD.EARNINGS' | translate }}</h5>
+                            <h5>{{ 'DASHBOARD.EARNINGS' | translate }}</h5>
                         </div>
                     </div>
                 </div>
@@ -84,10 +84,10 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="chart-title patient-visit mb-0">
-                            <h4>{{ 'DOCTOR_DASHBOARD.INCOME' | translate }}</h4>
+                            <h4>{{ 'DASHBOARD.INCOME' | translate }}</h4>
                             <div class="income-value" >
                                 <h3><span>$</span> 20,560</h3>
-                                <p><span class="passive-view"><i class="feather icon-arrow-up-right me-1"></i>40%</span> vs {{ 'DOCTOR_DASHBOARD.LAST_MONTH' | translate }}</p>
+                                <p><span class="passive-view"><i class="feather icon-arrow-up-right me-1"></i>40%</span> vs {{ 'DASHBOARD.LAST_MONTH' | translate }}</p>
                             </div>
                             <div class="form-group mb-0">
                                  <mat-select [(ngModel)]="selectedValue" class="form-control select"  placeholder="2022">
@@ -131,13 +131,13 @@
                 <div class="struct-point">
                     <div class="card patient-structure">
                         <div class="card-body">
-                            <h5>{{ 'DOCTOR_DASHBOARD.NEW_PATIENTS' | translate }}</h5>
+                            <h5>{{ 'DASHBOARD.NEW_PATIENTS' | translate }}</h5>
                             <h3>56<span class="status-green"><img src="assets/img/icons/sort-icon-01.svg" alt="" class="me-1">60%</span></h3>
                         </div>
                     </div>
                     <div class="card patient-structure">
                         <div class="card-body">
-                            <h5>{{ 'DOCTOR_DASHBOARD.OLD_PATIENTS' | translate }}</h5>
+                            <h5>{{ 'DASHBOARD.OLD_PATIENTS' | translate }}</h5>
                             <h3>35<span class="status-pink"><img src="assets/img/icons/sort-icon-02.svg" alt="" class="me-1">-20%</span></h3>
                         </div>
                     </div>
@@ -149,11 +149,11 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="chart-title patient-visit">
-                            <h4>{{ 'DOCTOR_DASHBOARD.ACTIVITY_CHART' | translate }}</h4>
+                            <h4>{{ 'DASHBOARD.ACTIVITY_CHART' | translate }}</h4>
                             <div >
                                 <ul class="nav chat-user-total">
-                                    <li><i class="fa fa-circle low-users" aria-hidden="true"></i>{{ 'DOCTOR_DASHBOARD.LOW' | translate }}</li>
-                                    <li><i class="fa fa-circle current-users" aria-hidden="true"></i> {{ 'DOCTOR_DASHBOARD.HIGH' | translate }}</li>
+                                    <li><i class="fa fa-circle low-users" aria-hidden="true"></i>{{ 'DASHBOARD.LOW' | translate }}</li>
+                                    <li><i class="fa fa-circle current-users" aria-hidden="true"></i> {{ 'DASHBOARD.HIGH' | translate }}</li>
                                 </ul>
                             </div>
                             <div class="form-group mb-0">
@@ -186,7 +186,7 @@
                     <div class="col-12 col-md-12  col-xl-9">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title d-inline-block">{{ 'DOCTOR_DASHBOARD.RECENT_APPOINTMENTS' | translate }}</h4> <a [routerLink]="routes.appointmentList" class="patient-views float-end">{{ 'DOCTOR_DASHBOARD.SHOW_ALL' | translate }}</a>
+                                <h4 class="card-title d-inline-block">{{ 'DASHBOARD.RECENT_APPOINTMENTS' | translate }}</h4> <a [routerLink]="routes.appointmentList" class="patient-views float-end">{{ 'DASHBOARD.SHOW_ALL' | translate }}</a>
                             </div>
                             <div class="card-body p-0 table-dash">
                                 <div class="table-responsive">
@@ -198,8 +198,8 @@
                                                     <h2>Dr.Jenny Smith</h2>
                                                 </td>
                                                 <td class="appoint-time text-center">
-                                                    <h6>{{ 'DOCTOR_DASHBOARD.TODAY' | translate }} 5:40 PM</h6>
-                                                    <span>{{ 'DOCTOR_DASHBOARD.TYPHOID_FEVER' | translate }}</span>
+                                                    <h6>{{ 'DASHBOARD.TODAY' | translate }} 5:40 PM</h6>
+                                                    <span>{{ 'DASHBOARD.TYPHOID_FEVER' | translate }}</span>
                                                 </td>
                                                 <td>
                                                     <button class="check-point status-green me-1"><i class="feather icon-check"></i></button>
@@ -212,8 +212,8 @@
                                                     <h2>Dr.Angelica Ramos</h2>
                                                 </td>
                                                 <td class="appoint-time text-center">
-                                                    <h6>{{ 'DOCTOR_DASHBOARD.TODAY' | translate }} 5:40 PM</h6>
-                                                    <span>{{ 'DOCTOR_DASHBOARD.TYPHOID_FEVER' | translate }}</span>
+                                                    <h6>{{ 'DASHBOARD.TODAY' | translate }} 5:40 PM</h6>
+                                                    <span>{{ 'DASHBOARD.TYPHOID_FEVER' | translate }}</span>
                                                 </td>
                                                 <td>
                                                     <button class="check-point status-green me-1"><i class="feather icon-check"></i></button>
@@ -226,8 +226,8 @@
                                                     <h2>Dr.Martin Doe</h2>
                                                 </td>
                                                 <td class="appoint-time text-center">
-                                                    <h6>{{ 'DOCTOR_DASHBOARD.TODAY' | translate }} 5:40 PM</h6>
-                                                    <span>{{ 'DOCTOR_DASHBOARD.TYPHOID_FEVER' | translate }}</span>
+                                                    <h6>{{ 'DASHBOARD.TODAY' | translate }} 5:40 PM</h6>
+                                                    <span>{{ 'DASHBOARD.TYPHOID_FEVER' | translate }}</span>
                                                 </td>
                                                 <td>
                                                     <button class="check-point status-green me-1"><i class="feather icon-check"></i></button>
@@ -250,7 +250,7 @@
                                 </div>
                             </div>
                             <div class="main-limit">
-                                <p>{{ 'DOCTOR_DASHBOARD.NEXT_APPOINTMENT_IN' | translate }}</p>
+                                <p>{{ 'DASHBOARD.NEXT_APPOINTMENT_IN' | translate }}</p>
                                 <h4>02h:12m</h4>
                             </div>
                         </div>
@@ -260,7 +260,7 @@
             <div class="col-12 col-lg-12 col-xl-5 d-flex">
                 <div class="card flex-fill comman-shadow">
                     <div class="card-header">
-                        <h4 class="card-title d-inline-block">{{ 'DOCTOR_DASHBOARD.RECENT_APPOINTMENTS' | translate }}</h4> <a [routerLink]="routes.appointmentList" class="patient-views float-end">{{ 'DOCTOR_DASHBOARD.SHOW_ALL' | translate }}</a>
+                        <h4 class="card-title d-inline-block">{{ 'DASHBOARD.RECENT_APPOINTMENTS' | translate }}</h4> <a [routerLink]="routes.appointmentList" class="patient-views float-end">{{ 'DASHBOARD.SHOW_ALL' | translate }}</a>
                     </div>
                     <div class="card-body">
                         <div class="teaching-card">
@@ -278,18 +278,18 @@
                                             <li class="stick-line"><i class="fas fa-circle me-2"></i>08:00 <span>Andrea Lalema</span></li>
                                             <li class=" dropdown ongoing-blk ">
                                                 <a href="javascript:void(0);" class="dropdown-toggle  active-doctor" data-bs-toggle="dropdown">
-                                                    <i class="fas fa-circle me-2 active-circles"></i>08:00 <span>Andrea Lalema</span><span class="ongoing-drapt">{{ 'DOCTOR_DASHBOARD.ONGOING' | translate }} <i class="feather icon-chevron-down ms-2"></i></span>
+                                                    <i class="fas fa-circle me-2 active-circles"></i>08:00 <span>Andrea Lalema</span><span class="ongoing-drapt">{{ 'DASHBOARD.ONGOING' | translate }} <i class="feather icon-chevron-down ms-2"></i></span>
                                                 </a>
                                                 <ul class="doctor-sub-list dropdown-menu">
-                                                    <li class="patient-new-list dropdown-item">{{ 'DOCTOR_DASHBOARD.PATIENT' | translate }}<span>Marie kennedy</span><a href="javascript:;" class="new-dot status-green"><i class="fas fa-circle me-1 fa-2xs"></i>{{ 'DOCTOR_DASHBOARD.NEW' | translate }}</a></li>
-                                                    <li class="dropdown-item">{{ 'DOCTOR_DASHBOARD.TIME' | translate }}<span>8:30 - 9:00 (30min)</span></li>
+                                                    <li class="patient-new-list dropdown-item">{{ 'DASHBOARD.PATIENT' | translate }}<span>Marie kennedy</span><a href="javascript:;" class="new-dot status-green"><i class="fas fa-circle me-1 fa-2xs"></i>{{ 'DASHBOARD.NEW' | translate }}</a></li>
+                                                    <li class="dropdown-item">{{ 'DASHBOARD.TIME' | translate }}<span>8:30 - 9:00 (30min)</span></li>
                                                     <li class="schedule-blk mb-0 pt-2 dropdown-item">
                                                         <ul class="nav schedule-time">
                                                             <li><a href="javascript:;"><img src="assets/img/icons/trash.svg" alt=""></a></li>
                                                             <li><a href="javascript:;"><img src="assets/img/icons/profile.svg" alt=""></a></li>
                                                             <li><a href="javascript:;"><img src="assets/img/icons/edit.svg" alt=""></a></li>
                                                         </ul>
-                                                        <a class="btn btn-primary appoint-start">{{ 'DOCTOR_DASHBOARD.START_APPOINTMENT' | translate }}</a>
+                                                        <a class="btn btn-primary appoint-start">{{ 'DASHBOARD.START_APPOINTMENT' | translate }}</a>
                                                     </li>
                                                 </ul>
                                             </li>

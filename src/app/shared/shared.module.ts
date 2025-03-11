@@ -27,7 +27,6 @@ import { TranslateModule } from '@ngx-translate/core';
         materialModule,
         NgxEditorModule,
         FullCalendarModule,
-        TranslateModule,
         
         MatSortModule,
         FormsModule,

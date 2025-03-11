@@ -6,6 +6,7 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule } from "@angular/material/form-field";
 import { TranslateModule } from "@ngx-translate/core";
+ 
 
 @NgModule({
 declarations:[],
@@ -25,7 +26,6 @@ exports: [
     MatCardModule,
     MatNativeDateModule,
     MatSelectModule,
-    TranslateModule,
     MatFormFieldModule
 ]
 })

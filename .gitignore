@@ -40,6 +40,3 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
-
-#Ignorar cambios de la carpeta i18n
-src/assets/i18n/*.json
