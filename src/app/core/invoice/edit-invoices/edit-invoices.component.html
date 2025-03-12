@@ -7,7 +7,7 @@
                     <ul class="breadcrumb invoices-breadcrumb">
                         <li class="breadcrumb-item invoices-breadcrumb-item">
                             <a [routerLink]="routes.invoices">
-                                <i class="fa fa-chevron-left"></i> {{ 'EDIT.BACK_TO_INVOICE_LIST' | translate }}
+                                <i class="fa fa-chevron-left"></i> {{ 'INVOICE.BACK_TO_INVOICE_LIST' | translate }}
                             </a>
                         </li>
                     </ul>
@@ -15,13 +15,13 @@
                 <div class="col-auto">
                     <div class="invoices-create-btn">
                         <a class="invoices-preview-link" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#invoices_preview">
-                            <i class="fa fa-eye"></i> {{ 'EDIT.PREVIEW' | translate }}
+                            <i class="fa fa-eye"></i> {{ 'INVOICE.PREVIEW' | translate }}
                         </a>
                         <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_invoices_details" class="btn delete-invoice-btn">
-                            {{ 'EDIT.DELETE_INVOICE' | translate }}
+                            {{ 'INVOICE.DELETE_INVOICE' | translate }}
                         </a>
                         <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#save_invocies_details" class="btn save-invoice-btn">
-                            {{ 'EDIT.SAVE_DRAFT' | translate }}
+                            {{ 'INVOICE.SAVE_DRAFT' | translate }}
                         </a>
                     </div>
                 </div>
@@ -38,42 +38,42 @@
                                 <div class="row">
                                     <div class="col-xl-4 col-md-6 col-sm-12 col-12">
                                         <div class="form-group">
-                                            <label for="Customer">{{ 'EDIT.CUSTOMER_NAME' | translate }}</label>
+                                            <label for="Customer">{{ 'INVOICE.CUSTOMER_NAME' | translate }}</label>
                                             <div class="multipleSelection">
                                                 <div class="selectBox" (click)="openCheckBoxes('Customer')" (keyup.enter)="openCheckBoxes('Customer')" tabindex="0">
-                                                    <p class="mb-0">{{ 'EDIT.SELECT_CUSTOMER' | translate }}</p>
+                                                    <p class="mb-0">{{ 'INVOICE.SELECT_CUSTOMER' | translate }}</p>
                                                     <span class="down-icon"><i class="fa fa-chevron-down"></i></span>
                                                 </div>
                                                 <div id="checkBoxes-one" [ngClass]="checkboxes[0] === 'Customer' ? 'd-block' : 'd-none'">
-                                                    <p class="checkbox-title">{{ 'EDIT.ENTER_CUSTOMER_NAME' | translate }}</p>
+                                                    <p class="checkbox-title">{{ 'INVOICE.ENTER_CUSTOMER_NAME' | translate }}</p>
                                                     <div class="form-custom">
-                                                        <input type="text" class="form-control bg-grey" placeholder="{{ 'EDIT.ENTER_CUSTOMER_NAME' | translate }}">
+                                                        <input type="text" class="form-control bg-grey" placeholder="{{ 'INVOICE.ENTER_CUSTOMER_NAME' | translate }}">
                                                     </div>
                                                     <div class="selectBox-cont">
                                                         <!-- Opciones de clientes -->
                                                     </div>
-                                                    <button type="submit" class="btn w-100 btn-primary">{{ 'EDIT.APPLY' | translate }}</button>
-                                                    <button type="reset" class="btn w-100 btn-grey">{{ 'EDIT.RESET' | translate }}</button>
+                                                    <button type="submit" class="btn w-100 btn-primary">{{ 'INVOICE.APPLY' | translate }}</button>
+                                                    <button type="reset" class="btn w-100 btn-grey">{{ 'INVOICE.RESET' | translate }}</button>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="po">{{ 'EDIT.PO_NUMBER' | translate }}</label>
-                                            <input class="form-control" type="text" placeholder="{{ 'EDIT.ENTER_REFERENCE_NUMBER' | translate }}">
+                                            <label for="po">{{ 'INVOICE.PO_NUMBER' | translate }}</label>
+                                            <input class="form-control" type="text" placeholder="{{ 'INVOICE.ENTER_REFERENCE_NUMBER' | translate }}">
                                         </div>
                                     </div>
                                     <div class="col-xl-5 col-md-6 col-sm-12 col-12">
-                                        <h4 class="invoice-details-title">{{ 'EDIT.INVOICE_DETAILS' | translate }}</h4>
+                                        <h4 class="invoice-details-title">{{ 'INVOICE.INVOICE_DETAILS' | translate }}</h4>
                                         <div class="invoice-details-box">
                                             <div class="invoice-inner-head">
-                                                <span>{{ 'EDIT.INVOICE_NO' | translate }} <a [routerLink]="routes.viewInvoice">IN093439#&#64;09</a></span>
+                                                <span>{{ 'INVOICE.INVOICE_NO' | translate }} <a [routerLink]="routes.viewInvoice">IN093439#&#64;09</a></span>
                                             </div>
                                             <div class="invoice-inner-footer">
                                                 <div class="row align-items-center">
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="invoice-inner-date">
                                                             <span>
-                                                                {{ 'EDIT.DATE' | translate }}
+                                                                {{ 'INVOICE.DATE' | translate }}
                                                                 <input class="form-control datetimepicker" type="text" [formControl]="date" matInput [matDatepicker]="picker1">
                                                                 <mat-datepicker #picker1></mat-datepicker>
                                                                 <mat-datepicker-toggle matIconSuffix [for]="picker1" class="toggle-date-picker"></mat-datepicker-toggle>
@@ -83,8 +83,8 @@
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="invoice-inner-date invoice-inner-datepic">
                                                             <span>
-                                                                {{ 'EDIT.DUE_DATE' | translate }}
-                                                                <input class="form-control datetimepicker" type="text" placeholder="{{ 'EDIT.SELECT' | translate }}" matInput [matDatepicker]="picker2">
+                                                                {{ 'INVOICE.DUE_DATE' | translate }}
+                                                                <input class="form-control datetimepicker" type="text" placeholder="{{ 'INVOICE.SELECT' | translate }}" matInput [matDatepicker]="picker2">
                                                                 <mat-datepicker #picker2></mat-datepicker>
                                                                 <mat-datepicker-toggle matIconSuffix [for]="picker2" class="toggle-date-picker"></mat-datepicker-toggle>
                                                             </span>
@@ -99,18 +99,18 @@
                                             <div class="form-group mb-0">
                                                 <label class="custom_check w-100">
                                                     <input type="checkbox" id="enableTax" name="invoice">
-                                                    <span class="checkmark"></span> {{ 'EDIT.ENABLE_TAX' | translate }}
+                                                    <span class="checkmark"></span> {{ 'INVOICE.ENABLE_TAX' | translate }}
                                                 </label>
                                                 <label class="custom_check w-100">
                                                     <input type="checkbox" id="chkYes" name="invoice" (click)="recurringInvoiceFunc()">
-                                                    <span class="checkmark"></span> {{ 'EDIT.RECURRING_INVOICE' | translate }}
+                                                    <span class="checkmark"></span> {{ 'INVOICE.RECURRING_INVOICE' | translate }}
                                                 </label>
                                             </div>
                                             <div id="show-invoices" [ngClass]="recurringInvoice ? 'd-block':'d-none'">
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select" placeholder="{{ 'EDIT.BY_MONTH' | translate }}">
+                                                            <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select" placeholder="{{ 'INVOICE.BY_MONTH' | translate }}">
                                                                 <mat-option *ngFor="let data of selecedList" [value]="data.value">
                                                                     {{ data.value }}
                                                                 </mat-option>
@@ -119,7 +119,7 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <input class="form-control" type="text" placeholder="{{ 'EDIT.ENTER_MONTHS' | translate }}">
+                                                            <input class="form-control" type="text" placeholder="{{ 'INVOICE.ENTER_MONTHS' | translate }}">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -135,5 +135,4 @@
             </div>
         </div>
     </div>
-  </div>
-  
+</div>
