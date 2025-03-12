@@ -5,9 +5,9 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="routes.blog">{{ 'EDIT_BLOG.BLOG_TITLE' | translate }}</a></li>
+                        <li class="breadcrumb-item"><a [routerLink]="routes.blog">{{ 'BLOG.BLOG_TITLE' | translate }}</a></li>
                         <li class="breadcrumb-item"><i class="feather icon-chevron-right"></i></li>
-                        <li class="breadcrumb-item active">{{ 'EDIT_BLOG.EDIT_BLOG' | translate }}</li>
+                        <li class="breadcrumb-item active">{{ 'BLOG.EDIT_BLOG' | translate }}</li>
                     </ul>
                 </div>
             </div>
@@ -21,25 +21,25 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-heading">
-                                        <h4>{{ 'EDIT_BLOG.BLOG_DETAILS_HEADING' | translate }}</h4>
+                                        <h4>{{ 'BLOG.BLOG_DETAILS_HEADING' | translate }}</h4>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">  
                                     <div class="form-group local-forms">
-                                        <label for="blogtitle">{{ 'EDIT_BLOG.BLOG_TITLE_LABEL' | translate }} <span class="login-danger">*</span></label>
+                                        <label for="blogtitle">{{ 'BLOG.BLOG_TITLE_LABEL' | translate }} <span class="login-danger">*</span></label>
                                         <input class="form-control" type="text" value="Vaccines Are Close - But Right Now We Need to Hunker Down">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label for="author">{{ 'EDIT_BLOG.AUTHOR_NAME_LABEL' | translate }} <span class="login-danger">*</span></label>
+                                        <label for="author">{{ 'BLOG.AUTHOR_NAME_LABEL' | translate }} <span class="login-danger">*</span></label>
                                         <input class="form-control" type="text" value="Stephen Bruk">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label for="category">{{ 'EDIT_BLOG.BLOG_CATEGORY_LABEL' | translate }} <span class="login-danger">*</span></label>
-                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select" placeholder="{{ 'EDIT_BLOG.BLOG_CATEGORY_LABEL' | translate }}">
+                                        <label for="category">{{ 'BLOG.BLOG_CATEGORY_LABEL' | translate }} <span class="login-danger">*</span></label>
+                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select" placeholder="{{ 'BLOG.BLOG_CATEGORY_LABEL' | translate }}">
                                             <mat-option *ngFor="let data of selectedList1" [value]="data.value">
                                                 {{data.value}}
                                             </mat-option>
@@ -48,8 +48,8 @@
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label for="blog">{{ 'EDIT_BLOG.BLOG_SUB_CATEGORY_LABEL' | translate }} <span class="login-danger">*</span></label>
-                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select" placeholder="{{ 'EDIT_BLOG.BLOG_SUB_CATEGORY_LABEL' | translate }}">
+                                        <label for="blog">{{ 'BLOG.BLOG_SUB_CATEGORY_LABEL' | translate }} <span class="login-danger">*</span></label>
+                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select" placeholder="{{ 'BLOG.BLOG_SUB_CATEGORY_LABEL' | translate }}">
                                             <mat-option *ngFor="let data of selectedList2" [value]="data.value">
                                                 {{data.value}}
                                             </mat-option>
@@ -58,21 +58,21 @@
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label for="Tags">{{ 'EDIT_BLOG.TAGS_LABEL' | translate }} <small>({{ 'EDIT_BLOG.TAGS_PLACEHOLDER' | translate }})</small> <span class="login-danger">*</span></label>
+                                        <label for="Tags">{{ 'BLOG.TAGS_LABEL' | translate }} <small>({{ 'EDIT_BLOG.TAGS_PLACEHOLDER' | translate }})</small> <span class="login-danger">*</span></label>
                                         <input type="text" data-role="tagsinput" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group select-gender">
-                                        <label for="Status" class="gen-label">{{ 'EDIT_BLOG.BLOG_STATUS_LABEL' | translate }} <span class="login-danger">*</span></label>
+                                        <label for="Status" class="gen-label">{{ 'BLOG.BLOG_STATUS_LABEL' | translate }} <span class="login-danger">*</span></label>
                                         <div class="form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" name="gender" class="form-check-input" checked>{{ 'EDIT_BLOG.ACTIVE' | translate }}
+                                                <input type="radio" name="gender" class="form-check-input" checked>{{ 'BLOG.ACTIVE' | translate }}
                                             </label>
                                         </div>
                                         <div class="form-check-inline">
                                             <label class="form-check-label">
-                                                <input type="radio" name="gender" class="form-check-input">{{ 'EDIT_BLOG.INACTIVE' | translate }}
+                                                <input type="radio" name="gender" class="form-check-input">{{ 'BLOG.INACTIVE' | translate }}
                                             </label>
                                         </div>
                                     </div>
@@ -87,10 +87,10 @@
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-12">
                                     <div class="form-group local-top-form">
-                                        <label for="Avatar" class="local-top">{{ 'EDIT_BLOG.AVATAR_LABEL' | translate }} <span class="login-danger">*</span></label>
+                                        <label for="Avatar" class="local-top">{{ 'BLOG.AVATAR_LABEL' | translate }} <span class="login-danger">*</span></label>
                                         <div class="settings-btn upload-files-avator">
                                             <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" class="hide-input">
-                                            <label for="file" class="upload">{{ 'EDIT_BLOG.CHOOSE_FILE' | translate }}</label>
+                                            <label for="file" class="upload">{{ 'BLOG.CHOOSE_FILE' | translate }}</label>
                                         </div>
                                     </div>
                                     <div class="upload-images upload-size" [ngClass]="{'d-none':deleteIcon === false}">
@@ -102,8 +102,8 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="doctor-submit text-end">
-                                        <button type="submit" class="btn btn-primary submit-form me-2">{{ 'EDIT_BLOG.PUBLISH_BLOG' | translate }}</button>
-                                        <button type="submit" class="btn btn-primary cancel-form">{{ 'EDIT_BLOG.CANCEL' | translate }}</button>
+                                        <button type="submit" class="btn btn-primary submit-form me-2">{{ 'BLOG.PUBLISH_BLOG' | translate }}</button>
+                                        <button type="submit" class="btn btn-primary cancel-form">{{ 'BLOG.CANCEL' | translate }}</button>
                                     </div>
                                 </div>
                             </div>

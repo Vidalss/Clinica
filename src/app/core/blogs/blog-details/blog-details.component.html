@@ -5,9 +5,9 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="routes.blog">{{ 'BLOG_DETAILS.BLOG_TITLE' | translate }}</a></li>
+                        <li class="breadcrumb-item"><a [routerLink]="routes.blog">{{ 'BLOG.BLOG_TITLE' | translate }}</a></li>
                         <li class="breadcrumb-item"><i class="feather icon-chevron-right"></i></li>
-                        <li class="breadcrumb-item active">{{ 'BLOG_DETAILS.VIEW_BLOG' | translate }}</li>
+                        <li class="breadcrumb-item active">{{ 'BLOG.VIEW_BLOG' | translate }}</li>
                     </ul>
                 </div>
             </div>
@@ -19,7 +19,7 @@
                     <article class="blog blog-single-post">
                         <h3 class="blog-title">Eye Care Routine To Get Rid Of Under Eye Circles And Puffiness</h3>
                         <div class="blog-info clearfix">
-                            <div class="post-right read-blks"><a href="javascript:void(0);">{{ 'BLOG_DETAILS.READ_MORE_MINUTES' | translate: { minutes: 8 } }}</a></div>
+                            <div class="post-right read-blks"><a href="javascript:void(0);">{{ 'BLOG.READ_MORE_MINUTES' | translate: { minutes: 8 } }}</a></div>
                             <div class="post-left date-blks">
                                 <ul>
                                     <li><a href="javascript:void(0);"><i class="feather icon-calendar"></i> <span>05 Jul 2022</span></a></li>
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                     <div class="widget blog-comments clearfix">
-                        <h3>{{ 'BLOG_DETAILS.COMMENTS' | translate }}</h3>
+                        <h3>{{ 'BLOG.COMMENTS' | translate }}</h3>
                         <ul class="comments-list">
                             <li>
                                 <div class="comment">
@@ -83,10 +83,10 @@
                                         <div class="comment-by">
                                             <div class="week-group">
                                                 <h5 class="blog-author-name">Diana Bailey</h5>
-                                                <span class="week-list">{{ 'BLOG_DETAILS.WEEKS_AGO' | translate: { weeks: 2 } }}</span>
+                                                <span class="week-list">{{ 'BLOG.WEEKS_AGO' | translate: { weeks: 2 } }}</span>
                                             </div>
                                             <span class="float-end">
-                                                <span class="blog-reply"><a href="javascript:void(0);"><i class="fa fa-reply"></i> {{ 'BLOG_DETAILS.REPLY' | translate }}</a></span>
+                                                <span class="blog-reply"><a href="javascript:void(0);"><i class="fa fa-reply"></i> {{ 'BLOG.REPLY' | translate }}</a></span>
                                             </span>
                                         </div>
                                         <p>Integer enim neque volutpat ac tincidunt vitae semper quis. Orci sagittis eu volutpat odio facilisis mauris sit. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. </p>
@@ -101,8 +101,8 @@
             <aside class="col-md-4">
                 <div class="widget post-widget">
                     <div class="relat-head">
-                        <h5>{{ 'BLOG_DETAILS.RELATED_POSTS' | translate }}</h5>
-                        <a href="javascript:;">{{ 'BLOG_DETAILS.SHOW_ALL' | translate }}</a>
+                        <h5>{{ 'BLOG.RELATED_POSTS' | translate }}</h5>
+                        <a href="javascript:;">{{ 'BLOG.SHOW_ALL' | translate }}</a>
                     </div>
                     <ul class="latest-posts">
                         <!-- Elementos de publicaciones relacionadas -->
@@ -110,17 +110,17 @@
                 </div>
                 <div class="widget tags-widget">
                     <div class="relat-head">
-                        <h5>{{ 'BLOG_DETAILS.TAGS' | translate }}</h5>
+                        <h5>{{ 'BLOG.TAGS' | translate }}</h5>
                     </div>
                     <ul class="tags">
-                        <li><a href="javascript:void(0);" class="tag"># {{ 'BLOG_DETAILS.TAG' | translate: { tag: 'Endodontics' } }}</a></li>
+                        <li><a href="javascript:void(0);" class="tag"># {{ 'BLOG.TAG' | translate: { tag: 'Endodontics' } }}</a></li>
                         <!-- Más etiquetas aquí -->
                     </ul>
                 </div>
                 <div class="widget post-widget">
                     <div class="relat-head">
-                        <h5>{{ 'BLOG_DETAILS.MOST_READS' | translate }}</h5>
-                        <a href="javascript:;">{{ 'BLOG_DETAILS.SHOW_ALL' | translate }}</a>
+                        <h5>{{ 'BLOG.MOST_READS' | translate }}</h5>
+                        <a href="javascript:;">{{ 'BLOG.SHOW_ALL' | translate }}</a>
                     </div>
                     <ul class="latest-posts">
                         <!-- Elementos de publicaciones más leídas -->
@@ -128,7 +128,7 @@
                 </div>
                 <div class="widget category-widget">
                     <div class="relat-head mb-0">
-                        <h5>{{ 'BLOG_DETAILS.CATEGORIES' | translate }}</h5>
+                        <h5>{{ 'BLOG.CATEGORIES' | translate }}</h5>
                     </div>
                     <ul class="categories">
                         <!-- Elementos de categorías -->
@@ -137,30 +137,30 @@
             </aside>
             <div class="col-md-12">
                 <div class="widget new-comment clearfix">
-                    <h3>{{ 'BLOG_DETAILS.LEAVE_A_COMMENT' | translate }}</h3>
+                    <h3>{{ 'BLOG.LEAVE_A_COMMENT' | translate }}</h3>
                     <form>
                         <div class="row">
                             <div class="col-12 col-md-6 col-xl-6">  
                                 <div class="form-group local-forms">
-                                    <label for="Name">{{ 'BLOG_DETAILS.NAME' | translate }} <span class="login-danger">*</span></label>
+                                    <label for="Name">{{ 'BLOG.NAME' | translate }} <span class="login-danger">*</span></label>
                                     <input class="form-control" type="text" placeholder="{{ 'BLOG_DETAILS.NAME' | translate }}">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-xl-6">
                                 <div class="form-group local-forms">
-                                    <label for="email">{{ 'BLOG_DETAILS.EMAIL' | translate }}<span class="login-danger">*</span></label>
+                                    <label for="email">{{ 'BLOG.EMAIL' | translate }}<span class="login-danger">*</span></label>
                                     <input class="form-control" type="text" placeholder="{{ 'BLOG_DETAILS.EMAIL' | translate }}">
                                 </div>
                             </div>
                             <div class="col-12 col-sm-12">
                                 <div class="form-group local-forms">
-                                    <label for="Comments">{{ 'BLOG_DETAILS.COMMENTS_PLACEHOLDER' | translate }}<span class="login-danger">*</span></label>
+                                    <label for="Comments">{{ 'BLOG.COMMENTS_PLACEHOLDER' | translate }}<span class="login-danger">*</span></label>
                                     <textarea class="form-control" rows="3" cols="30"></textarea>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="remember-me">
-                                    <label class="custom_check mr-2 mb-0 d-inline-flex remember-me"> {{ 'BLOG_DETAILS.SAVE_INFO' | translate }}
+                                    <label class="custom_check mr-2 mb-0 d-inline-flex remember-me"> {{ 'BLOG.SAVE_INFO' | translate }}
                                     <input type="checkbox" name="radio" checked>
                                     <span class="checkmark"></span>
                                     </label>
@@ -168,7 +168,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="doctor-submit text-end">
-                                    <button type="submit" class="btn btn-primary submit-form me-2">{{ 'BLOG_DETAILS.SUBMIT' | translate }}</button>
+                                    <button type="submit" class="btn btn-primary submit-form me-2">{{ 'BLOG.SUBMIT' | translate }}</button>
                                 </div>
                             </div>
                         </div>

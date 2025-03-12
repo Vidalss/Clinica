@@ -6,12 +6,12 @@
                 <div class="col-sm-12">
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a [routerLink]="routes.assetsList">{{ 'EDIT_ASSET.ASSETS' | translate }}</a>
+                            <a [routerLink]="routes.assetsList">{{ 'ASSETS.ASSETS' | translate }}</a>
                         </li>
                         <li class="breadcrumb-item">
                             <i class="feather icon-chevron-right"></i>
                         </li>
-                        <li class="breadcrumb-item active">{{ 'EDIT_ASSET.EDIT_ASSETS' | translate }}</li>
+                        <li class="breadcrumb-item active">{{ 'ASSETS.EDIT_ASSETS' | translate }}</li>
                     </ul>
                 </div>
             </div>
@@ -25,24 +25,24 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-heading">
-                                        <h4>{{ 'EDIT_ASSET.EDIT_ASSETS' | translate }}</h4>
+                                        <h4>{{ 'ASSETS.EDIT_ASSETS' | translate }}</h4>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.ASSETS_NAME' | translate }} <span class="login-danger">*</span></label>
+                                        <label>{{ 'ASSETS.ASSETS_NAME' | translate }} <span class="login-danger">*</span></label>
                                         <input class="form-control" type="text" value="Williams Bruk">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.ASSET_ID' | translate }} <span class="login-danger">*</span></label>
+                                        <label>{{ 'ASSETS.ASSET_ID' | translate }} <span class="login-danger">*</span></label>
                                         <input class="form-control" type="text" value="#AST-0001">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.PURCHASE_DATE' | translate }} <span class="login-danger">*</span></label>
+                                        <label>{{ 'ASSETS.PURCHASE_DATE' | translate }} <span class="login-danger">*</span></label>
                                         <input class="form-control datetimepicker" type="text" [formControl]="date" matInput [matDatepicker]="picker">
                                         <mat-datepicker #picker></mat-datepicker>
                                         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
@@ -50,56 +50,56 @@
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.PURCHASE_FROM' | translate }} <span class="login-danger">*</span></label>
+                                        <label>{{ 'ASSETS.PURCHASE_FROM' | translate }} <span class="login-danger">*</span></label>
                                         <input class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.MANUFACTURER' | translate }} <span class="login-danger">*</span></label>
+                                        <label>{{ 'ASSETS.MANUFACTURER' | translate }} <span class="login-danger">*</span></label>
                                         <input class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.MODEL' | translate }} <span class="login-danger">*</span></label>
+                                        <label>{{ 'ASSETS.MODEL' | translate }} <span class="login-danger">*</span></label>
                                         <input class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.SERIAL_NUMBER' | translate }} <span class="login-danger">*</span></label>
+                                        <label>{{ 'ASSETS.SERIAL_NUMBER' | translate }} <span class="login-danger">*</span></label>
                                         <input class="form-control" type="text" value="3455">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.SUPPLIER' | translate }} <span class="login-danger">*</span></label>
+                                        <label>{{ 'ASSETS.SUPPLIER' | translate }} <span class="login-danger">*</span></label>
                                         <input class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.CONDITION' | translate }} <span class="login-danger">*</span></label>
+                                        <label>{{ 'ASSETS.CONDITION' | translate }} <span class="login-danger">*</span></label>
                                         <input class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.WARRANTY' | translate }} <span class="login-danger">*</span></label>
+                                        <label>{{ 'ASSETS.WARRANTY' | translate }} <span class="login-danger">*</span></label>
                                         <input class="form-control" type="text" value="4year">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.VALUE' | translate }} <span class="login-danger">*</span></label>
+                                        <label>{{ 'ASSETS.VALUE' | translate }} <span class="login-danger">*</span></label>
                                         <input class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.ASSET_USER' | translate }} <span class="login-danger">*</span></label>
-                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select" placeholder="{{ 'EDIT_ASSET.ASSET_USER' | translate }}">
+                                        <label>{{ 'ASSETS.ASSET_USER' | translate }} <span class="login-danger">*</span></label>
+                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select" placeholder="{{ 'ASSETS.ASSET_USER' | translate }}">
                                             <mat-option *ngFor="let data of selectedList1" [value]="data.value">
                                                 {{ data.value }}
                                             </mat-option>
@@ -108,14 +108,14 @@
                                 </div>
                                 <div class="col-12 col-sm-12">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.DESCRIPTION' | translate }} <span class="login-danger">*</span></label>
+                                        <label>{{ 'ASSETS.DESCRIPTION' | translate }} <span class="login-danger">*</span></label>
                                         <textarea class="form-control" rows="3" cols="30"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-xl-6">
                                     <div class="form-group local-forms">
-                                        <label>{{ 'EDIT_ASSET.STATUS' | translate }} <span class="login-danger">*</span></label>
-                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select" placeholder="{{ 'EDIT_ASSET.STATUS' | translate }}">
+                                        <label>{{ 'ASSETS.STATUS' | translate }} <span class="login-danger">*</span></label>
+                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select" placeholder="{{ 'ASSETS.STATUS' | translate }}">
                                             <mat-option *ngFor="let data of selectedList2" [value]="data.value">
                                                 {{ data.value }}
                                             </mat-option>
@@ -124,8 +124,8 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="doctor-submit text-end">
-                                        <button type="submit" class="btn btn-primary submit-form me-2">{{ 'EDIT_ASSET.SUBMIT' | translate }}</button>
-                                        <button type="submit" class="btn btn-primary cancel-form">{{ 'EDIT_ASSET.CANCEL' | translate }}</button>
+                                        <button type="submit" class="btn btn-primary submit-form me-2">{{ 'ASSETS.SUBMIT' | translate }}</button>
+                                        <button type="submit" class="btn btn-primary cancel-form">{{ 'ASSETS.CANCEL' | translate }}</button>
                                     </div>
                                 </div>
                             </div>
