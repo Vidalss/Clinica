@@ -8,7 +8,7 @@
                     <ul class="breadcrumb invoices-breadcrumb">
                         <li class="breadcrumb-item invoices-breadcrumb-item">
                             <a [routerLink]="routes.allInvoice">
-                                <i class="fa fa-chevron-left"></i> {{ 'ADD.BACK_TO_INVOICE_LIST' | translate }}
+                                <i class="fa fa-chevron-left"></i> {{ 'INVOICE.BACK_TO_INVOICE_LIST' | translate }}
                             </a>
                         </li>
                     </ul>
@@ -16,14 +16,14 @@
                 <div class="col-auto">
                     <div class="invoices-create-btn">
                         <a class="invoices-preview-link" href="javascript:void(0);" data-bs-toggle="modal"
-                            data-bs-target="#invoices_preview"><i class="fa fa-eye"></i> {{ 'ADD.PREVIEW' | translate }}</a>
+                            data-bs-target="#invoices_preview"><i class="fa fa-eye"></i> {{ 'INVOICE.PREVIEW' | translate }}</a>
                         <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_invoices_details"
                             class="btn delete-invoice-btn">
-                            {{ 'ADD.DELETE_INVOICE' | translate }}
+                            {{ 'INVOICE.DELETE_INVOICE' | translate }}
                         </a>
                         <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#save_invocies_details"
                             class="btn save-invoice-btn">
-                            {{ 'ADD.SAVE_DRAFT' | translate }}
+                            {{ 'INVOICE.SAVE_DRAFT' | translate }}
                         </a>
                     </div>
                 </div>
@@ -40,17 +40,17 @@
                                 <div class="row">
                                     <div class="col-xl-4 col-md-6 col-sm-12 col-12">
                                         <div class="form-group">
-                                            <label for="Customer">{{ 'ADD.CUSTOMER_NAME' | translate }}</label>
+                                            <label for="Customer">{{ 'INVOICE.CUSTOMER_NAME' | translate }}</label>
                                             <div class="multipleSelection">
                                                 <div class="selectBox" (click)="openCheckBoxes('Customer')"(keyup.enter)="openCheckBoxes('Customer')" tabindex="0">
-                                                    <p class="mb-0">{{ 'ADD.SELECT_CUSTOMER' | translate }}</p>
+                                                    <p class="mb-0">{{ 'INVOICE.SELECT_CUSTOMER' | translate }}</p>
                                                     <span class="down-icon"><i class="fa fa-chevron-down"></i></span>
                                                 </div>
                                                 <div id="checkBoxes-one" [ngClass]="checkboxes[0] === 'Customer' ? 'd-block' : 'd-none'">
-                                                    <p class="checkbox-title">{{ 'ADD.CUSTOMER_NAME' | translate }}</p>
+                                                    <p class="checkbox-title">{{ 'INVOICE.CUSTOMER_NAME' | translate }}</p>
                                                     <div class="form-custom">
                                                         <input type="text" class="form-control bg-grey"
-                                                            placeholder="{{ 'ADD.ENTER_CUSTOMER_NAME' | translate }}">
+                                                            placeholder="{{ 'INVOICE.ENTER_CUSTOMER_NAME' | translate }}">
                                                     </div>
                                                     <div class="selectBox-cont">
                                                         <label class="custom_check w-100">
@@ -83,22 +83,22 @@
                                                         </label>
                                                     </div>
                                                     <button type="submit"
-                                                        class="btn w-100 btn-primary mb-2">{{ 'ADD.APPLY' | translate }}</button>
-                                                    <button type="reset" class="btn w-100 btn-grey">{{ 'ADD.RESET' | translate }}</button>
+                                                        class="btn w-100 btn-primary mb-2">{{ 'INVOICE.APPLY' | translate }}</button>
+                                                    <button type="reset" class="btn w-100 btn-grey">{{ 'INVOICE.RESET' | translate }}</button>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="Po">{{ 'ADD.PO_NUMBER' | translate }}</label>
+                                            <label for="Po">{{ 'INVOICE.PO_NUMBER' | translate }}</label>
                                             <input class="form-control" type="text"
-                                                placeholder="{{ 'ADD.ENTER_REFERENCE_NUMBER' | translate }}">
+                                                placeholder="{{ 'INVOICE.ENTER_REFERENCE_NUMBER' | translate }}">
                                         </div>
                                     </div>
                                     <div class="col-xl-5 col-md-6 col-sm-12 col-12">
-                                        <h4 class="invoice-details-title">{{ 'ADD.INVOICE_DETAILS' | translate }}</h4>
+                                        <h4 class="invoice-details-title">{{ 'INVOICE.INVOICE_DETAILS' | translate }}</h4>
                                         <div class="invoice-details-box">
                                             <div class="invoice-inner-head">
-                                                <span>{{ 'ADD.INVOICE_NO' | translate }} <a
+                                                <span>{{ 'INVOICE.INVOICE_NO' | translate }} <a
                                                         [routerLink]="routes.viewInvoice">IN093439#&#64;09</a></span>
                                             </div>
                                             <div class="invoice-inner-footer">
@@ -106,7 +106,7 @@
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="invoice-inner-date">
                                                             <span>
-                                                                {{ 'ADD.DATE' | translate }} <input class="form-control datetimepicker"
+                                                                {{ 'INVOICE.DATE' | translate }} <input class="form-control datetimepicker"
                                                                     type="text" [formControl]="date" matInput [matDatepicker]="picker1">
                                                                 <mat-datepicker #picker1></mat-datepicker>
                                                                 <mat-datepicker-toggle matIconSuffix class="toggle-date-picker"
@@ -117,7 +117,7 @@
                                                     <div class="col-lg-6 col-md-6">
                                                         <div class="invoice-inner-date invoice-inner-datepic">
                                                             <span>
-                                                                {{ 'ADD.DUE_DATE' | translate }} <input class="form-control datetimepicker"
+                                                                {{ 'INVOICE.DUE_DATE' | translate }} <input class="form-control datetimepicker"
                                                                     type="text" placeholder="Select" matInput [matDatepicker]="picker2">
                                                                     <mat-datepicker #picker2></mat-datepicker>
                                                                     <mat-datepicker-toggle matIconSuffix [for]="picker2" class="toggle-date-picker"></mat-datepicker-toggle>
@@ -133,11 +133,11 @@
                                             <div class="form-group mb-0">
                                                 <label class="custom_check w-100">
                                                     <input type="checkbox" id="enableTax" name="invoice">
-                                                    <span class="checkmark"></span> {{ 'ADD.ENABLE_TAX' | translate }}
+                                                    <span class="checkmark"></span> {{ 'INVOICE.ENABLE_TAX' | translate }}
                                                 </label>
                                                 <label class="custom_check w-100">
                                                     <input type="checkbox" id="chkYes" name="invoice" (click)="recurringInvoiceFunc()">
-                                                    <span class="checkmark"></span> {{ 'ADD.RECURRING_INVOICE' | translate }}
+                                                    <span class="checkmark"></span> {{ 'INVOICE.RECURRING_INVOICE' | translate }}
                                                 </label>
                                             </div>
                                             <div id="show-invoices" [ngClass]="recurringInvoice ? 'd-block':'d-none'">
@@ -167,8 +167,8 @@
                                 <div class="row">
                                     <div class="col-xl-4 col-lg-6 col-md-6">
                                         <div class="invoice-info">
-                                            <strong class="customer-text">{{ 'ADD.INVOICE_FROM' | translate }} <a class="small"
-                                                    [routerLink]="routes.editInvoices">{{ 'ADD.EDIT_ADDRESS' | translate }}</a></strong>
+                                            <strong class="customer-text">{{ 'INVOICE.INVOICE_FROM' | translate }} <a class="small"
+                                                    [routerLink]="routes.editInvoices">{{ 'INVOICE.EDIT_ADDRESS' | translate }}</a></strong>
                                             <p class="invoice-details invoice-details-two">
                                                 Darren Elder <br>
                                                 806 Twin Willow Lane, Old Forge,<br>
@@ -178,7 +178,7 @@
                                     </div>
                                     <div class="col-xl-4 col-lg-6 col-md-6">
                                         <div class="invoice-info">
-                                            <strong class="customer-text">{{ 'ADD.INVOICE_TO' | translate }}</strong>
+                                            <strong class="customer-text">{{ 'INVOICE.INVOICE_TO' | translate }}</strong>
                                             <p class="invoice-details invoice-details-two">
                                                 Walter Roberson <br>
                                                 299 Star Trek Drive, Panama City, <br>
@@ -189,18 +189,18 @@
                                 </div>
                             </div>
                             <div class="invoice-add-table">
-                                <h4>{{ 'ADD.ITEM_DETAILS' | translate }}</h4>
+                                <h4>{{ 'INVOICE.ITEM_DETAILS' | translate }}</h4>
                                 <div class="table-responsive">
                                     <table class="table table-striped table-nowrap  mb-0 no-footer add-table-items">
                                         <thead>
                                             <tr>
-                                                <th>{{ 'ADD.ITEMS' | translate }}</th>
-                                                <th>{{ 'ADD.CATEGORY' | translate }}</th>
-                                                <th>{{ 'ADD.QUANTITY' | translate }}</th>
-                                                <th>{{ 'ADD.PRICE' | translate }}</th>
-                                                <th>{{ 'ADD.AMOUNT' | translate }}</th>
-                                                <th>{{ 'ADD.DISCOUNT' | translate }}</th>
-                                                <th>{{ 'ADD.ACTIONS' | translate }}</th>
+                                                <th>{{ 'INVOICE.ITEMS' | translate }}</th>
+                                                <th>{{ 'INVOICE.CATEGORY' | translate }}</th>
+                                                <th>{{ 'INVOICE.QUANTITY' | translate }}</th>
+                                                <th>{{ 'INVOICE.PRICE' | translate }}</th>
+                                                <th>{{ 'INVOICE.AMOUNT' | translate }}</th>
+                                                <th>{{ 'INVOICE.DISCOUNT' | translate }}</th>
+                                                <th>{{ 'INVOICE.ACTIONS' | translate }}</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -238,12 +238,12 @@
                             <div class="row">
                                 <div class="col-lg-7 col-md-6">
                                     <div class="invoice-fields">
-                                        <h4 class="field-title">{{ 'ADD.MORE_FIELDS' | translate }}</h4>
+                                        <h4 class="field-title">{{ 'INVOICE.MORE_FIELDS' | translate }}</h4>
                                         <div class="field-box">
-                                            <p>{{ 'ADD.PAYMENT_DETAILS' | translate }}</p>
+                                            <p>{{ 'INVOICE.PAYMENT_DETAILS' | translate }}</p>
                                             <a class="btn btn-primary" href="javascript:void(0);" data-bs-toggle="modal"
                                                 data-bs-target="#bank_details"><i
-                                                    class="fas fa-plus-circle me-2"></i>{{ 'ADD.ADD_BANK_DETAILS' | translate }}</a>
+                                                    class="fas fa-plus-circle me-2"></i>{{ 'INVOICE.ADD_BANK_DETAILS' | translate }}</a>
                                         </div>
                                     </div>
                                     <div class="invoice-faq">
@@ -256,7 +256,7 @@
                                                             <a class="collapsed" data-bs-toggle="collapse"
                                                                 data-bs-parent="#accordion" href="#collapseTwo"
                                                                 aria-expanded="false" aria-controls="collapseTwo">
-                                                                <i class="fas fa-plus-circle me-1"></i> {{ 'ADD.ADD_TERMS_&_CONDITIONS' | translate }}
+                                                                <i class="fas fa-plus-circle me-1"></i> {{ 'INVOICE.ADD_TERMS_&_CONDITIONS' | translate }}
                                                             </a>
                                                         </p>
                                                     </div>
@@ -276,7 +276,7 @@
                                                             <a class="collapsed" data-bs-toggle="collapse"
                                                                 data-bs-parent="#accordion" href="#collapseThree"
                                                                 aria-expanded="false" aria-controls="collapseThree">
-                                                                <i class="fas fa-plus-circle me-1"></i> {{ 'ADD.ADD_NOTES' | translate }}
+                                                                <i class="fas fa-plus-circle me-1"></i> {{ 'INVOICE.ADD_NOTES' | translate }}
                                                             </a>
                                                         </p>
                                                     </div>
@@ -294,11 +294,11 @@
                                 </div>
                                 <div class="col-lg-5 col-md-6">
                                     <div class="invoice-total-card">
-                                        <h4 class="invoice-total-title">{{ 'ADD.SUMMARY' | translate }}</h4>
+                                        <h4 class="invoice-total-title">{{ 'INVOICE.SUMMARY' | translate }}</h4>
                                         <div class="invoice-total-box">
                                             <div class="invoice-total-inner">
-                                                <p>{{ 'ADD.TAXABLE_AMOUNT' | translate }} <span>$21</span></p>
-                                                <p>{{ 'ADD.ROUND_OFF' | translate }}
+                                                <p>{{ 'INVOICE.TAXABLE_AMOUNT' | translate }} <span>$21</span></p>
+                                                <p>{{ 'INVOICE.ROUND_OFF' | translate }}
                                                     <input type="checkbox" id="status_1" class="check">
                                                     <label for="status_1" class="checktoggles">checkbox</label>
                                                     <span>$54</span>
@@ -307,38 +307,38 @@
                                                     <div class="links-info">
                                                         <div class="links-cont" (click)="deleteCharges(i)" *ngIf="i" tabindex="0"  (keyup.enter)="deleteCharges(i)">
                                                             <a href="javascript:void(0);" class="service-trash1">
-                                                                <i class="fa fa-minus-circle me-1 mb-3"></i>{{ 'ADD.ADDITIONAL_CHARGES' | translate }}
+                                                                <i class="fa fa-minus-circle me-1 mb-3"></i>{{ 'INVOICE.ADDITIONAL_CHARGES' | translate }}
                                                             </a>
                                                     </div>
                                                     </div>
                                                 </div>
                                                 <a href="javascript:void(0);" class="add-links1" (click)="addCharges()">
-                                                    <i class="fas fa-plus-circle me-1"></i> {{ 'ADD.ADDITIONAL_CHARGES' | translate }}
+                                                    <i class="fas fa-plus-circle me-1"></i> {{ 'INVOICE.ADDITIONAL_CHARGES' | translate }}
                                                 </a>
                                                 <div class="links-info-discount">
                                                     <div class="links-cont-discount">
                                                         <a href="javascript:void(0);" class="add-links-one">
-                                                            <i class="fas fa-plus-circle me-1"></i> {{ 'ADD.ADD_MORE_DISCOUNT' | translate }}
+                                                            <i class="fas fa-plus-circle me-1"></i> {{ 'INVOICE.ADD_MORE_DISCOUNT' | translate }}
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="invoice-total-footer">
-                                                <h4>{{ 'ADD.TOTAL_AMOUNT' | translate }} <span>$ 894.00</span></h4>
+                                                <h4>{{ 'INVOICE.TOTAL_AMOUNT' | translate }} <span>$ 894.00</span></h4>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="upload-sign">
                                         <div class="form-group service-upload">
-                                            <span>{{ 'ADD.UPLOAD_SIGN' | translate }}</span>
+                                            <span>{{ 'INVOICE.UPLOAD_SIGN' | translate }}</span>
                                             <input type="file" multiple>
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control"
-                                                placeholder="{{ 'ADD.NAME_OF_THE_SIGNATUAORY' | translate }}">
+                                                placeholder="{{ 'INVOICE.NAME_OF_THE_SIGNATUAORY' | translate }}">
                                         </div>
                                         <div class="form-group float-end mb-0">
-                                            <button class="btn btn-primary" type="submit">{{ 'ADD.SAVE_INVOICE' | translate }}</button>
+                                            <button class="btn btn-primary" type="submit">{{ 'INVOICE.SAVE_INVOICE' | translate }}</button>
                                         </div>
                                     </div>
                                 </div>
@@ -370,8 +370,8 @@
                                         <div class="col-md-6">
                                             <div class="invoice-info">
                                                 <div class="invoice-head">
-                                                    <h2 class="text-primary">{{ 'ADD.INVOICE' | translate }}</h2>
-                                                    <p>{{ 'ADD.INVOICE_NUMBER' | translate }} : In983248782</p>
+                                                    <h2 class="text-primary">{{ 'INVOICE.INVOICE' | translate }}</h2>
+                                                    <p>{{ 'INVOICE.INVOICE_NUMBER' | translate }} : In983248782</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -387,8 +387,8 @@
                                     <div class="row">
                                         <div class="col-lg-4 col-md-12">
                                             <div class="invoice-info">
-                                                <strong class="customer-text-one">{{ 'ADD.BILLED_TO' | translate }}</strong>
-                                                <h6 class="invoice-name">{{ 'ADD.CUSTOMER_NAME' | translate }}</h6>
+                                                <strong class="customer-text-one">{{ 'INVOICE.BILLED_TO' | translate }}</strong>
+                                                <h6 class="invoice-name">{{ 'INVOICE.CUSTOMER_NAME' | translate }}</h6>
                                                 <p class="invoice-details invoice-details-two">
                                                     9087484288 <br>
                                                     Address line 1, <br>
@@ -399,8 +399,8 @@
                                         </div>
                                         <div class="col-lg-4 col-md-12">
                                             <div class="invoice-info">
-                                                <strong class="customer-text-one">{{ 'ADD.INVOICE_FROM' | translate }}</strong>
-                                                <h6 class="invoice-name">{{ 'ADD.COMPANY_NAME' | translate }}</h6>
+                                                <strong class="customer-text-one">{{ 'INVOICE.INVOICE_FROM' | translate }}</strong>
+                                                <h6 class="invoice-name">{{ 'INVOICE.COMPANY_NAME' | translate }}</h6>
                                                 <p class="invoice-details invoice-details-two">
                                                     9087484288 <br>
                                                     Address line 1, <br>
@@ -411,11 +411,11 @@
                                         </div>
                                         <div class="col-lg-4 col-md-12">
                                             <div class="invoice-info invoice-info-one border-0">
-                                                <p>{{ 'ADD.ISSUE_DATE' | translate }} : 27 Jul 2022</p>
-                                                <p>{{ 'ADD.DUE_DATE' | translate }} : 27 Aug 2022</p>
-                                                <p>{{ 'ADD.DUE_AMOUNT' | translate }} : $ 1,54,22 </p>
-                                                <p>{{ 'ADD.RECURRING_INVOICE' | translate }} : 15 Months</p>
-                                                <p class="mb-0">{{ 'ADD.PO_NUMBER' | translate }} : 54515454</p>
+                                                <p>{{ 'INVOICE.ISSUE_DATE' | translate }} : 27 Jul 2022</p>
+                                                <p>{{ 'INVOICE.DUE_DATE' | translate }} : 27 Aug 2022</p>
+                                                <p>{{ 'INVOICE.DUE_AMOUNT' | translate }} : $ 1,54,22 </p>
+                                                <p>{{ 'INVOICE.RECURRING_INVOICE' | translate }} : 15 Months</p>
+                                                <p class="mb-0">{{ 'INVOICE.PO_NUMBER' | translate }} : 54515454</p>
                                             </div>
                                         </div>
                                     </div>
@@ -430,12 +430,12 @@
                                                 <table class="invoice-table table table-center mb-0">
                                                     <thead>
                                                         <tr>
-                                                            <th>{{ 'ADD.DESCRIPTION' | translate }}</th>
-                                                            <th>{{ 'ADD.CATEGORY' | translate }}</th>
-                                                            <th>{{ 'ADD.RATE_ITEM' | translate }}</th>
-                                                            <th>{{ 'ADD.QUANTITY' | translate }}</th>
-                                                            <th>{{ 'ADD.DISCOUNT' | translate }}</th>
-                                                            <th class="text-end">{{ 'ADD.AMOUNT' | translate }}</th>
+                                                            <th>{{ 'INVOICE.DESCRIPTION' | translate }}</th>
+                                                            <th>{{ 'INVOICE.CATEGORY' | translate }}</th>
+                                                            <th>{{ 'INVOICE.RATE_ITEM' | translate }}</th>
+                                                            <th>{{ 'INVOICE.QUANTITY' | translate }}</th>
+                                                            <th>{{ 'INVOICE.DISCOUNT' | translate }}</th>
+                                                            <th class="text-end">{{ 'INVOICE.AMOUNT' | translate }}</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -474,7 +474,7 @@
                                 <div class="row align-items-center justify-content-center">
                                     <div class="col-lg-6 col-md-6">
                                         <div class="invoice-payment-box">
-                                            <h4>{{ 'ADD.PAYMENT_DETAILS' | translate }}</h4>
+                                            <h4>{{ 'INVOICE.PAYMENT_DETAILS' | translate }}</h4>
                                             <div class="payment-details">
                                                 <p>Debit Card XXXXXXXXXXXX-2541 HDFC Bank</p>
                                             </div>
@@ -484,13 +484,13 @@
                                         <div class="invoice-total-card">
                                             <div class="invoice-total-box">
                                                 <div class="invoice-total-inner">
-                                                    <p>{{ 'ADD.TAXABLE' | translate }} <span>$6,660.00</span></p>
-                                                    <p>{{ 'ADD.ADDITIONAL_CHARGES' | translate }} <span>$6,660.00</span></p>
-                                                    <p>{{ 'ADD.DISCOUNT' | translate }} <span>$3,300.00</span></p>
-                                                    <p class="mb-0">{{ 'ADD.SUB_TOTAL' | translate }} <span>$3,300.00</span></p>
+                                                    <p>{{ 'INVOICE.TAXABLE' | translate }} <span>$6,660.00</span></p>
+                                                    <p>{{ 'INVOICE.ADDITIONAL_CHARGES' | translate }} <span>$6,660.00</span></p>
+                                                    <p>{{ 'INVOICE.DISCOUNT' | translate }} <span>$3,300.00</span></p>
+                                                    <p class="mb-0">{{ 'INVOICE.SUB_TOTAL' | translate }} <span>$3,300.00</span></p>
                                                 </div>
                                                 <div class="invoice-total-footer">
-                                                    <h4>{{ 'ADD.TOTAL_AMOUNT' | translate }} <span>$143,300.00</span></h4>
+                                                    <h4>{{ 'INVOICE.TOTAL_AMOUNT' | translate }} <span>$143,300.00</span></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -500,12 +500,12 @@
                                     <div class="row">
                                         <div class="col-lg-8 col-md-8">
                                             <div class="invoice-terms">
-                                                <h6>{{ 'ADD.NOTES' | translate }}:</h6>
-                                                <p class="mb-0">{{ 'ADD.ENTER_CUSTOMER_NOTES' | translate }}</p>
+                                                <h6>{{ 'INVOICE.NOTES' | translate }}:</h6>
+                                                <p class="mb-0">{{ 'INVOICE.ENTER_CUSTOMER_NOTES' | translate }}</p>
                                             </div>
                                             <div class="invoice-terms mb-0">
-                                                <h6>{{ 'ADD.TERMS_AND_CONDITIONS' | translate }}:</h6>
-                                                <p class="mb-0">{{ 'ADD.ENTER_CUSTOMER_NOTES' | translate }}</p>
+                                                <h6>{{ 'INVOICE.TERMS_AND_CONDITIONS' | translate }}:</h6>
+                                                <p class="mb-0">{{ 'INVOICE.ENTER_CUSTOMER_NOTES' | translate }}</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-md-4">
@@ -533,7 +533,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div class="form-header text-start mb-0">
-                    <h4 class="mb-0">{{ 'ADD.ADD_BANK_DETAILS' | translate }}</h4>
+                    <h4 class="mb-0">{{ 'INVOICE.ADD_BANK_DETAILS' | translate }}</h4>
                 </div>
                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -544,25 +544,25 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label for="Account">{{ 'ADD.ACCOUNT_HOLDER_NAME' | translate }}</label>
-                                <input type="text" class="form-control" placeholder="{{ 'ADD.ADD_NAME' | translate }}">
+                                <label for="Account">{{ 'INVOICE.ACCOUNT_HOLDER_NAME' | translate }}</label>
+                                <input type="text" class="form-control" placeholder="{{ 'INVOICE.ADD_NAME' | translate }}">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label for="Bank ">{{ 'ADD.BANK_NAME' | translate }}</label>
-                                <input type="text" class="form-control" placeholder="{{ 'ADD.ADD_BANK_NAME' | translate }}">
+                                <label for="Bank ">{{ 'INVOICE.BANK_NAME' | translate }}</label>
+                                <input type="text" class="form-control" placeholder="{{ 'INVOICE.ADD_BANK_NAME' | translate }}">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label for="IFSC ">{{ 'ADD.IFSC_CODE' | translate }}</label>
+                                <label for="IFSC ">{{ 'INVOICE.IFSC_CODE' | translate }}</label>
                                 <input type="text" class="form-control">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label for="Account">{{ 'ADD.ACCOUNT_NUMBER' | translate }}</label>
+                                <label for="Account">{{ 'INVOICE.ACCOUNT_NUMBER' | translate }}</label>
                                 <input type="text" class="form-control">
                             </div>
                         </div>
@@ -571,8 +571,8 @@
             </div>
             <div class="modal-footer">
                 <div class="bank-details-btn">
-                    <a href="javascript:void(0);" data-bs-dismiss="modal" class="btn bank-cancel-btn me-2">{{ 'ADD.CANCEL' | translate }}</a>
-                    <a href="javascript:void(0);" class="btn bank-save-btn">{{ 'ADD.SAVE_ITEM' | translate }}</a>
+                    <a href="javascript:void(0);" data-bs-dismiss="modal" class="btn bank-cancel-btn me-2">{{ 'INVOICE.CANCEL' | translate }}</a>
+                    <a href="javascript:void(0);" class="btn bank-save-btn">{{ 'INVOICE.SAVE_ITEM' | translate }}</a>
                 </div>
             </div>
         </div>
@@ -586,18 +586,18 @@
         <div class="modal-content">
             <div class="modal-body">
                 <div class="form-header">
-                    <h3>{{ 'ADD.DELETE_INVOICE_DETAILS' | translate }}</h3>
-                    <p>{{ 'ADD.ARE_YOU_SURE_DELETE' | translate }}</p>
+                    <h3>{{ 'INVOICE.DELETE_INVOICE_DETAILS' | translate }}</h3>
+                    <p>{{ 'INVOICE.ARE_YOU_SURE_DELETE' | translate }}</p>
                 </div>
                 <div class="modal-btn delete-action">
                     <div class="row">
                         <div class="col-6">
                             <a href="javascript:void(0);" data-bs-dismiss="modal"
-                                class="btn btn-primary paid-continue-btn">{{ 'ADD.DELETE' | translate }}</a>
+                                class="btn btn-primary paid-continue-btn">{{ 'INVOICE.DELETE' | translate }}</a>
                         </div>
                         <div class="col-6">
                             <a href="javascript:void(0);" data-bs-dismiss="modal"
-                                class="btn btn-primary paid-cancel-btn">{{ 'ADD.CANCEL' | translate }}</a>
+                                class="btn btn-primary paid-cancel-btn">{{ 'INVOICE.CANCEL' | translate }}</a>
                         </div>
                     </div>
                 </div>
@@ -613,18 +613,18 @@
         <div class="modal-content">
             <div class="modal-body">
                 <div class="form-header">
-                    <h3>{{ 'ADD.SAVE_INVOICE_DETAILS' | translate }}</h3>
-                    <p>{{ 'ADD.ARE_YOU_SURE_SAVE' | translate }}</p>
+                    <h3>{{ 'INVOICE.SAVE_INVOICE_DETAILS' | translate }}</h3>
+                    <p>{{ 'INVOICE.ARE_YOU_SURE_SAVE' | translate }}</p>
                 </div>
                 <div class="modal-btn delete-action">
                     <div class="row">
                         <div class="col-6">
                             <a href="javascript:void(0);" data-bs-dismiss="modal"
-                                class="btn btn-primary paid-continue-btn">{{ 'ADD.SAVE' | translate }}</a>
+                                class="btn btn-primary paid-continue-btn">{{ 'INVOICE.SAVE' | translate }}</a>
                         </div>
                         <div class="col-6">
                             <a href="javascript:void(0);" data-bs-dismiss="modal"
-                                class="btn btn-primary paid-cancel-btn">{{ 'ADD.CANCEL' | translate }}</a>
+                                class="btn btn-primary paid-cancel-btn">{{ 'INVOICE.CANCEL' | translate }}</a>
                         </div>
                     </div>
                 </div>
@@ -633,4 +633,3 @@
     </div>
   </div>
   <!-- /Save Invoices Modal -->
-  
