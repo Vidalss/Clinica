@@ -1003,6 +1003,18 @@
     "NOTES": "Notas",
     "ENTER_CUSTOMER_NOTES": "Ingrese notas del cliente",
     "TERMS_AND_CONDITIONS": "Términos y condiciones",
-    "SELECT": "Seleccionar"
+    "SELECT": "Seleccionar",
+    "DELETE_CONFIRM": "¿Estás seguro de que quieres eliminar esta factura?",
+    "SAVE_CONFIRM": "¿Estás seguro de que quieres guardar esta factura?",
+    "SAVE":"Guardar cambios",
+    "ADD_NAME": "Agregar nombre",
+    "ADD_BANK_NAME": "Agregar nombre del banco",
+    "PATIENT": "Paciente",
+    "CREATED_DATE": "Fecha de creación",
+    "SEARCH": "Buscar",
+    "PAYMENT_STATUS": "Estado de pago",
+    "SEARCH_HERE": "Buscar aquí",
+    "DOWNLOAD": "Descargar",
+    "ACCOUNTS": "Cuentas"
   }
 }
