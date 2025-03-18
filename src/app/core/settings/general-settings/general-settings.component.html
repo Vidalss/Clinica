@@ -1,99 +1,48 @@
-<div class="page-wrapper">
-    <!-- Page Content -->
-    <div class="content container-fluid">
-
-        <!-- Page Header -->
-        <div class="page-header">
-            <div class="row">
-                <div class="col-sm-12">
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="routes.adminDashboard"> {{'SETTING.DASHBOARD' | translate }} </a></li>
-                        <li class="breadcrumb-item"><i class="feather icon-chevron-right"></i></li>
-                        <li class="breadcrumb-item active"> {{'SETTING.SETTINGS' | translate }} </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- /Page Header -->
-
-        <div class="settings-menu-links">
-            <ul class="nav nav-tabs menu-tabs">
-                <li class="nav-item active">
-                    <a class="nav-link" [routerLink]="routes.settings"> {{'SETTING.GENERAL' | translate }} </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.localizationDetails"> {{'SETTING.LOCALIZATION' | translate }} </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.paymentSettings"> {{'SETTING.PAYMENT' | translate }} </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.emailSettings"> {{'SETTING.EMAIL' | translate }} </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.socialSettings"> {{'SETTING.SOCIAL_MEDIA' | translate }} </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.socialLinks"> {{'SETTING.SOCIAL_LINKS' | translate }} </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.seoSettings"> {{'SETTING.SEO' | translate }} </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.themeSettings"> {{'SETTING.THEME' | translate }} </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.changePassword"> {{'SETTING.CHANGE_PASSWORD' | translate }} </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="routes.othersSettings"> {{'SETTING.OTHERS' | translate }} </a>
-                </li>
-            </ul>
-        </div>
-        
+<div class="main-container">
+    <div class="content-container">
+        <!-- Contenido de la página -->
         <div class="row">
+            <!-- Tarjeta de Detalles del Sitio Web -->
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title"> {{'SETTING.WEBSITE_DETAILS' | translate }} </h5>
+                        <h5 class="card-title">{{'SETTING.WEBSITE_DETAILS' | translate}}</h5>
                     </div>
                     <div class="card-body pt-0">
                         <form>
                             <div class="settings-form">
                                 <div class="form-group">
-                                    <label for="website"> {{'SETTING.WEBSITE_NAME' | translate }} <span class="star-red">*</span></label>
-                                    <input type="text" class="form-control" placeholder=" {{'SETTING.ENTER_WEBSITE_NAME' | translate }} ">
+                                    <label for="website">{{'SETTING.WEBSITE_NAME' | translate}} <span class="star-red">*</span></label>
+                                    <input type="text" class="form-control" placeholder="{{'SETTING.ENTER_WEBSITE_NAME' | translate}}">
                                 </div>
-                                <div class="form-group ">
-                                    <p class="settings-label"> {{'SETTING.LOGO' | translate }} <span class="star-red">*</span></p>
+                                <div class="form-group">
+                                    <p class="settings-label">{{'SETTING.LOGO' | translate}} <span class="star-red">*</span></p>
                                     <div class="settings-btn">
                                         <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" class="hide-input">
                                         <label for="file" class="upload">
                                             <i class="feather icon-upload upload-icon"></i>
                                         </label>
                                     </div>
-                                    <h6 class="settings-size"> {{'SETTING.MESSAGE_IMAGE' | translate }} <span>150px x 150px</span></h6>
-                                    <div class="upload-images" [ngClass]="{'d-none':deleteIcon2 === false}">
-                                        <img src="assets/img/logo-dark.png" alt="Image">
+                                    <h6 class="settings-size">{{'SETTING.MESSAGE_IMAGE' | translate}} <span>150px x 150px</span></h6>
+                                    <div class="upload-images" [ngClass]="{'d-none': deleteIcon2 === false}">
+                                        <img src="assets/img/logo-dark.png" alt="Logo">
                                         <a (click)="deleteIconFunc2()" href="javascript:void(0);" class="btn-icon logo-hide-btn">
                                             <i class="feather icon-x-circle"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <p class="settings-label"> {{'SETTING.FAVICON' | translate }} <span class="star-red">*</span></p>
+                                    <p class="settings-label">{{'SETTING.FAVICON' | translate}} <span class="star-red">*</span></p>
                                     <div class="settings-btn">
                                         <input type="file" accept="image/*" name="image" id="files" onchange="loadFile(event)" class="hide-input">
-                                        <label for="file" class="upload">
+                                        <label for="files" class="upload">
                                             <i class="feather icon-upload upload-icon"></i>
                                         </label>
                                     </div>
-                                    <h6 class="settings-size">
-                                        {{'SETTING.MESSAGE_IMAGE' | translate }} <span>16px x 16px or 32px x 32px</span>
-                                    </h6>
-                                    <h6 class="settings-size mt-1"> {{'SETTING.MESSAGE_FORMATS' | translate }} </h6>
-                                    <div class="upload-images upload-size" [ngClass]="{'d-none':deleteIcon1 === false}">
-                                        <img src="assets/img/favicon.png" alt="Image">
+                                    <h6 class="settings-size">{{'SETTING.MESSAGE_IMAGE' | translate}} <span>16px x 16px or 32px x 32px</span></h6>
+                                    <h6 class="settings-size mt-1">{{'SETTING.MESSAGE_FORMATS' | translate}}</h6>
+                                    <div class="upload-images upload-size" [ngClass]="{'d-none': deleteIcon1 === false}">
+                                        <img src="assets/img/favicon.png" alt="Favicon">
                                         <a (click)="deleteIconFunc1()" href="javascript:void(0);" class="btn-icon logo-hide-btn">
                                             <i class="feather icon-x-circle"></i>
                                         </a>
@@ -103,7 +52,7 @@
                                     <div class="col-lg-5 col-md-6">
                                         <div class="form-group">
                                             <div class="status-toggle d-flex justify-content-between align-items-center">
-                                                <p class="mb-0"> {{'SETTING.RTL' | translate }} </p>
+                                                <p class="mb-0">{{'SETTING.RTL' | translate}}</p>
                                                 <input type="checkbox" id="status_1" class="check">
                                                 <label for="status_1" class="checktoggle">checkbox</label>
                                             </div>
@@ -112,8 +61,8 @@
                                 </div>
                                 <div class="form-group mb-0">
                                     <div class="settings-btns">
-                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded"> {{'SETTING.UPDATE' | translate }} </button>&nbsp;&nbsp;
-                                        <button type="submit" class="btn btn-secondary btn-rounded"> {{'SETTING.CANCEL' | translate }} </button>
+                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded">{{'SETTING.UPDATE' | translate}}</button>&nbsp;&nbsp;
+                                        <button type="submit" class="btn btn-secondary btn-rounded">{{'SETTING.CANCEL' | translate}}</button>
                                     </div>
                                 </div>
                             </div>
@@ -122,60 +71,75 @@
                 </div>
             </div>
 
+            <!-- Tarjeta de Dirección -->
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title"> {{'SETTING.ADDRESS' | translate }} </h5>
+                        <h5 class="card-title">{{'SETTING.ADDRESS' | translate}}</h5>
                     </div>
                     <div class="card-body pt-0">
                         <form>
                             <div class="settings-form">
                                 <div class="form-group">
-                                    <label for="address"> {{'SETTING.ADDRESS_LINE' | translate }} <span class="star-red">*</span></label>
-                                    <input type="text" class="form-control" placeholder=" {{'SETTING.ENTER_ADDRESS_LINE' | translate }} ">
+                                    <label for="address">{{'SETTING.ADDRESS_LINE' | translate}} <span class="star-red">*</span></label>
+                                    <input type="text" class="form-control" placeholder="{{'SETTING.ENTER_ADDRESS_LINE' | translate}}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="address"> {{'SETTING.ADDRESS_LINE2' | translate }} <span class="star-red">*</span></label>
-                                    <input type="text" class="form-control" placeholder=" {{'SETTING.ENTER_ADDRESS_LINE2' | translate }} ">
+                                    <label for="address">{{'SETTING.ADDRESS_LINE2' | translate}} <span class="star-red">*</span></label>
+                                    <input type="text" class="form-control" placeholder="{{'SETTING.ENTER_ADDRESS_LINE2' | translate}}">
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="city"> {{'SETTING.CITY' | translate }} <span class="star-red">*</span></label>
+                                            <label for="city">{{'SETTING.CITY' | translate}} <span class="star-red">*</span></label>
                                             <input type="text" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="State"> {{'SETTING.STATE' | translate }} <span class="star-red">*</span></label>
-                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder=" {{'SETTING.SELECT_STATE' | translate }} ">
-                                            <mat-option *ngFor="let data of selectedList1" [value]="data.value">
-                                            {{data.value}}
-                                            </mat-option>
-                                        </mat-select>
+                                            <label for="State">{{'SETTING.STATE' | translate}} <span class="star-red">*</span></label>
+                                            <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select" placeholder="{{'SETTING.SELECT_STATE' | translate}}">
+                                                <mat-option *ngFor="let data of selectedList1" [value]="data.value">
+                                                    {{data.value}}
+                                                </mat-option>
+                                            </mat-select>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="zip"> {{'SETTING.POSTAL_CODE' | translate }} <span class="star-red">*</span></label>
+                                            <label for="zip">{{'SETTING.POSTAL_CODE' | translate}} <span class="star-red">*</span></label>
                                             <input type="text" class="form-control">
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="country"> {{'SETTING.COUNTRY' | translate }} <span class="star-red">*</span></label>
-                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select"  placeholder=" {{'SETTING.SELECT_COUNTRY' | translate }} ">
-                                            <mat-option *ngFor="let data of selectedList2" [value]="data.value">
-                                            {{data.value}}
-                                            </mat-option>
-                                        </mat-select>
+                                            <label for="country">{{'SETTING.COUNTRY' | translate}} <span class="star-red">*</span></label>
+                                            <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="form-control select" placeholder="{{'SETTING.SELECT_COUNTRY' | translate}}">
+                                                <mat-option *ngFor="let data of selectedList2" [value]="data.value">
+                                                    {{data.value}}
+                                                </mat-option>
+                                            </mat-select>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="form-group mb-0">
-                                    <div class="settings-btns">
-                                        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded"> {{'SETTING.UPDATE' | translate }} </button>&nbsp;&nbsp;
-                                        <button type="submit" class="btn btn-secondary btn-rounded"> {{'SETTING.CANCEL' | translate }} </button>
+                                        
+                                        <!-- Botones Update y Cancel -->
+                                        <div class="form-group mb-0">
+    <div class="settings-btns">
+        <button type="submit" class="border-0 btn btn-primary btn-gradient-primary btn-rounded">{{'SETTING.UPDATE' | translate}}</button>
+        <button type="submit" class="btn btn-secondary btn-rounded">{{'SETTING.CANCEL' | translate}}</button>
+    </div>
+</div>
+
+<!-- Sección de Language Change y Select Language -->
+<div class="language-section">
+    <h2 class="language-change-title">{{'SETTING.LANGUAGE_CHANGE' | translate}}</h2>
+    <p class="select-language-text">{{'SETTING.SELECT_LANGUAGE' | translate}}</p>
+    <div class="language-buttons">
+        <button class="btn-flag" (click)="changeLanguage('en')">
+            <img src="assets/img/flags/usa.svg" alt="English">
+        </button>
+        <button class="btn-flag" (click)="changeLanguage('es')">
+            <img src="assets/img/flags/mexico.svg" alt="Español">
+        </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +148,5 @@
                 </div>
             </div>
         </div>
-        
     </div>
-    <!-- /Page Content -->
 </div>

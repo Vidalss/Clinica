@@ -90,6 +90,10 @@ body.dark-mode {
 
     .card-title, .card-text {
       color: #ffffff !important;
+      font-size: 20px; /* Tamaño de la fuente */
+      font-weight: bold; /* Negrita */
+      margin-bottom: 5px; /* Reducir el margen inferior */
+  
     }
 
     .feather {
@@ -488,25 +492,354 @@ body.dark-mode {
       td {
         background-color: #2d2d2d;
       }
-      /* Estilos para recuadros blancos (no afectados por el modo oscuro) */
-.white-card {
-  background-color: #ffffff !important; /* Fondo blanco */
-  color: #333 !important; /* Texto oscuro */
-
-  h1, h2, h3, h4, h5, h6, p, span, div {
-    color: #333 !important; /* Texto oscuro dentro de los recuadros */
-  }
-}
-
-/* Asegurar que estos estilos no se sobrescriban en modo oscuro */
-body.dark-mode .white-card {
-  background-color: #ffffff !important; /* Fondo blanco */
-  color: #333 !important; /* Texto oscuro */
-
-  h1, h2, h3, h4, h5, h6, p, span, div {
-    color: #333 !important; /* Texto oscuro dentro de los recuadros */
-  }
-}
     }
   }
+}
+
+/* Añade estos estilos al archivo CSS */
+
+/* Contenedor para los botones */
+
+/* Ajustes para el contenedor del header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; /* Espaciado interno */
+  background-color: #f8f9fa; /* Color de fondo para modo claro */
+}
+
+/* Ajustes para el botón de alternar la barra lateral */
+#toggle_btn {
+  margin-right: 10px; /* Reduce el espacio a la derecha del ícono de menú */
+}
+
+/* Ajustes para la barra de búsqueda */
+.top-nav-search {
+  margin-left: 10px; /* Reduce el espacio a la izquierda de la barra de búsqueda */
+  display: flex;
+  align-items: center;
+}
+
+.top-nav-search form {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav-search input {
+  padding: 8px 12px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño de la fuente */
+  width: 100%; /* Ancho completo */
+  max-width: 300px; /* Ancho máximo */
+}
+
+.top-nav-search .btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px; /* Espacio entre el input y el botón de búsqueda */
+}
+
+/* Ajustes para el modo oscuro */
+body.dark-mode .top-nav-search input {
+  border-color: #555; /* Borde para modo oscuro */
+  background-color: #333; /* Fondo para modo oscuro */
+  color: #ffffff; /* Texto para modo oscuro */
+}
+
+body.dark-mode .top-nav-search .btn {
+  color: #ffffff; /* Color del ícono de búsqueda para modo oscuro */
+}
+
+
+
+
+
+.header-buttons {
+    display: none; /* Ocultar los botones */
+}
+
+/* Estilos para los botones */
+.header-buttons .btn {
+    background-color: #333; /* Color de fondo para modo oscuro */
+    color: #ffffff; /* Color del texto */
+    border: 1px solid #555; /* Borde para modo oscuro */
+    padding: 8px 16px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.header-buttons .btn:hover {
+    background-color: #444; /* Color de fondo al pasar el ratón */
+}
+
+/* Ajustes para el modo oscuro */
+body.dark-mode .header-buttons .btn {
+    background-color: #555; /* Color de fondo para modo oscuro */
+    border-color: #777; /* Borde para modo oscuro */
+    color: #ffffff; /* Color del texto */
+}
+
+body.dark-mode .header-buttons .btn:hover {
+    background-color: #666; /* Color de fondo al pasar el ratón en modo oscuro */
+}
+
+/* Ajustes para el menú de usuario */
+.user-menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Empuja el menú de usuario a la derecha */
+}
+
+/* Ajustes para el contenedor del header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #f8f9fa; /* Color de fondo para modo claro */
+}
+
+body.dark-mode .header {
+    background-color: #1e1e1e; /* Color de fondo para modo oscuro */
+}
+
+/* Ajustes para el logo y el menú de idioma */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.language-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px; /* Espacio entre el logo y el menú de idioma */
+}
+
+.language-menu .nav-item {
+    margin-right: 10px; /* Espacio entre elementos del menú de idioma */
+}
+
+.language-menu .nav-link {
+    color: #333; /* Color del texto para modo claro */
+    text-decoration: none;
+    border: 1px solid #ccc; /* Borde para modo claro */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+body.dark-mode .language-menu .nav-link {
+    color: #ffffff; /* Color del texto para modo oscuro */
+    border-color: #555; /* Borde para modo oscuro */
+}
+
+/* Ajustes para las banderas */
+.flag-icon {
+    width: 20px; /* Tamaño de las banderas */
+    height: auto; /* Mantener la proporción */
+    vertical-align: middle; /* Alinear verticalmente */
+    margin: 0 5px; /* Espaciado entre banderas */
+}
+
+/* Ajustes para la barra de búsqueda */
+.top-nav-search {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Reducimos el margen izquierdo para que esté más cerca de los botones de idioma */
+}
+
+.top-nav-search form {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav-search input {
+    padding: 5px 10px;
+    border: 1px solid #ccc; /* Borde para modo claro */
+    border-radius: 4px;
+    margin-right: 10px; /* Espacio entre el input y el botón de búsqueda */
+}
+
+.top-nav-search .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+body.dark-mode .top-nav-search input {
+    border-color: #555; /* Borde para modo oscuro */
+    background-color: #333; /* Fondo para modo oscuro */
+    color: #ffffff; /* Texto para modo oscuro */
+}
+
+body.dark-mode .top-nav-search .btn {
+    color: #ffffff; /* Color del ícono de búsqueda para modo oscuro */
+}
+
+/* Estilos para el contenedor principal */
+.main-container {
+    margin-left: 250px; /* Ajusta este valor según el ancho de tu sidebar */
+    padding: 20px;
+    width: calc(100% - 250px); /* Ajusta el ancho para evitar superposición */
+    border-left: 2px solid #ddd; /* Línea de separación entre el sidebar y el contenido */
+}
+
+/* Estilos para el contenido */
+.content-container {
+    background-color: #fff; /* Fondo blanco para el contenido */
+    padding: 50px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Ajustes para el modo oscuro */
+body.dark-mode .main-container {
+    border-left-color: #555; /* Color de la línea de separación en modo oscuro */
+}
+
+body.dark-mode .content-container {
+    background-color: #1e1e1e; /* Fondo oscuro para el contenido */
+    color: #ffffff; /* Texto blanco en modo oscuro */
+}
+
+/* Estilos para los botones de idioma */
+
+/* Contenedor de los botones de idioma */
+.language-buttons {
+  display: flex; /* Mostrar en línea */
+  gap: 10px; /* Espacio entre los botones */
+  align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilos para los botones de idioma */
+.language-buttons .btn-flag {
+  width: 40px; /* Ancho del botón */
+  height: 40px; /* Altura del botón */
+  padding: 5px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  background-color: transparent; /* Fondo transparente */
+  cursor: pointer; /* Cursor de puntero */
+  border-radius: 4px; /* Bordes redondeados */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave */
+  display: flex; /* Flexbox para centrar la imagen */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  
+}
+/* Estilos para el título "Language Change" */
+.language-change-title {
+  font-size: 16px; /* Tamaño de la fuente más pequeño */
+  font-weight: bold; /* Negrita */
+  margin-bottom: 5px; /* Espacio inferior reducido */
+}
+
+
+
+
+/* Efecto hover para los botones de idioma */
+.language-buttons .btn-flag:hover {
+  transform: scale(1.2); /* Zoom del 20% (más pronunciado) */
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo semi-transparente al pasar el ratón */
+}
+
+/* Estilos para la imagen dentro del botón de idioma */
+.language-buttons .btn-flag img {
+  width: 30px; /* Ancho de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+  border-radius: 3px; /* Bordes redondeados para la imagen */
+  transition: transform 0.3s ease; /* Transición suave para la imagen */
+}
+
+/* Ajustes para el modo oscuro */
+body.dark-mode .language-buttons .btn-flag {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente en modo oscuro */
+}
+
+body.dark-mode .language-buttons .btn-flag:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo más claro al pasar el ratón en modo oscuro */
+}
+
+/* Opción 1: Margen inferior para los botones */
+.settings-btns {
+  margin-bottom: 20px; /* Espacio debajo de los botones */
+}
+
+/* Opción 2: Margen superior para la sección de Language Change */
+.language-section {
+  margin-top: 20px; /* Espacio encima de Language Change */
+}
+
+/* Estilos para el contenedor de los botones */
+
+.settings-btns {
+  display: flex; /* Mostrar en línea */
+  gap: 10px; /* Espacio entre los botones */
+  align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilos para los botones */
+.btn {
+  padding: 8px 16px; /* Espaciado interno */
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño de la fuente */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilos específicos para el botón "Update" */
+.btn-primary {
+  background-color: #007bff; /* Color de fondo */
+  border-color: #007bff; /* Color del borde */
+  color: #fff; /* Color del texto */
+}
+
+/* Estilos específicos para el botón "Cancel" */
+.btn-secondary {
+  background-color: #6c757d; /* Color de fondo */
+  border-color: #6c757d; /* Color del borde */
+  color: #fff; /* Color del texto */
+}
+
+/* Efecto hover para los botones */
+.btn:hover {
+  opacity: 0.9; /* Efecto de hover */
+}
+
+/* Añadir margen superior a la sección de Language Change */
+.language-section {
+  margin-top: 60px; /* Aumenta este valor para más separación */
+}
+
+/* Estilos para el contenedor del logo y el título "Hospital" */
+.header-left .logo {
+  margin-right: 20px; /* Espacio a la derecha del logo */
+}
+
+/* Estilos para la barra de búsqueda */
+.top-nav-search {
+  margin-left: 20px; /* Espacio a la izquierda de la barra de búsqueda */
+}
+
+/* Estilos adicionales para la barra de búsqueda */
+.top-nav-search input {
+  padding: 8px 12px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño de la fuente */
+  width: 100%; /* Ancho completo */
+  max-width: 300px; /* Ancho máximo */
+}
+
+/* Estilos para el botón de alternar la barra lateral */
+#toggle_btn {
+  margin-right: 10px; /* Reduce el espacio a la derecha del ícono de menú */
+}
+
+/* Estilos para la barra de búsqueda */
+.top-nav-search {
+  margin-left: 10px; /* Reduce el espacio a la izquierda de la barra de búsqueda */
 }

@@ -616,6 +616,8 @@
     "PUBLISH_BLOG": "Publicar blog"
   },
   "SETTING": {
+    "LANGUAGE_CHANGE": "Cambiar idioma",
+    "SELECT_LANGUAGE": "Seleccione idioma",
     "INVOICE": "Factura",
     "INVOICE_SETTING": "Configuración de factura",
     "GENERAL_SETTING": "Configuración general",

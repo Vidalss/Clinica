@@ -624,6 +624,8 @@
 
   "SETTING": {
     "INVOICE": "Invoice",
+    "LANGUAGE_CHANGE": "Language Change",
+    "SELECT_LANGUAGE": "Select Language",
     "INVOICE_SETTING": "Invoice Setting",
     "GENERAL_SETTING": "General Setting",
     "TAX_SETTING": "Tax Setting",

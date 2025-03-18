@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { routes } from 'src/app/shared/routes/routes';
 interface data {
   value: string ;
@@ -9,6 +10,7 @@ interface data {
   styleUrls: ['./general-settings.component.scss']
 })
 export class GeneralSettingsComponent {
+  
   public routes = routes;
   public deleteIcon1 = true;
   public deleteIcon2  = true;
@@ -20,6 +22,18 @@ export class GeneralSettingsComponent {
   deleteIconFunc2(){
     this.deleteIcon2 = !this.deleteIcon2
   }
+  constructor(private translate: TranslateService) {
+    // Establece el idioma predeterminado
+    this.translate.setDefaultLang('en');
+  }
+
+  changeLanguage(lang: string) {
+    this.translate.use(lang); 
+  }
+
+
+
+
   
 selectedList1: data[] = [
   {value: 'Select'},
@@ -34,4 +48,7 @@ selectedList2: data[] = [
   {value: 'France'},
   {value: 'USA'},
 ];
+
+
+
 }
